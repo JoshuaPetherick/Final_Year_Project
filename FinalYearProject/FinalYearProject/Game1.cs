@@ -13,6 +13,7 @@ namespace FinalYearProject
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Player p = new Player(0, 0);
 
         public Game1()
         {
@@ -28,6 +29,10 @@ namespace FinalYearProject
         /// </summary>
         protected override void Initialize()
         {
+            // Change window size
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 600;
+            graphics.ApplyChanges();
             base.Initialize();
         }
 
@@ -39,6 +44,8 @@ namespace FinalYearProject
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            // Load player image across
+            p.setTexture(Content.Load<Texture2D>("bot"));
         }
 
         /// <summary>
@@ -61,6 +68,8 @@ namespace FinalYearProject
                 Exit();
             }
 
+            // Player input
+            p.handleInput();
             base.Update(gameTime);
         }
 
@@ -71,6 +80,11 @@ namespace FinalYearProject
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            // Draw player on-screen
+            spriteBatch.Begin();
+            p.drawPlayer(spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
