@@ -1,6 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.Xna.Framework.Input;
-
 //https://msdn.microsoft.com/en-us/library/ms182532.aspx
 
 namespace FinalYearProject
