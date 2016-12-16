@@ -15,6 +15,9 @@ namespace FinalYearProject
         SpriteBatch spriteBatch;
         Player p = new Player(0, 0);
 
+        int GAMEWIDTH = 800;
+        int GAMEHEIGHT = 600;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -30,8 +33,8 @@ namespace FinalYearProject
         protected override void Initialize()
         {
             // Change window size
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = GAMEWIDTH;
+            graphics.PreferredBackBufferHeight = GAMEHEIGHT;
             graphics.ApplyChanges();
             base.Initialize();
         }
@@ -69,7 +72,7 @@ namespace FinalYearProject
             }
 
             // Player input
-            p.handleInput();
+            p.playerUpdate();
             base.Update(gameTime);
         }
 

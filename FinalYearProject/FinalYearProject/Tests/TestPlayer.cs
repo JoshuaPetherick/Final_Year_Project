@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.Xna.Framework.Input;
 
 //https://msdn.microsoft.com/en-us/library/ms182532.aspx
 
@@ -44,6 +45,33 @@ namespace FinalYearProject
             int expected = 11;
 
             play.setY(11);
+            Assert.AreEqual(expected, play.getY());
+        }
+
+        [TestMethod]
+        public void canPlayerJump()
+        {
+            Player play = new Player(10, 500);
+            int expected = 494;
+
+            play.state = Player.playerStates.JUMPING;
+            for (int i = 0; i < 3; i++)
+            {
+                play.playerUpdate();
+            }
+            Assert.AreEqual(expected, play.getY());
+        }
+
+        [TestMethod]
+        public void doesPlayerFall()
+        {
+            Player play = new Player(10, 10);
+            int expected = 15;
+
+            for (int i = 0; i < 3; i++)
+            {
+                play.playerUpdate();
+            }
             Assert.AreEqual(expected, play.getY());
         }
     }
