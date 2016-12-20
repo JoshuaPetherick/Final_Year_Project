@@ -13,7 +13,8 @@ namespace FinalYearProject
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Player p = new Player(0, 0);
+        Player player = new Player(0, 0);
+        Server server;
 
         int GAMEWIDTH = 800;
         int GAMEHEIGHT = 600;
@@ -48,7 +49,7 @@ namespace FinalYearProject
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Load player image across
-            p.setTexture(Content.Load<Texture2D>("bot"));
+            player.setTexture(Content.Load<Texture2D>("bot"));
         }
 
         /// <summary>
@@ -72,7 +73,7 @@ namespace FinalYearProject
             }
 
             // Player input
-            p.playerUpdate();
+            player.playerUpdate();
             base.Update(gameTime);
         }
 
@@ -86,7 +87,7 @@ namespace FinalYearProject
 
             // Draw player on-screen
             spriteBatch.Begin();
-            p.drawPlayer(spriteBatch);
+            player.drawPlayer(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

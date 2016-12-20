@@ -33,7 +33,7 @@ namespace FinalYearProject
                 switch (message.MessageType)
                 {
                     case NetIncomingMessageType.Data:
-                        // handle custom messages
+                        // handle server messages
                         var data = message.ReadString();
                         Console.WriteLine(data);
                         break;
@@ -42,15 +42,8 @@ namespace FinalYearProject
                         // handle connection status messages
                         break;
 
-                    case NetIncomingMessageType.DebugMessage:
-                        // handle debug messages
-                        // (only received when compiled in DEBUG mode)
-                        Console.WriteLine(message.ReadString());
-                        break;
-
                     default:
-                        Console.WriteLine("unhandled message with type: "
-                            + message.MessageType);
+                        Console.WriteLine("Unhandled message with type: " + message.MessageType);
                         break;
                 }
             }

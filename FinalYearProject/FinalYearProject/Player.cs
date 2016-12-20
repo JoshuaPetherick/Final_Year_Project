@@ -6,6 +6,8 @@ namespace FinalYearProject
 {
     class Player
     {
+        Client client;
+
         private int x;
         private int y;
         private int ID;
@@ -54,6 +56,11 @@ namespace FinalYearProject
         public int getY()
         {
             return y;
+        }
+
+        public int getID()
+        {
+            return ID;
         }
 
         public void handleInput()

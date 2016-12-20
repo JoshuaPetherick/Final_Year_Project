@@ -9,6 +9,8 @@ namespace FinalYearProject
     {
         private NetServer server;
         private NetPeerConfiguration config;
+
+        private int MAX_PLAYERS = 8;
         private List<Player> players = new List<Player>();
 
         public Server (int port)
@@ -30,11 +32,6 @@ namespace FinalYearProject
         // First bit = players ID (Each player will be assigned an ID by the server)
         // Second bit = player action/state
 
-        // States:
-        // 1. Move Left
-        // 2. Move Right
-        // 3. Jump
-
         public void checkMessages()
         {
             NetIncomingMessage message;
@@ -43,9 +40,12 @@ namespace FinalYearProject
                 switch (message.MessageType)
                 {
                     case NetIncomingMessageType.Data:
-                        // handle custom messages
-                        Console.WriteLine(message.ReadString());
-                        //Console.WriteLine(data);
+                        // handle client messages
+                        string msg = message.ReadString();
+                        if (msg.Length == 2)
+                        {
+                            applyLogic((int)msg[0], (int)msg[1]);
+                        }
                         break;
 
                     case NetIncomingMessageType.StatusChanged:
@@ -54,19 +54,12 @@ namespace FinalYearProject
                         Console.WriteLine(dat);
                         break;
 
-                    case NetIncomingMessageType.DebugMessage:
-                        // handle debug messages
-                        // (only received when compiled in DEBUG mode)
-                        Console.WriteLine(message.ReadString());
-                        break;
-
                     case NetIncomingMessageType.WarningMessage:
                         Console.WriteLine(message.ReadString());
                         break;
-                    /* .. */
+
                     default:
-                        Console.WriteLine("unhandled message with type: "
-                            + message.MessageType);
+                        Console.WriteLine("Unhandled message with type: " + message.MessageType);
                         break;
                 }
             }
@@ -77,6 +70,33 @@ namespace FinalYearProject
             NetOutgoingMessage message = server.CreateMessage();
             message.Write(msg);
             server.SendToAll(message, NetDeliveryMethod.ReliableOrdered);
+        }
+
+        public void applyLogic(int ID, int state)
+        {
+            Player player;
+            foreach (Player p in players)
+            {
+                if (p.getID() == ID)
+                {
+                    player = p;
+                    break;
+                }
+            }
+            switch(state)
+            {
+                case 1:
+                    // Move Left
+                    break;
+
+                case 2:
+                    // Move Right
+                    break;
+
+                case 3:
+                    // Jump
+                    break;
+            }
         }
 
         public int serverStatus()
