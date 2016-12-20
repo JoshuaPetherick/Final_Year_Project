@@ -8,6 +8,7 @@ namespace FinalYearProject
     {
         private int x;
         private int y;
+        private int ID;
         private int speed = 2;
         private double gravity = 1;
 
@@ -33,6 +34,11 @@ namespace FinalYearProject
         public void setY(int y)
         {
             this.y = y;
+        }
+
+        public void setID(int ID)
+        {
+            this.ID = ID;
         }
 
         public void setTexture(Texture2D texture)

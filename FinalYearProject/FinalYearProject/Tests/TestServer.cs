@@ -11,7 +11,7 @@ namespace FinalYearProject.Tests
         {
             Server serv = new Server(14242);
             int expected = 2; // 2 means up and running
-            int result = serv.status;
+            int result = serv.serverStatus();
 
             serv.closeServer();
             Assert.AreEqual(expected, result);
