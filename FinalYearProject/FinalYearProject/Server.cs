@@ -7,7 +7,6 @@ namespace FinalYearProject
     {
         private NetServer server;
         private NetPeerConfiguration config;
-        public int status;
 
         public Server (int port)
         {
@@ -16,8 +15,7 @@ namespace FinalYearProject
                 Port = port
             };
             server = new NetServer(config);
-            server.Start();
-            status = (int)server.Status;
+            server.Start(); 
         }
 
         ~Server()
@@ -31,6 +29,11 @@ namespace FinalYearProject
             {
                 server.Shutdown("Closing down");
             }
+        }
+
+        public int serverStatus()
+        {
+            return (int)server.Status;
         }
     }
 }
