@@ -13,8 +13,11 @@ namespace FinalYearProject
         private int MAX_PLAYERS = 8;
         private List<Player> players = new List<Player>();
 
-        public Server (int port)
+        private World world;
+
+        public Server (int port, World world)
         {
+            this.world = world;
             config = new NetPeerConfiguration("FYP")
             {
                 Port = port

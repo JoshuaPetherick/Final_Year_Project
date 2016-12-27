@@ -13,7 +13,9 @@ namespace FinalYearProject
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
         Player player = new Player(0, 0);
+        World world;
         Server server;
 
         int GAMEWIDTH = 800;
@@ -50,6 +52,10 @@ namespace FinalYearProject
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Load player image across
             player.setTexture(Content.Load<Texture2D>("bot"));
+            // Load new World (Pass across level and Texture Loader)
+            world = new World(1, Content);
+            // Activate Server
+            // server = new Server(14242, world)
         }
 
         /// <summary>
