@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Content;
 using System.Collections.Generic;
 
 namespace FinalYearProject
@@ -7,28 +6,39 @@ namespace FinalYearProject
     class World
     {
         private int level;
-        private ContentManager Content;
-
         //private Goal goal;
         private List<Floor> floors = new List<Floor>();
 
-        public World(int level, ContentManager Content)
+        private int GAMEWIDTH;
+        private int GAMEHEIGHT;
+
+        private Texture2D floorTexture;
+        private Texture2D goalTexture;
+
+        public World(int level, int GAMEWIDTH, int GAMEHEIGHT)
         {
             this.level = level;
-            this.Content = Content;
-            loadLevel();
+            this.GAMEWIDTH = GAMEWIDTH;
+            this.GAMEHEIGHT = GAMEHEIGHT;
         }
 
-        private void loadLevel()
+        // Optional for testing reasons
+        public void loadTextures(Texture2D floorTexture, Texture2D goalTexture)
+        {
+            this.floorTexture = floorTexture;
+            this.goalTexture = goalTexture;
+        }
+
+        public void loadLevel()
         {
             switch (level)
             {
                 case 1:
                     for (int i = 0; i < 400; i++)
                     { // Height - texture.height = 470
-                        for (int j = 0; j < 2; j++)
+                        for (int j = 1; j < 4; j++)
                         {
-                            floors.Add(new Floor((i * 10), (470 - (j * 10)), Content.Load<Texture2D>("floor")));
+                            floors.Add(new Floor((i * 10), (GAMEHEIGHT - (j * 10)), floorTexture));
                         }
                     }
                     break;
@@ -36,9 +46,9 @@ namespace FinalYearProject
                 case 2:
                     for (int i = 0; i < 400; i++)
                     { // Height - texture.height = 470
-                        for (int j = 0; j < 4; j++)
+                        for (int j = 1; j < 4; j++)
                         {
-                            floors.Add(new Floor((i * 10), (470 - (j * 10)), Content.Load<Texture2D>("floor")));
+                            floors.Add(new Floor((i * 10), (GAMEHEIGHT - (j * 10)), floorTexture));
                         }
                     }
                     break;

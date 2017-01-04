@@ -14,12 +14,12 @@ namespace FinalYearProject
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Player player = new Player(0, 0);
-        World world;
-        Server server;
+        static int GAMEWIDTH = 800;
+        static int GAMEHEIGHT = 600;
 
-        int GAMEWIDTH = 800;
-        int GAMEHEIGHT = 600;
+        Player player = new Player(0, 0);
+        World world = new World(1, GAMEWIDTH, GAMEHEIGHT);
+        Server server;
 
         public Game1()
         {
@@ -52,8 +52,9 @@ namespace FinalYearProject
             spriteBatch = new SpriteBatch(GraphicsDevice);
             // Load player image across
             player.setTexture(Content.Load<Texture2D>("bot"));
-            // Load new World (Pass across level and Texture Loader)
-            world = new World(1, Content);
+            // Load new World (Load floor and goal Textures)
+            world.loadTextures(Content.Load<Texture2D>("floor"), Content.Load<Texture2D>("floor"));
+            world.loadLevel();
             // Activate Server
             // server = new Server(14242, world)
         }
@@ -93,6 +94,7 @@ namespace FinalYearProject
 
             // Draw player on-screen
             spriteBatch.Begin();
+            world.draw(spriteBatch);
             player.drawPlayer(spriteBatch);
             spriteBatch.End();
 

@@ -10,7 +10,9 @@ namespace FinalYearProject
         private NetPeerConfiguration config;
         private NetClient client;
 
-        public Client (string ip, int prt)
+        Technique technique;
+
+        public Client (string ip, int prt, Technique technique)
         {
             config = new NetPeerConfiguration("FYP");
             client = new NetClient(config);
@@ -18,11 +20,17 @@ namespace FinalYearProject
             try
             {
                 client.Connect(host: ip, port: prt);
+                this.technique = technique;
             }
             catch (System.Exception e)
             {
                 System.Console.WriteLine(e);
             }
+        }
+
+        public void updatePlayer(int action)
+        {
+            technique.update(action);
         }
 
         public void getMessages()

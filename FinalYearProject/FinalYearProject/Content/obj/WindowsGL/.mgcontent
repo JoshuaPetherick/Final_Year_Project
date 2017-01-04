@@ -4,6 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Joshua/Documents/Work/FYP/Final_Year_Project/FinalYearProject/FinalYearProject/Content/bot.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/Final_Year_Project/FinalYearProject/FinalYearProject/Content/bot.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/Final_Year_Project/FinalYearProject/FinalYearProject/Content/floor.png</File>
   </SourceFiles>
 </SourceFileCollection>

@@ -9,7 +9,7 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void canCreateServer()
         {
-            World world;
+            World world = new World(1, 800, 600);
             Server serv = new Server(14242, world);
             int expected = 2; // 2 means up and running
             int result = serv.serverStatus();
