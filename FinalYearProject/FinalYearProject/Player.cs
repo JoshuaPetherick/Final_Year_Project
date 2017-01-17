@@ -59,6 +59,16 @@ namespace FinalYearProject
             return y;
         }
 
+        public int getHeight()
+        {
+            return PREFHEIGHT;
+        }
+
+        public int getWidth()
+        {
+            return PREFWIDTH;
+        }
+
         public int getID()
         {
             return ID;
@@ -101,11 +111,11 @@ namespace FinalYearProject
             }
         }
 
-        public void playerUpdate()
+        public void playerUpdate(World world)
         {
             handleInput();
-            
-            if (y != (600 - PREFHEIGHT) && state != playerStates.JUMPING)
+            int colStatus = world.checkColliding(x, y, PREFHEIGHT, PREFWIDTH);
+            if (state != playerStates.JUMPING && colStatus == 0)
             {
                 state = playerStates.FALLING;
             }
@@ -120,11 +130,11 @@ namespace FinalYearProject
                     break;
 
                 case playerStates.FALLING:
-                    gravity += 0.5; // Increase effect of gravity
+                    gravity += 0.25; // Increase effect of gravity
                     setY(y + (int)gravity);
-                    if (y > (Game1.GAMEHEIGHT - PREFHEIGHT))
+                    if (y > (Game1.GAMEHEIGHT - PREFHEIGHT) || colStatus == 1)
                     {
-                        setY((Game1.GAMEHEIGHT - PREFHEIGHT));
+                        setY((y - (int)gravity));
                         state = playerStates.IDLE;
                         gravity = 1; // Reset Gravity
                     }
@@ -139,7 +149,6 @@ namespace FinalYearProject
 
         public void drawPlayer(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, new Rectangle(x, y, texture.Width, texture.Height), Color.GhostWhite);
             spriteBatch.Draw(texture, new Rectangle(x, y, PREFWIDTH, PREFHEIGHT), Color.GhostWhite);
         }
     }

@@ -5,10 +5,10 @@ namespace FinalYearProject
 {
     class Goal
     {
-        private int x;
-        private int y;
-        private int height = 400;
-        private int width = 20;
+        public int x;
+        public int y;
+        public int height = 400;
+        public int width = 20;
         private Texture2D texture;
 
         public Goal(int x, int y, Texture2D texture)

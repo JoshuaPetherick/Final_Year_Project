@@ -79,8 +79,8 @@ namespace FinalYearProject
                 Exit();
             }
 
-            // Player input
-            player.playerUpdate();
+            // Player input handled in Update
+            player.playerUpdate(world);
             base.Update(gameTime);
         }
 

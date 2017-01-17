@@ -53,11 +53,12 @@ namespace FinalYearProject
         [TestMethod]
         public void canPlayerJump()
         {
+            World world = new World(1);
             Player play = new Player(10, 500);
             play.state = Player.playerStates.JUMPING;
             for (int i = 0; i < 3; i++)
             {
-                play.playerUpdate();
+                play.playerUpdate(world);
             }
 
             int expected = 494;
@@ -68,13 +69,14 @@ namespace FinalYearProject
         [TestMethod]
         public void doesPlayerFall()
         {
+            World world = new World(1);
             Player play = new Player(10, 10);
             for (int i = 0; i < 3; i++)
             {
-                play.playerUpdate();
+                play.playerUpdate(world);
             }
 
-            int expected = 15;
+            int expected = 13;
             int result = play.getY();
             Assert.AreEqual(expected, result);
         }

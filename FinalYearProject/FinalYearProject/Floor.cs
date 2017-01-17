@@ -5,10 +5,10 @@ namespace FinalYearProject
 {
     class Floor
     {
-        private int x;
-        private int y;
-        private int height = 10;
-        private int width = 10;
+        public int x;
+        public int y;
+        public int height = 10;
+        public int width = 10;
         private Texture2D texture;
 
         public Floor(int x, int y, Texture2D texture)

@@ -66,18 +66,37 @@ namespace FinalYearProject
 
         public int checkColliding(int px, int py, int ph, int pw)
         {
-            if (false)
+            // Skip this for testing purposes
+            if (goal != null)
             {
-                //return 2;
+                if (axisAlignedBoundingBox(px, py, ph, pw, goal.x, goal.y, goal.height, goal.width))
+                {
+                    return 2;
+                }
             }
             foreach (Floor floor in floors)
             {
-                if(false)
-                {
-                    //return 1;
+                // Only want to check floors which are NEAR the player
+               if (floor.x >= px && floor.x <= (px + pw))
+               {
+                    if (axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, floor.height, floor.width))
+                    {
+                        return 1;
+                    }
                 }
             }
             return 0;
+        }
+
+        public bool axisAlignedBoundingBox(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)
+        {
+            // https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
+            if (px < (ox+ow) && (px + pw) > ox &&
+                py < (oy + oh) && (ph + py) > oy)
+            {
+                return true;
+            }
+            return false;
         }
 
         public void draw(SpriteBatch spriteBatch)

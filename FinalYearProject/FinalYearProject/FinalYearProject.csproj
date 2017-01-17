@@ -55,6 +55,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\TestServer.cs" />
+    <Compile Include="Tests\TestWorld.cs" />
     <Compile Include="Tests\TestTechnique.cs" />
     <Compile Include="World.cs" />
   </ItemGroup>
