@@ -10,9 +10,9 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void canClientConnect()
         {
-            World world =  new World(1, 800, 600);
+            World world =  new World(1);
             Server serv = new Server(14242, world); // Need to make server first
-            Client clint = new Client("127.0.0.1", 14242, new ClientSidePrediction());
+            Client clint = new Client("127.0.0.1", 14242);
             Thread.Sleep(1000); // Wait for packet to be recieved
 
             clint.getMessages();

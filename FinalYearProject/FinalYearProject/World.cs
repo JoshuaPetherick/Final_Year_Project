@@ -6,20 +6,15 @@ namespace FinalYearProject
     class World
     {
         private int level;
-        //private Goal goal;
+        private Goal goal;
         private List<Floor> floors = new List<Floor>();
-
-        private int GAMEWIDTH;
-        private int GAMEHEIGHT;
 
         private Texture2D floorTexture;
         private Texture2D goalTexture;
 
-        public World(int level, int GAMEWIDTH, int GAMEHEIGHT)
+        public World(int level)
         {
             this.level = level;
-            this.GAMEWIDTH = GAMEWIDTH;
-            this.GAMEHEIGHT = GAMEHEIGHT;
         }
 
         // Optional for testing reasons
@@ -38,9 +33,10 @@ namespace FinalYearProject
                     { // Height - texture.height = 470
                         for (int j = 1; j < 4; j++)
                         {
-                            floors.Add(new Floor((i * 10), (GAMEHEIGHT - (j * 10)), floorTexture));
+                            floors.Add(new Floor((i * 10), (Game1.GAMEHEIGHT - (j * 10)), floorTexture));
                         }
                     }
+                    goal = new Goal(680, Game1.GAMEHEIGHT - 430, goalTexture);
                     break;
 
                 case 2:
@@ -48,7 +44,7 @@ namespace FinalYearProject
                     { // Height - texture.height = 470
                         for (int j = 1; j < 4; j++)
                         {
-                            floors.Add(new Floor((i * 10), (GAMEHEIGHT - (j * 10)), floorTexture));
+                            floors.Add(new Floor((i * 10), (Game1.GAMEHEIGHT - (j * 10)), floorTexture));
                         }
                     }
                     break;
@@ -58,7 +54,7 @@ namespace FinalYearProject
         public void unloadLevel()
         {
             floors.Clear();
-            //goal = null;
+            goal = null;
         }
 
         public void nextLevel()
@@ -68,13 +64,29 @@ namespace FinalYearProject
             loadLevel();
         }
 
+        public int checkColliding(int px, int py, int ph, int pw)
+        {
+            if (false)
+            {
+                //return 2;
+            }
+            foreach (Floor floor in floors)
+            {
+                if(false)
+                {
+                    //return 1;
+                }
+            }
+            return 0;
+        }
+
         public void draw(SpriteBatch spriteBatch)
         {
             foreach (Floor floor in floors)
             {
                 floor.draw(spriteBatch);
             }
-            //goal.draw(spriteBatch);
+            goal.draw(spriteBatch);
         }
     }
 }

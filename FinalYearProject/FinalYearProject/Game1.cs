@@ -14,12 +14,12 @@ namespace FinalYearProject
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        static int GAMEWIDTH = 800;
-        static int GAMEHEIGHT = 600;
+        public static int GAMEWIDTH = 800;
+        public static int GAMEHEIGHT = 600;
 
-        Player player = new Player(0, 0);
-        World world = new World(1, GAMEWIDTH, GAMEHEIGHT);
-        Server server;
+        private Player player = new Player(0, 0);
+        private World world = new World(1);
+        private Server server;
 
         public Game1()
         {
@@ -56,7 +56,7 @@ namespace FinalYearProject
             world.loadTextures(Content.Load<Texture2D>("floor"), Content.Load<Texture2D>("floor"));
             world.loadLevel();
             // Activate Server
-            // server = new Server(14242, world)
+            server = new Server(14242, world);
         }
 
         /// <summary>

@@ -7,6 +7,7 @@ namespace FinalYearProject
     class Player
     {
         Client client;
+        //Technique technique;
 
         private int x;
         private int y;
@@ -15,8 +16,8 @@ namespace FinalYearProject
         private double gravity = 1;
 
         private Texture2D texture;
-        private int PREFWIDTH = 60; // Values determined based on personal preference
-        private int PREFHEIGHT = 100; // Values determined based on personal preference
+        private int PREFWIDTH = 45; // Values determined based on personal preference
+        private int PREFHEIGHT = 75; // Values determined based on personal preference
 
         public playerStates state = playerStates.IDLE; // Made public for Unit Test
         public enum playerStates { IDLE, JUMPING, FALLING};
@@ -81,14 +82,14 @@ namespace FinalYearProject
             }
             if (Keyboard.GetState().IsKeyDown(Keys.S))
             {
-                if ((y + speed) < (600 - PREFHEIGHT)) // Need to get GAMEHEIGHT
+                if ((y + speed) < (Game1.GAMEHEIGHT - PREFHEIGHT))
                 {
                     setY(y + speed);
                 }
             }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
-                if ((x + speed) < (800 - PREFWIDTH)) // Need to get GAMEWIDTH
+                if ((x + speed) < (Game1.GAMEWIDTH - PREFWIDTH))
                 {
                     setX(x + speed);
                 }
@@ -121,14 +122,19 @@ namespace FinalYearProject
                 case playerStates.FALLING:
                     gravity += 0.5; // Increase effect of gravity
                     setY(y + (int)gravity);
-                    if (y > (600 - PREFHEIGHT))  // Need to get GAMEHEIGHT
+                    if (y > (Game1.GAMEHEIGHT - PREFHEIGHT))
                     {
-                        setY((600 - PREFHEIGHT)); // Need to get GAMEHEIGHT
+                        setY((Game1.GAMEHEIGHT - PREFHEIGHT));
                         state = playerStates.IDLE;
                         gravity = 1; // Reset Gravity
                     }
                     break;
             }
+        }
+
+        public void connectClient(string ip, int port)
+        {
+            client = new Client(ip, port);
         }
 
         public void drawPlayer(SpriteBatch spriteBatch)

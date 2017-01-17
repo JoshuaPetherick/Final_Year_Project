@@ -45,6 +45,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="ClientSidePrediction.cs" />
     <Compile Include="Floor.cs" />
+    <Compile Include="Goal.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Technique.cs" />
     <Compile Include="Tests\TestClient.cs" />

@@ -3,15 +3,15 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace FinalYearProject
 {
-    class Floor
+    class Goal
     {
         private int x;
         private int y;
-        private int height = 10;
-        private int width = 10;
+        private int height = 400;
+        private int width = 20;
         private Texture2D texture;
 
-        public Floor(int x, int y, Texture2D texture)
+        public Goal(int x, int y, Texture2D texture)
         {
             this.x = x;
             this.y = y;
@@ -22,5 +22,6 @@ namespace FinalYearProject
         {
             spriteBatch.Draw(texture, new Rectangle(x, y, width, height), Color.GhostWhite);
         }
+
     }
 }
