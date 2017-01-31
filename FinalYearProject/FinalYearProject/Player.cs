@@ -115,7 +115,10 @@ namespace FinalYearProject
         public void playerUpdate(World world)
         {
             // Get updates from server
-            if (clnt != null) { clnt.getMessages(); }
+            if (clnt != null)
+            {
+                clnt.getMessages();
+            }
             // Handle player input
             handleInput();
             int colStatus = world.checkColliding(x, y, PREFHEIGHT, PREFWIDTH);

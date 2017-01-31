@@ -10,9 +10,8 @@ namespace FinalYearProject
         private NetServer server;
         private NetPeerConfiguration config;
 
-        private int MAX_PLAYERS = 8;
+        //private int MAX_PLAYERS = 8;
         private List<Player> players = new List<Player>();
-
         private World world;
 
         public Server (int port, World world)
@@ -47,10 +46,16 @@ namespace FinalYearProject
                         string msg = message.ReadString();
                         if (msg.Length == 2)
                         {
-                            Console.WriteLine(msg);
                             string id = msg[0].ToString();
                             string state = msg[1].ToString();
                             applyLogic(id, state);
+                        }
+                        else if (msg.ToString().Equals("0"))
+                        {
+                            Player player = new Player(0, 0);
+                            player.setID(server.ConnectionsCount.ToString());
+                            players.Add(player);
+                            sendMessages(player.getID(), message.SenderConnection);
                         }
                         break;
 
@@ -71,37 +76,29 @@ namespace FinalYearProject
             }
         }
 
-        public void sendMessages(string msg)
+        public void sendMessages(string msg, NetConnection recipient)
         {
             NetOutgoingMessage message = server.CreateMessage();
             message.Write(msg);
-            server.SendToAll(message, NetDeliveryMethod.ReliableOrdered);
+            if (recipient != null)
+            {
+                server.SendMessage(message, recipient, NetDeliveryMethod.ReliableOrdered);
+            }
+            else
+            {
+                server.SendToAll(message, NetDeliveryMethod.ReliableOrdered);
+            }
         }
 
         public void applyLogic(string ID, string state)
         {
-            Player player;
-            foreach (Player p in players)
+            foreach (Player player in players)
             {
-                if (p.getID()== ID)
+                if (player.getID().Equals(ID))
                 {
-                    player = p;
+                    Tuple<int, int> pos = Logic.actionTree(new Tuple<int, int>(player.getX(), player.getY()), state);
                     break;
                 }
-            }
-            switch(state)
-            {
-                case "1":
-                    // Move Left
-                    break;
-
-                case "2":
-                    // Move Right
-                    break;
-
-                case "3":
-                    // Jump
-                    break;
             }
         }
 
