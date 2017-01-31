@@ -66,7 +66,7 @@ namespace FinalYearProject
 
         public int checkColliding(int px, int py, int ph, int pw)
         {
-            // Skip this for testing purposes
+            // Check this for testing purposes
             if (goal != null)
             {
                 if (axisAlignedBoundingBox(px, py, ph, pw, goal.x, goal.y, goal.height, goal.width))

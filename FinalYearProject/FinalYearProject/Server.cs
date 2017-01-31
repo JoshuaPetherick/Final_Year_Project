@@ -47,7 +47,10 @@ namespace FinalYearProject
                         string msg = message.ReadString();
                         if (msg.Length == 2)
                         {
-                            applyLogic((int)msg[0], (int)msg[1]);
+                            Console.WriteLine(msg);
+                            string id = msg[0].ToString();
+                            string state = msg[1].ToString();
+                            applyLogic(id, state);
                         }
                         break;
 
@@ -75,12 +78,12 @@ namespace FinalYearProject
             server.SendToAll(message, NetDeliveryMethod.ReliableOrdered);
         }
 
-        public void applyLogic(int ID, int state)
+        public void applyLogic(string ID, string state)
         {
             Player player;
             foreach (Player p in players)
             {
-                if (p.getID() == ID)
+                if (p.getID()== ID)
                 {
                     player = p;
                     break;
@@ -88,15 +91,15 @@ namespace FinalYearProject
             }
             switch(state)
             {
-                case 1:
+                case "1":
                     // Move Left
                     break;
 
-                case 2:
+                case "2":
                     // Move Right
                     break;
 
-                case 3:
+                case "3":
                     // Jump
                     break;
             }

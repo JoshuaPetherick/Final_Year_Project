@@ -57,6 +57,7 @@ namespace FinalYearProject
             world.loadLevel();
             // Activate Server
             server = new Server(14242, world);
+            player.connectClient("127.0.0.1", 14242);
         }
 
         /// <summary>
@@ -81,6 +82,8 @@ namespace FinalYearProject
 
             // Player input handled in Update
             player.playerUpdate(world);
+            // Server side (Remove once it is its own thread)
+            server.checkMessages();
             base.Update(gameTime);
         }
 

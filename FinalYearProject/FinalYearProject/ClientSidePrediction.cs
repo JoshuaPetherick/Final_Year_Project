@@ -4,20 +4,15 @@ namespace FinalYearProject
 {
     class ClientSidePrediction : Technique
     {
-        private int lastAction;
+        private string lastAction;
 
-        public ClientSidePrediction()
+        public override void update(string action, Client clint)
         {
-
-        }
-
-        public override void update(int action)
-        {
+            clint.sendMessages(action);
             lastAction = action;
-            // Do Client side stuff in here...
         }
 
-        public override int getLastAction()
+        public override string getLastAction()
         {
             return lastAction;
         }

@@ -6,12 +6,12 @@ namespace FinalYearProject
 {
     class Player
     {
-        Client client;
-        //Technique technique;
+        Client clnt;
+        private string ID;
+        Technique technique = new ClientSidePrediction();
 
         private int x;
         private int y;
-        private int ID;
         private int speed = 2;
         private double gravity = 1;
 
@@ -39,7 +39,7 @@ namespace FinalYearProject
             this.y = y;
         }
 
-        public void setID(int ID)
+        public void setID(string ID)
         {
             this.ID = ID;
         }
@@ -69,7 +69,7 @@ namespace FinalYearProject
             return PREFWIDTH;
         }
 
-        public int getID()
+        public string getID()
         {
             return ID;
         }
@@ -108,11 +108,15 @@ namespace FinalYearProject
             {
                 jumpPoint = y - 40;
                 state = playerStates.JUMPING;
+                technique.update("3", clnt);
             }
         }
 
         public void playerUpdate(World world)
         {
+            // Get updates from server
+            if (clnt != null) { clnt.getMessages(); }
+            // Handle player input
             handleInput();
             int colStatus = world.checkColliding(x, y, PREFHEIGHT, PREFWIDTH);
             if (state != playerStates.JUMPING && colStatus == 0)
@@ -144,7 +148,7 @@ namespace FinalYearProject
 
         public void connectClient(string ip, int port)
         {
-            client = new Client(ip, port);
+            clnt = new Client(ip, port);
         }
 
         public void drawPlayer(SpriteBatch spriteBatch)

@@ -9,10 +9,10 @@ namespace FinalYearProject.Tests
         public void doesClientSidePredictionUpdateRun()
         {
             Technique technique = new ClientSidePrediction();
-            technique.update(7);
+            technique.update("7", new Client("127.0.0.1", 14242));
 
-            int expected = 7;
-            int result = technique.getLastAction();
+            string expected = "7";
+            string result = technique.getLastAction();
             Assert.AreEqual(expected, result);
         }
     }

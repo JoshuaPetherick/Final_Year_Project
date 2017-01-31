@@ -3,7 +3,7 @@ namespace FinalYearProject
 {
     abstract class Technique
     {
-        abstract public void update(int action);
-        abstract public int getLastAction();
+        abstract public void update(string action, Client clnt);
+        abstract public string getLastAction();
     }
 }

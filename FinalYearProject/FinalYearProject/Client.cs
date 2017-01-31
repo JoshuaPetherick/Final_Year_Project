@@ -6,7 +6,7 @@ namespace FinalYearProject
 {
     class Client
     {
-        public int ID; // ID assigned by Server
+        public string ID = "1"; // ID assigned by Server
         private NetPeerConfiguration config;
         private NetClient client;
 
@@ -49,10 +49,11 @@ namespace FinalYearProject
             }
         }
 
-        public void sendMessages(int msg)
+        public void sendMessages(string action)
         {
             NetOutgoingMessage message = client.CreateMessage();
-            message.Write(ID + "" + msg);
+            string msg = ID + action;
+            message.Write(msg);
             client.SendMessage(message, NetDeliveryMethod.ReliableOrdered);
         }
 
