@@ -16,7 +16,7 @@ namespace FinalYearProject.Tests
             Client clint = new Client("127.0.0.1", 14242);
             Thread.Sleep(1000); // Wait for packet to be recieved
 
-            clint.getMessages();
+            clint.getMessages(world);
             int expected = 5;
             int result = clint.getStatus();
 

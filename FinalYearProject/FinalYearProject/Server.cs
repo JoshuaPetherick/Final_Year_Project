@@ -13,6 +13,7 @@ namespace FinalYearProject
         //private int MAX_PLAYERS = 8;
         private List<Player> players = new List<Player>();
         private World world;
+        private int currID = 1;
 
         public Server (int port, World world)
         {
@@ -48,12 +49,24 @@ namespace FinalYearProject
                         {
                             string id = msg[0].ToString();
                             string state = msg[1].ToString();
-                            applyLogic(id, state);
+                            Player p = applyLogic(id);
+                            if (p == null)
+                            {
+                                Console.WriteLine("ERROR OCCURED: Unable to find player via ID (" + id + ")");
+                            }
+                            else
+                            {
+                                // Do something with pos and state
+                                // Send updated pos to all players
+                                // string send = id + "/" + pos.item1 + "/" + pos.item2; 
+                                // sendMessages(send, null);
+                            }
                         }
                         else if (msg.ToString().Equals("0"))
                         {
                             Player player = new Player(0, 0);
-                            player.setID(server.ConnectionsCount.ToString());
+                            player.setID(currID.ToString());
+                            currID++;
                             players.Add(player);
                             sendMessages(player.getID(), message.SenderConnection);
                         }
@@ -90,16 +103,16 @@ namespace FinalYearProject
             }
         }
 
-        public void applyLogic(string ID, string state)
+        public Player applyLogic(string ID)
         {
             foreach (Player player in players)
             {
                 if (player.getID().Equals(ID))
                 {
-                    Tuple<int, int> pos = Logic.actionTree(new Tuple<int, int>(player.getX(), player.getY()), state);
-                    break;
+                    return player;
                 }
             }
+            return null;
         }
 
         public int serverStatus()

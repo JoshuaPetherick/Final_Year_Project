@@ -83,7 +83,7 @@ namespace FinalYearProject
             // Player input handled in Update
             player.playerUpdate(world);
             // Server side (Remove once it is its own thread)
-            server.checkMessages();
+            //server.checkMessages();
             base.Update(gameTime);
         }
 

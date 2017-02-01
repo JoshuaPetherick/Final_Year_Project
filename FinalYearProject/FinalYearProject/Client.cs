@@ -12,9 +12,10 @@ namespace FinalYearProject
         private NetClient client;
 
         private List<string> actions = new List<string>(); // Array of Actions
-        private double delay = 50; // Set to 50 Milliseconds
+        private double delay = 50; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
-        public bool local = true; 
+        private Player localPlayer = new Player(0, 0);
+        public bool local = false; 
 
         public Client (string ip, int prt)
         {
@@ -39,8 +40,9 @@ namespace FinalYearProject
             }
         }
 
-        public void getMessages()
+        public Tuple<int, int> getMessages(World world)
         {
+            Tuple<int, int> pos = new Tuple<int, int>(localPlayer.getX(), localPlayer.getY());
             if (!local)
             {
                 NetIncomingMessage message;
@@ -52,6 +54,10 @@ namespace FinalYearProject
                             // handle server messages
                             var data = message.ReadString();
                             Console.WriteLine(data);
+                            if (data.Length < 1)
+                            {
+                                pos = new Tuple<int, int>(data[0], data[1]);
+                            }
                             break;
 
                         case NetIncomingMessageType.StatusChanged:
@@ -71,9 +77,19 @@ namespace FinalYearProject
                 {
                     // Send Positions
                     lastSent = DateTime.Now;
-                    Console.WriteLine(lastSent);
+                    // Process action
+                    if (actions.Count > 0)
+                    {
+                        string action = actions[0];
+                        actions.RemoveAt(0);
+                        pos = Logic.actionTree(localPlayer, action);
+                    }
                 }
+                pos = Logic.update(localPlayer, pos, world);
+                localPlayer.setX(pos.Item1);
+                localPlayer.setY(pos.Item2);
             }
+            return pos;
         }
 
         public void sendMessages(string action)
@@ -87,7 +103,7 @@ namespace FinalYearProject
             }
             else
             {
-
+                actions.Add(action);
             }
         }
 

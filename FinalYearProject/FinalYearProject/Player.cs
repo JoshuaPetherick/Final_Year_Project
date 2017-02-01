@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace FinalYearProject
 {
@@ -12,16 +13,13 @@ namespace FinalYearProject
 
         private int x;
         private int y;
-        private int speed = 2;
-        private double gravity = 1;
-
+        public static int PREFWIDTH = 45; // Values determined based on personal preference
+        public static int PREFHEIGHT = 75; // Values determined based on personal preference
         private Texture2D texture;
-        private int PREFWIDTH = 45; // Values determined based on personal preference
-        private int PREFHEIGHT = 75; // Values determined based on personal preference
 
         public playerStates state = playerStates.IDLE; // Made public for Unit Test
         public enum playerStates { IDLE, JUMPING, FALLING};
-        private int jumpPoint;
+        public int jumpPoint;
 
         public Player(int x, int y)
         {
@@ -74,41 +72,21 @@ namespace FinalYearProject
             return ID;
         }
 
-        public void handleInput()
+        public void handleInput(World world)
         {
-            if(Keyboard.GetState().IsKeyDown(Keys.W))
-            {
-                if ((y - speed) > 0)
-                {
-                    setY(y - speed);
-                }
-            }
             if (Keyboard.GetState().IsKeyDown(Keys.A))
             {
-                if ((x - speed) > 0)
-                {
-                    setX(x - speed);
-                }
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.S))
-            {
-                if ((y + speed) < (Game1.GAMEHEIGHT - PREFHEIGHT))
-                {
-                    setY(y + speed);
-                }
+                // Move Left
+                technique.update(clnt, this, world, "1");
             }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
-                if ((x + speed) < (Game1.GAMEWIDTH - PREFWIDTH))
-                {
-                    setX(x + speed);
-                }
+                // Move Right
+                technique.update(clnt, this, world, "2");
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && state == playerStates.IDLE)
             {
-                jumpPoint = y - 40;
-                state = playerStates.JUMPING;
-                technique.update("3", clnt);
+                technique.update(clnt, this, world, "3");
             }
         }
 
@@ -117,36 +95,13 @@ namespace FinalYearProject
             // Get updates from server
             if (clnt != null)
             {
-                clnt.getMessages();
+                // Get updated position from server/local
+                Tuple<int, int> pos = technique.process(clnt, world);
+                setX(pos.Item1);
+                setY(pos.Item2);
             }
             // Handle player input
-            handleInput();
-            int colStatus = world.checkColliding(x, y, PREFHEIGHT, PREFWIDTH);
-            if (state != playerStates.JUMPING && colStatus == 0)
-            {
-                state = playerStates.FALLING;
-            }
-            switch (state)
-            {
-                case playerStates.JUMPING:
-                    setY(y - speed);
-                    if (y <= jumpPoint)
-                    {
-                        state = playerStates.FALLING;
-                    }
-                    break;
-
-                case playerStates.FALLING:
-                    gravity += 0.25; // Increase effect of gravity
-                    setY(y + (int)gravity);
-                    if (y > (Game1.GAMEHEIGHT - PREFHEIGHT) || colStatus == 1)
-                    {
-                        setY((y - (int)gravity));
-                        state = playerStates.IDLE;
-                        gravity = 1; // Reset Gravity
-                    }
-                    break;
-            }
+            handleInput(world);
         }
 
         public void connectClient(string ip, int port)
