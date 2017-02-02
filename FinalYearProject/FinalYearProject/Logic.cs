@@ -6,7 +6,7 @@ namespace FinalYearProject
     class Logic
     {
         private static int speed = 2;
-        private static int gravity = 1;
+        private static int gravity = 2;
 
         public static bool axisAlignedBoundingBox(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)
         {
@@ -63,17 +63,20 @@ namespace FinalYearProject
             {
                 case Player.playerStates.JUMPING:
                     y = y - speed;
-                    if (player.getY() <= player.jumpPoint)
+                    if (y <= player.jumpPoint)
                     {
                         player.state = Player.playerStates.FALLING;
                     }
                     break;
 
                 case Player.playerStates.FALLING:
-                    y = y + gravity;
-                    if (player.getY() > (Game1.GAMEHEIGHT - Player.PREFHEIGHT) || colStatus == 1)
+                    for (int i = 1; i <= gravity; i++)
                     {
-                        y = y - gravity;
+                        y = y + gravity;
+                        colStatus = world.checkColliding(x, y, Player.PREFHEIGHT, Player.PREFWIDTH);
+                    }
+                    if (y > (Game1.GAMEHEIGHT - Player.PREFHEIGHT) || colStatus == 1)
+                    {
                         player.state = Player.playerStates.IDLE;
                     }
                     break;

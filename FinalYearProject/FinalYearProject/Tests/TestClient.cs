@@ -10,10 +10,10 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void canClientConnect()
         {
-            World world =  new World(1);
+            World world = new World(1);
             Server serv = new Server(14242, world); // Need to make server first
 
-            Client clint = new Client("127.0.0.1", 14242);
+            Client clint = new Client("127.0.0.1", 14242, false);
             Thread.Sleep(1000); // Wait for packet to be recieved
 
             clint.getMessages(world);
@@ -21,6 +21,20 @@ namespace FinalYearProject.Tests
             int result = clint.getStatus();
 
             serv.closeServer();
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void actionQueueTest()
+        {
+            Client clint = new Client("127.0.0.1", 14242, true);
+            for (int i = 1; i < 4; i++)
+            {
+                clint.sendMessages(i.ToString());
+            }
+            string result = clint.processAction();
+            string expected = "1";
+
             Assert.AreEqual(expected, result);
         }
     }

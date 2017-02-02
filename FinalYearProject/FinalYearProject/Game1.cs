@@ -57,7 +57,8 @@ namespace FinalYearProject
             world.loadLevel();
             // Activate Server
             server = new Server(14242, world);
-            player.connectClient("127.0.0.1", 14242);
+            // Change to false when not running Local
+            player.connectClient("127.0.0.1", 14242, true);
         }
 
         /// <summary>

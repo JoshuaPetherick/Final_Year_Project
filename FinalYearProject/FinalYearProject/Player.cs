@@ -92,21 +92,25 @@ namespace FinalYearProject
 
         public void playerUpdate(World world)
         {
+             // Handle player input
+            handleInput(world);
+            technique.update(clnt, this, world, "0");
             // Get updates from server
             if (clnt != null)
             {
                 // Get updated position from server/local
                 Tuple<int, int> pos = technique.process(clnt, world);
-                setX(pos.Item1);
-                setY(pos.Item2);
+                if (pos != null)
+                {
+                    setX(pos.Item1);
+                    setY(pos.Item2);
+                }
             }
-            // Handle player input
-            handleInput(world);
         }
 
-        public void connectClient(string ip, int port)
+        public void connectClient(string ip, int port, bool local)
         {
-            clnt = new Client(ip, port);
+            clnt = new Client(ip, port, local);
         }
 
         public void drawPlayer(SpriteBatch spriteBatch)

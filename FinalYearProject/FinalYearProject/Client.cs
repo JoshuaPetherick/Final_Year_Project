@@ -12,13 +12,14 @@ namespace FinalYearProject
         private NetClient client;
 
         private List<string> actions = new List<string>(); // Array of Actions
-        private double delay = 50; // Millisecond Delay
+        private double delay = 0; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
         private Player localPlayer = new Player(0, 0);
-        public bool local = false; 
+        public bool local; 
 
-        public Client (string ip, int prt)
+        public Client (string ip, int prt, bool local)
         {
+            this.local = local;
             if (!local)
             {
                 connect(ip, prt);
@@ -42,7 +43,7 @@ namespace FinalYearProject
 
         public Tuple<int, int> getMessages(World world)
         {
-            Tuple<int, int> pos = new Tuple<int, int>(localPlayer.getX(), localPlayer.getY());
+            Tuple<int, int> pos = null;
             if (!local)
             {
                 NetIncomingMessage message;
@@ -75,19 +76,22 @@ namespace FinalYearProject
                 // Check Timer
                 if (lastSent.AddMilliseconds(delay) <= DateTime.Now)
                 {
+                    Console.WriteLine(DateTime.Now);
                     // Send Positions
                     lastSent = DateTime.Now;
                     // Process action
                     if (actions.Count > 0)
                     {
-                        string action = actions[0];
-                        actions.RemoveAt(0);
-                        pos = Logic.actionTree(localPlayer, action);
+                        pos = Logic.actionTree(localPlayer, processAction());
                     }
+                    else
+                    {
+                        pos = new Tuple<int, int>(localPlayer.getX(), localPlayer.getY());
+                    }
+                    pos = Logic.update(localPlayer, pos, world);
+                    localPlayer.setX(pos.Item1);
+                    localPlayer.setY(pos.Item2);
                 }
-                pos = Logic.update(localPlayer, pos, world);
-                localPlayer.setX(pos.Item1);
-                localPlayer.setY(pos.Item2);
             }
             return pos;
         }
@@ -110,6 +114,13 @@ namespace FinalYearProject
         public int getStatus()
         {
             return (int)client.ConnectionStatus;
+        }
+
+        public string processAction()
+        {
+            string action = actions[0];
+            actions.RemoveAt(0);
+            return action;
         }
     }
 }
