@@ -62,7 +62,7 @@ namespace FinalYearProject.Tests
                 play.setY(pos.Item2);
             }
 
-            int expected = 13;
+            int expected = 22;
             int result = play.getY();
             Assert.AreEqual(expected, result);
         }

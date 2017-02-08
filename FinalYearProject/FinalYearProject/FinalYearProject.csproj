@@ -48,6 +48,7 @@
     <Compile Include="Goal.cs" />
     <Compile Include="Logic.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="ServerReconcilliation.cs" />
     <Compile Include="Technique.cs" />
     <Compile Include="Tests\TestClient.cs" />
     <Compile Include="Tests\TestLogic.cs" />
