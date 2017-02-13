@@ -24,7 +24,15 @@ namespace FinalYearProject
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Final_Year_Project/Content";
+            try // Safest way to test this
+            {
+                Content.RootDirectory = "Final_Year_Project/Content";
+                Texture2D test = Content.Load<Texture2D>("bot");
+            }
+            catch
+            {
+                Content.RootDirectory = "Content";
+            }
         }
 
         /// <summary>
