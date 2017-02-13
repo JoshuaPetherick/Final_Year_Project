@@ -24,7 +24,7 @@ namespace FinalYearProject
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = "Final_Year_Project/Content";
         }
 
         /// <summary>
