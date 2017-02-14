@@ -35,7 +35,7 @@ namespace FinalYearProject
 
                 case "2":
                     // Move Right
-                    if ((x + speed) < (Game1.GAMEWIDTH - Player.PREFWIDTH))
+                    if ((x + speed) < (World.WORLDLENGTH - Player.PREFWIDTH))
                     {
                         x = x + speed;
                     }

@@ -7,8 +7,8 @@ namespace FinalYearProject
     {
         public int x;
         public int y;
-        public int height = 10;
-        public int width = 10;
+        public static int HEIGHT = 20;
+        public static int WIDTH = 40;
         private Texture2D texture;
 
         public Floor(int x, int y, Texture2D texture)
@@ -20,7 +20,7 @@ namespace FinalYearProject
 
         public void draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, new Rectangle(x, y, width, height), Color.GhostWhite);
+            spriteBatch.Draw(texture, new Rectangle(x, y, WIDTH, HEIGHT), Color.GhostWhite);
         }
     }
 }

@@ -5,6 +5,8 @@ namespace FinalYearProject
 {
     class World
     {
+        public static int WORLDLENGTH = 2400;
+
         private int level;
         private Goal goal;
         private List<Floor> floors = new List<Floor>();
@@ -29,14 +31,18 @@ namespace FinalYearProject
             switch (level)
             {
                 case 1:
-                    for (int i = 0; i < 400; i++)
+                    for (int i = 0; i < WORLDLENGTH; i+= Floor.WIDTH)
                     { // Height - texture.height = 470
-                        for (int j = 1; j < 4; j++)
+                        for (int j = 0; j < Floor.HEIGHT; j+= Floor.HEIGHT)
                         {
-                            floors.Add(new Floor((i * 10), (Game1.GAMEHEIGHT - (j * 10)), floorTexture));
+                            if (i >= 200 && i < 240) { }
+                            else
+                            {
+                                floors.Add(new Floor(i, (Game1.GAMEHEIGHT - j), floorTexture));
+                            }
                         }
                     }
-                    goal = new Goal(680, Game1.GAMEHEIGHT - 430, goalTexture);
+                    goal = new Goal(WORLDLENGTH-50, Game1.GAMEHEIGHT - 400, goalTexture);
                     break;
 
                 case 2:
@@ -79,7 +85,7 @@ namespace FinalYearProject
                 // Only want to check floors which are NEAR the player
                if (floor.x >= px && floor.x <= (px + pw))
                {
-                    if (Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, floor.height, floor.width))
+                    if (Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, Floor.HEIGHT, Floor.WIDTH))
                     {
                         return 1;
                     }

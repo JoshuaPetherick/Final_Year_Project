@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 // All of the structure below is provided by the Monogame Framework
 
@@ -17,22 +18,15 @@ namespace FinalYearProject
         public static int GAMEWIDTH = 800;
         public static int GAMEHEIGHT = 600;
 
+        private Server server;
+        private Camera camera;
         private Player player = new Player(0, 0);
         private World world = new World(1);
-        private Server server;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-            try // Safest way to test this
-            {
-                Content.RootDirectory = "Final_Year_Project/Content";
-                Texture2D test = Content.Load<Texture2D>("bot");
-            }
-            catch
-            {
-                Content.RootDirectory = "Content";
-            }
+            Content.RootDirectory = "Content";
         }
 
         /// <summary>
@@ -63,9 +57,11 @@ namespace FinalYearProject
             // Load new World (Load floor and goal Textures)
             world.loadTextures(Content.Load<Texture2D>("floor"), Content.Load<Texture2D>("floor"));
             world.loadLevel();
+            // Camera class
+            camera = new Camera(GraphicsDevice.Viewport);
             // Activate Server
             server = new Server(14242, world);
-            // Change to false when not running Local
+            // Change to true when running Locally
             player.connectClient("127.0.0.1", 14242, true);
         }
 
@@ -103,9 +99,12 @@ namespace FinalYearProject
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            // Camera movement
+            float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            camera.Position = new Vector2(player.getX() * 50, player.getY() * 2) * deltaTime;
 
             // Draw player on-screen
-            spriteBatch.Begin();
+            spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
             world.draw(spriteBatch);
             player.drawPlayer(spriteBatch);
             spriteBatch.End();
