@@ -11,11 +11,11 @@ namespace FinalYearProject
         private NetPeerConfiguration config;
         private NetClient client;
 
-        private List<string> actions = new List<string>(); // Array of Actions
-        private double delay = 10; // Millisecond Delay
+        public bool local;
+        private double delay = 5; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
         private Player localPlayer = new Player(0, 0);
-        public bool local; 
+        private List<string> actions = new List<string>(); // Array of Actions
 
         public Client (string ip, int prt, bool local)
         {
@@ -76,7 +76,6 @@ namespace FinalYearProject
                 // Check Timer
                 if (lastSent.AddMilliseconds(delay) <= DateTime.Now)
                 {
-                    Console.WriteLine(DateTime.Now);
                     // Send Positions
                     lastSent = DateTime.Now;
                     // Process action
@@ -121,6 +120,11 @@ namespace FinalYearProject
             string action = actions[0];
             actions.RemoveAt(0);
             return action;
+        }
+
+        public Player getPlayer()
+        {
+            return localPlayer;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace FinalYearProject
     {
         private Viewport viewport;
 
+        private int x = 0;
         public float Zoom = 1.0f;
         public float Rotation = 0;
         public Vector2 Origin { get; set; }
@@ -17,8 +18,23 @@ namespace FinalYearProject
         {
             this.viewport = viewport;
 
-            Origin = new Vector2(viewport.Width / 2f, viewport.Height / 2f);
+            Origin = new Vector2(viewport.Width / 2f, viewport.Width / 2f);
             Position = Vector2.Zero;
+        }
+
+        public void update(int px, int py, float deltaTime)
+        {
+            if (x != px)
+            {
+                int diffX = x - px;
+                Position -= new Vector2((60 * diffX), 0) * deltaTime;
+                // Don't move camera off world setting
+                if (Position.X < 0 || Position.X >= (World.WORLDLENGTH - viewport.Width))
+                { 
+                    Position += new Vector2((60 * diffX), 0) * deltaTime;
+                }
+                x = px;
+            }
         }
 
         public Matrix GetViewMatrix()

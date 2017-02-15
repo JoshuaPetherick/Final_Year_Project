@@ -38,7 +38,7 @@ namespace FinalYearProject
                             if (i >= 200 && i < 240) { }
                             else
                             {
-                                floors.Add(new Floor(i, (Game1.GAMEHEIGHT - j), floorTexture));
+                                floors.Add(new Floor(i, (Game1.GAMEHEIGHT - (j + Floor.HEIGHT)), floorTexture));
                             }
                         }
                     }

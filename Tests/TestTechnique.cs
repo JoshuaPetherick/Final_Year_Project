@@ -10,8 +10,8 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesClientSidePredictionUpdate()
         {
-            Player player = new Player(10, 10);
             World world = new World(1);
+            Player player = new Player(10, 10);
             Technique technique = new ClientSidePrediction();
             technique.update(new Client("127.0.0.1", 14242, true), player, world, "7");
 
@@ -39,8 +39,8 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesServerReconcilliationUpdate()
         {
-            Player player = new Player(10, 10);
             World world = new World(1);
+            Player player = new Player(10, 10);
             Technique technique = new ServerReconcilliation();
             technique.update(new Client("127.0.0.1", 14242, true), player, world, "7");
 

@@ -18,6 +18,7 @@ namespace FinalYearProject
         public static int GAMEWIDTH = 800;
         public static int GAMEHEIGHT = 600;
 
+        private bool local = true;
         private Server server;
         private Camera camera;
         private Player player = new Player(0, 0);
@@ -60,9 +61,12 @@ namespace FinalYearProject
             // Camera class
             camera = new Camera(GraphicsDevice.Viewport);
             // Activate Server
-            server = new Server(14242, world);
+            if (!local)
+            {
+                server = new Server(14242, world);
+            }
             // Change to true when running Locally
-            player.connectClient("127.0.0.1", 14242, true);
+            player.connectClient("127.0.0.1", 14242, local);
         }
 
         /// <summary>
@@ -87,8 +91,11 @@ namespace FinalYearProject
 
             // Player input handled in Update
             player.playerUpdate(world);
-            // Server side (Remove once it is its own thread)
-            //server.checkMessages();
+            // Server side - Remove this when setup threading on Server side
+            if (!local)
+            {
+                server.checkMessages();
+            }
             base.Update(gameTime);
         }
 
@@ -100,12 +107,16 @@ namespace FinalYearProject
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             // Camera movement
-            float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            camera.Position = new Vector2(player.getX() * 50, player.getY() * 2) * deltaTime;
+            camera.update(player.getX(), player.getY(), (float)gameTime.ElapsedGameTime.TotalSeconds);
 
             // Draw player on-screen
             spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
             world.draw(spriteBatch);
+            if (local)
+            {
+                player.drawClient(spriteBatch);
+            }
+            // Draw actual player on top of Client player
             player.drawPlayer(spriteBatch);
             spriteBatch.End();
 

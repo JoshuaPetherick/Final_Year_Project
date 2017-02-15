@@ -13,9 +13,10 @@ namespace FinalYearProject
 
         private int x;
         private int y;
+        private Texture2D texture;
         public static int PREFWIDTH = 45; // Values determined based on personal preference
         public static int PREFHEIGHT = 75; // Values determined based on personal preference
-        private Texture2D texture;
+        private SpriteEffects effect = SpriteEffects.None;
 
         public playerStates state = playerStates.IDLE; // Made public for Unit Test
         public enum playerStates { IDLE, JUMPING, FALLING};
@@ -78,11 +79,13 @@ namespace FinalYearProject
             {
                 // Move Left
                 technique.update(clnt, this, world, "1");
+                effect = SpriteEffects.FlipHorizontally;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 // Move Right
                 technique.update(clnt, this, world, "2");
+                effect = SpriteEffects.None;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && state == playerStates.IDLE)
             {
@@ -115,7 +118,15 @@ namespace FinalYearProject
 
         public void drawPlayer(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, new Rectangle(x, y, PREFWIDTH, PREFHEIGHT), Color.GhostWhite);
+            spriteBatch.Draw(texture, new Rectangle(x, y, PREFWIDTH, PREFHEIGHT), null,
+                new Color(255, 255, 255, 1.0f), 0.0f, new Vector2(0, 0), effect, 0.0f);
+        }
+
+        public void drawClient(SpriteBatch spriteBatch)
+        {
+            Player cPlayer = clnt.getPlayer();
+            spriteBatch.Draw(texture, new Rectangle(cPlayer.getX(), cPlayer.getY(), PREFWIDTH, PREFHEIGHT), null,
+                new Color(255, 255, 255, 0.5f), 0.0f, new Vector2(0, 0), effect, 0.0f);
         }
     }
 }

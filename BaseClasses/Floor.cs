@@ -7,7 +7,7 @@ namespace FinalYearProject
     {
         public int x;
         public int y;
-        public static int HEIGHT = 20;
+        public static int HEIGHT = 50;
         public static int WIDTH = 40;
         private Texture2D texture;
 
