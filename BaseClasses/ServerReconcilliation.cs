@@ -20,8 +20,19 @@ namespace FinalYearProject
             player.setY(pos.Item2);
         }
 
+        // TODO: Issue with gravity representing position, need to update accordingly
         public override Tuple<int, int> process(Client clnt, World world)
         {
+            // if action[0] matchs client action then don't update position, else update
+            if (actions.Count > 0)
+            {
+                if (actions[0].Equals(clnt.getAction()))
+                {
+                    actions.RemoveAt(0);
+                    clnt.getMessages(world);
+                    return null;
+                }
+            }
             return clnt.getMessages(world);
         }
 

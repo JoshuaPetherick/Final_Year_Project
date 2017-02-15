@@ -12,7 +12,7 @@ namespace FinalYearProject
         private NetClient client;
 
         public bool local;
-        private double delay = 5; // Millisecond Delay
+        private double delay = 105; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
         private Player localPlayer = new Player(0, 0);
         private List<string> actions = new List<string>(); // Array of Actions
@@ -113,6 +113,11 @@ namespace FinalYearProject
         public int getStatus()
         {
             return (int)client.ConnectionStatus;
+        }
+
+        public string getAction()
+        {
+            return actions[0];
         }
 
         public string processAction()

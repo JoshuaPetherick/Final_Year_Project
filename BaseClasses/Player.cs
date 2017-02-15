@@ -9,7 +9,7 @@ namespace FinalYearProject
     {
         Client clnt;
         private string ID;
-        Technique technique = new ClientSidePrediction();
+        Technique technique = new ServerReconcilliation();
 
         private int x;
         private int y;
