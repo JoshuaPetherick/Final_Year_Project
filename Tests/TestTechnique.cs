@@ -60,7 +60,7 @@ namespace FinalYearProject.Tests
             technique.update(clnt, player, world, "1");
             Thread.Sleep(1000); // Wait for packet to be recieved
 
-            Tuple<int, int> expected = null; // Null as doing whats expected
+            Tuple<int, int> expected = null; // Should match and therefore return nothing
             Tuple<int, int> result = technique.process(clnt, world);
             Assert.AreEqual(expected, result);
         }
