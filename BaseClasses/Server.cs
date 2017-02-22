@@ -11,9 +11,10 @@ namespace FinalYearProject
         private NetPeerConfiguration config;
 
         //private int MAX_PLAYERS = 8;
-        private List<Player> players = new List<Player>();
         private World world;
         private int currID = 1;
+        private List<Player> players = new List<Player>();
+        private List<Tuple<string, DateTime>> actions = new List<Tuple<string, DateTime>>();
 
         public Server (int port, World world)
         {
@@ -45,10 +46,13 @@ namespace FinalYearProject
                     case NetIncomingMessageType.Data:
                         // handle client messages
                         string msg = message.ReadString();
-                        if (msg.Length == 2)
+                        if (!msg.ToString().Equals("0"))
                         {
-                            string id = msg[0].ToString();
-                            string state = msg[1].ToString();
+                            string[] mess = msg.Split('/');
+                            string id = mess[0];
+                            string state = mess[1];
+                            DateTime time = Convert.ToDateTime(mess[2]);
+
                             Player p = applyLogic(id);
                             if (p == null)
                             {
@@ -62,7 +66,11 @@ namespace FinalYearProject
                                 // sendMessages(send, null);
                             }
                         }
-                        else if (msg.ToString().Equals("0"))
+                        break;
+
+                    case NetIncomingMessageType.StatusChanged:
+                        // handle connection status messages
+                        if(message.SenderConnection.Status == NetConnectionStatus.Connected)
                         {
                             Player player = new Player(0, 0);
                             player.setID(currID.ToString());
@@ -72,18 +80,13 @@ namespace FinalYearProject
                         }
                         break;
 
-                    case NetIncomingMessageType.StatusChanged:
-                        // handle connection status messages
-                        var dat = message.ReadByte();
-                        Console.WriteLine(dat);
-                        break;
-
                     case NetIncomingMessageType.WarningMessage:
                         Console.WriteLine(message.ReadString());
                         break;
 
                     default:
                         Console.WriteLine("Unhandled message with type: " + message.MessageType);
+                        Console.WriteLine(message.ReadString());
                         break;
                 }
             }

@@ -7,7 +7,7 @@ namespace FinalYearProject
 {
     class Client
     {
-        public string ID = "1"; // ID assigned by Server
+        public string ID = "0"; // ID assigned by Server
         private NetPeerConfiguration config;
         private NetClient client;
 
@@ -55,7 +55,11 @@ namespace FinalYearProject
                             // handle server messages
                             var data = message.ReadString();
                             Console.WriteLine(data);
-                            if (data.Length < 1)
+                            if (data.Length == 1)
+                            {
+                                ID = data;
+                            }
+                            else
                             {
                                 pos = new Tuple<int, int>(data[0], data[1]);
                             }
@@ -100,14 +104,11 @@ namespace FinalYearProject
             if (!local)
             {
                 NetOutgoingMessage message = client.CreateMessage();
-                string msg = ID + action;
+                string msg = ID + '/' + action + '/' + DateTime.Now.TimeOfDay.ToString();
                 message.Write(msg);
                 client.SendMessage(message, NetDeliveryMethod.ReliableOrdered);
             }
-            else
-            {
-                actions.Add(action);
-            }
+            actions.Add(action);
         }
 
         public int getStatus()

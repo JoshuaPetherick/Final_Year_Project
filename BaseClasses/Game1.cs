@@ -18,7 +18,7 @@ namespace FinalYearProject
         public static int GAMEWIDTH = 800;
         public static int GAMEHEIGHT = 600;
 
-        private bool local = true;
+        private bool local = false;
         private Server server;
         private Camera camera;
         private Player player = new Player(0, 0);
