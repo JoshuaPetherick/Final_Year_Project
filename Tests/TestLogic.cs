@@ -7,12 +7,24 @@ namespace FinalYearProject.Tests
     public class TestLogic
     {
         [TestMethod]
-        public void doesAABBWork()
+        public void doesAABBWorkPart1()
         {
             Player player1 = new Player(10, 10);
             Player player2 = new Player(10, 10);
 
             bool expected = true;
+            bool result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
+                player2.getX(), player2.getY(), player2.getHeight(), player2.getWidth());
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void doesAABBWorkPart2()
+        {
+            Player player1 = new Player(100, 100);
+            Player player2 = new Player(10, 10);
+
+            bool expected = false;
             bool result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
                 player2.getX(), player2.getY(), player2.getHeight(), player2.getWidth());
             Assert.AreEqual(expected, result);
@@ -62,7 +74,7 @@ namespace FinalYearProject.Tests
                 play.setY(pos.Item2);
             }
 
-            int expected = 22;
+            int expected = 13;
             int result = play.getY();
             Assert.AreEqual(expected, result);
         }

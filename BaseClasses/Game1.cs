@@ -12,13 +12,21 @@ namespace FinalYearProject
     /// </summary>
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        GraphicsDeviceManager graphics;
 
         public static int GAMEWIDTH = 800;
         public static int GAMEHEIGHT = 600;
+        // Controls Menu states to allow for navigation
+        private enum gameStates {
+            MAINMENU,   // Controls Main Menu
+            HOSTING,    // Enter Port Num
+            JOINING,    // Enter IP and Port Num
+            TESTING,    // Creates an Empty Lab Session - Similar to Playing
+            PLAYING     // Playing Multipler Session
+        };
+        gameStates state = gameStates.PLAYING;
 
-        private bool local = false;
         private Server server;
         private Camera camera;
         private Player player = new Player(0, 0);
@@ -61,12 +69,16 @@ namespace FinalYearProject
             // Camera class
             camera = new Camera(GraphicsDevice.Viewport);
             // Activate Server
-            if (!local)
+            if (state != gameStates.TESTING)
             {
                 server = new Server(14242, world);
+                player.connectClient("127.0.0.1", 14242, false);
             }
-            // Change to true when running Locally
-            player.connectClient("127.0.0.1", 14242, local);
+            else
+            {
+                // Change to true when running Locally
+                player.connectClient("127.0.0.1", 14242, true);
+            }
         }
 
         /// <summary>
@@ -92,7 +104,7 @@ namespace FinalYearProject
             // Player input handled in Update
             player.playerUpdate(world);
             // Server side - Remove this when setup threading on Server side
-            if (!local)
+            if (state != gameStates.TESTING)
             {
                 server.checkMessages();
             }
@@ -106,18 +118,21 @@ namespace FinalYearProject
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            // Camera movement
-            camera.update(player.getX(), player.getY(), (float)gameTime.ElapsedGameTime.TotalSeconds);
-
-            // Draw player on-screen
-            spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
-            world.draw(spriteBatch);
-            if (local)
+            if (state == gameStates.PLAYING || state == gameStates.TESTING)
             {
-                player.drawClient(spriteBatch);
+                // Camera movement
+                camera.update(player.getX(), player.getY(), (float)gameTime.ElapsedGameTime.TotalSeconds);
+
+                // Draw player on-screen
+                spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
+                world.draw(spriteBatch);
+                if (state == gameStates.TESTING)
+                {
+                    player.drawClient(spriteBatch);
+                }
+                // Draw actual player on top of Client player
+                player.drawPlayer(spriteBatch);
             }
-            // Draw actual player on top of Client player
-            player.drawPlayer(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

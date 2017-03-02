@@ -6,7 +6,7 @@ namespace FinalYearProject
     class Logic
     {
         private static int speed = 2;
-        private static int gravity = 2;
+        private static int gravity = 1;
 
         public static bool axisAlignedBoundingBox(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)
         {
@@ -43,7 +43,7 @@ namespace FinalYearProject
 
                 case "3":
                     // Jump - Needs player to be passed
-                    player.jumpPoint = y - 40;
+                    player.jumpPoint = y - 50;
                     player.state = Player.playerStates.JUMPING;
                     break;
             }

@@ -35,7 +35,7 @@ namespace FinalYearProject
                     { // Height - texture.height = 470
                         for (int j = 0; j < Floor.HEIGHT; j+= Floor.HEIGHT)
                         {
-                            if (i >= 200 && i < 240) { }
+                            if (i >= 200 && i <= 240) { }
                             else
                             {
                                 floors.Add(new Floor(i, (Game1.GAMEHEIGHT - (j + Floor.HEIGHT)), floorTexture));
@@ -83,7 +83,7 @@ namespace FinalYearProject
             foreach (Floor floor in floors)
             {
                 // Only want to check floors which are NEAR the player
-               if (floor.x >= px && floor.x <= (px + pw))
+               if (floor.x >= px - 50 && floor.x <= px + (pw + 50))
                {
                     if (Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, Floor.HEIGHT, Floor.WIDTH))
                     {
