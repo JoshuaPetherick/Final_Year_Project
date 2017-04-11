@@ -37,3 +37,8 @@
 /processorParam:TextureFormat=Color
 /build:floor.png
 
+#begin level.txt
+/importer:
+/processor:
+/build:level.txt
+

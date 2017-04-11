@@ -10,10 +10,10 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesClientSidePredictionUpdate()
         {
-            World world = new World(1);
+            World world = new World();
             Player player = new Player(10, 10);
             Technique technique = new ClientSidePrediction();
-            technique.update(new Client("127.0.0.1", 14242, true), player, world, "7");
+            technique.update(new Client(true), player, world, "7");
 
             string expected = "7";
             string result = technique.getLastAction();
@@ -23,10 +23,10 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesClientSidePredictionProcess()
         {
-            World world = new World(1);
+            World world = new World();
             Player player = new Player(0, 0);
             Technique technique = new ClientSidePrediction();
-            Client clnt = new Client("127.0.0.1", 14242, true);
+            Client clnt = new Client(true);
 
             technique.update(clnt, player, world, "1");
             Thread.Sleep(1000); // Wait for packet to be recieved
@@ -39,10 +39,10 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesServerReconcilliationUpdate()
         {
-            World world = new World(1);
+            World world = new World();
             Player player = new Player(10, 10);
             Technique technique = new ServerReconcilliation();
-            technique.update(new Client("127.0.0.1", 14242, true), player, world, "7");
+            technique.update(new Client(true), player, world, "7");
 
             string expected = "7";
             string result = technique.getLastAction();
@@ -52,10 +52,10 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesServerReconcilliationProcess()
         {
-            World world = new World(1);
+            World world = new World();
             Player player = new Player(0, 0);
             Technique technique = new ServerReconcilliation();
-            Client clnt = new Client("127.0.0.1", 14242, true);
+            Client clnt = new Client(true);
 
             technique.update(clnt, player, world, "1");
             Thread.Sleep(1000); // Wait for packet to be recieved

@@ -22,14 +22,14 @@ namespace FinalYearProject
             Position = Vector2.Zero;
         }
 
-        public void update(int px, int py, float deltaTime)
+        public void update(int px, int py, float deltaTime, World world)
         {
             if (x != px)
             {
                 int diffX = x - px;
                 Position -= new Vector2((60 * diffX), 0) * deltaTime;
                 // Don't move camera off world setting
-                if (Position.X < 0 || Position.X >= (World.WORLDLENGTH - viewport.Width))
+                if (Position.X < 0 || Position.X >= (world.getWorldLength() - viewport.Width))
                 { 
                     Position += new Vector2((60 * diffX), 0) * deltaTime;
                 }

@@ -25,12 +25,12 @@ namespace FinalYearProject
             TESTING,    // Creates an Empty Lab Session - Similar to Playing
             PLAYING     // Playing Multipler Session
         };
-        gameStates state = gameStates.PLAYING;
+        gameStates state = gameStates.TESTING;
 
         private Server server;
         private Camera camera;
-        private Player player = new Player(0, 0);
-        private World world = new World(1);
+        private World world = new World();
+        private Player player;
 
         public Game1()
         {
@@ -61,23 +61,24 @@ namespace FinalYearProject
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            // Load player image across
-            player.setTexture(Content.Load<Texture2D>("bot"));
             // Load new World (Load floor and goal Textures)
             world.loadTextures(Content.Load<Texture2D>("floor"), Content.Load<Texture2D>("floor"));
             world.loadLevel();
+            // Load player image across
+            Tuple<int, int> playerPos = world.getPlayerPos();
+            player = new Player(playerPos.Item1, playerPos.Item2);
+            player.setTexture(Content.Load<Texture2D>("bot"));
             // Camera class
             camera = new Camera(GraphicsDevice.Viewport);
             // Activate Server
-            if (state != gameStates.TESTING)
+            if (state == gameStates.PLAYING)
             {
                 server = new Server(14242, world);
-                player.connectClient("127.0.0.1", 14242, false);
+                player.connectClient("127.0.0.1", 14242);
             }
-            else
+            else if(state == gameStates.TESTING)
             {
-                // Change to true when running Locally
-                player.connectClient("127.0.0.1", 14242, true);
+                player.connectClient(true); // Running locally
             }
         }
 
@@ -101,12 +102,13 @@ namespace FinalYearProject
                 Exit();
             }
 
-            // Player input handled in Update
-            player.playerUpdate(world);
-            // Server side - Remove this when setup threading on Server side
-            if (state != gameStates.TESTING)
+            if (state == gameStates.PLAYING || state == gameStates.TESTING)
             {
-                server.checkMessages();
+                player.playerUpdate(world); // Player input handled in Update
+                if (state == gameStates.PLAYING)
+                {
+                    server.checkMessages();
+                }
             }
             base.Update(gameTime);
         }
@@ -121,7 +123,7 @@ namespace FinalYearProject
             if (state == gameStates.PLAYING || state == gameStates.TESTING)
             {
                 // Camera movement
-                camera.update(player.getX(), player.getY(), (float)gameTime.ElapsedGameTime.TotalSeconds);
+                camera.update(player.getX(), player.getY(), (float)gameTime.ElapsedGameTime.TotalSeconds, world);
 
                 // Draw player on-screen
                 spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());

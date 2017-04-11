@@ -1,14 +1,14 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
 
 namespace FinalYearProject
 {
     class Player
     {
         Client clnt;
-        private string ID;
+        private bool input = true;
         Technique technique = new ServerReconcilliation();
 
         private int x;
@@ -38,11 +38,6 @@ namespace FinalYearProject
             this.y = y;
         }
 
-        public void setID(string ID)
-        {
-            this.ID = ID;
-        }
-
         public void setTexture(Texture2D texture)
         {
             this.texture = texture;
@@ -68,11 +63,6 @@ namespace FinalYearProject
             return PREFWIDTH;
         }
 
-        public string getID()
-        {
-            return ID;
-        }
-
         public void handleInput(World world)
         {
             if (Keyboard.GetState().IsKeyDown(Keys.A))
@@ -80,16 +70,19 @@ namespace FinalYearProject
                 // Move Left
                 technique.update(clnt, this, world, "1");
                 effect = SpriteEffects.FlipHorizontally;
+                input = true;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.D))
             {
                 // Move Right
                 technique.update(clnt, this, world, "2");
                 effect = SpriteEffects.None;
+                input = true;
             }
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && state == playerStates.IDLE)
             {
                 technique.update(clnt, this, world, "3");
+                input = true;
             }
         }
 
@@ -97,7 +90,10 @@ namespace FinalYearProject
         {
              // Handle player input
             handleInput(world);
-            technique.update(clnt, this, world, "0");
+            if (!input)
+            {
+                technique.update(clnt, this, world, "0");
+            }
             // Get updates from server
             if (clnt != null)
             {
@@ -111,20 +107,32 @@ namespace FinalYearProject
             }
         }
 
-        public void connectClient(string ip, int port, bool local)
+        /*
+            Connect to a server
+        */
+        public void connectClient(string ip, int port)
         {
-            clnt = new Client(ip, port, local);
+            clnt = new Client(ip, port);
+        }
+
+        /*
+            Connect to a server
+        */
+        public void connectClient(bool local)
+        {
+            clnt = new Client(local);
         }
 
         public void drawPlayer(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, new Rectangle(x, y, PREFWIDTH, PREFHEIGHT), null,
                 new Color(255, 255, 255, 1.0f), 0.0f, new Vector2(0, 0), effect, 0.0f);
+            input = false; // Reset input
         }
 
         public void drawClient(SpriteBatch spriteBatch)
         {
-            Player cPlayer = clnt.getPlayer();
+            ServerPlayer cPlayer = clnt.getPlayer();
             spriteBatch.Draw(texture, new Rectangle(cPlayer.getX(), cPlayer.getY(), PREFWIDTH, PREFHEIGHT), null,
                 new Color(255, 255, 255, 0.5f), 0.0f, new Vector2(0, 0), effect, 0.0f);
         }

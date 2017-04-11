@@ -1,23 +1,20 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using System;
+using System.IO;
+using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 
 namespace FinalYearProject
 {
     class World
     {
-        public static int WORLDLENGTH = 2400;
+        private int WORLDLENGTH;
 
-        private int level;
+        private Tuple<int, int> playerPos;
         private Goal goal;
         private List<Floor> floors = new List<Floor>();
 
         private Texture2D floorTexture;
         private Texture2D goalTexture;
-
-        public World(int level)
-        {
-            this.level = level;
-        }
 
         // Optional for testing reasons
         public void loadTextures(Texture2D floorTexture, Texture2D goalTexture)
@@ -28,33 +25,45 @@ namespace FinalYearProject
 
         public void loadLevel()
         {
-            switch (level)
-            {
-                case 1:
-                    for (int i = 0; i < WORLDLENGTH; i+= Floor.WIDTH)
-                    { // Height - texture.height = 470
-                        for (int j = 0; j < Floor.HEIGHT; j+= Floor.HEIGHT)
-                        {
-                            if (i >= 200 && i <= 240) { }
-                            else
-                            {
-                                floors.Add(new Floor(i, (Game1.GAMEHEIGHT - (j + Floor.HEIGHT)), floorTexture));
-                            }
-                        }
-                    }
-                    goal = new Goal(WORLDLENGTH-50, Game1.GAMEHEIGHT - 400, goalTexture);
-                    break;
+            buildFromFile(File.ReadAllLines("Final_Year_Project/Content/level.txt"));
+        }
 
-                case 2:
-                    for (int i = 0; i < 400; i++)
-                    { // Height - texture.height = 470
-                        for (int j = 1; j < 4; j++)
-                        {
-                            floors.Add(new Floor((i * 10), (Game1.GAMEHEIGHT - (j * 10)), floorTexture));
-                        }
-                    }
+        private void buildFromFile(string[] lines)
+        {
+            int x, y = 0;
+            foreach (string line in lines)
+            {
+                x = 0;
+                foreach (char type in line)
+                {
+                    newObject(type, x, y);
+                    x += Floor.WIDTH;
+                    WORLDLENGTH = x;
+                }
+                y += Floor.HEIGHT;
+            }
+            Console.WriteLine(WORLDLENGTH);
+        }
+
+        private void newObject(char type, int x, int y)
+        {
+            switch (type)
+            {
+                case 'G':
+                    floors.Add(new Floor(x, y, floorTexture));
+                    break;
+                case 'E':
+                    goal = new Goal(x, ((y+Floor.HEIGHT)-Goal.HEIGHT), goalTexture);
+                    break;
+                case 'P':
+                    playerPos = new Tuple<int, int>(x, (y-Player.PREFHEIGHT));
                     break;
             }
+        }
+
+        public Tuple<int, int> getPlayerPos()
+        {
+            return playerPos;
         }
 
         public void unloadLevel()
@@ -63,21 +72,14 @@ namespace FinalYearProject
             goal = null;
         }
 
-        public void nextLevel()
-        {
-            level++;
-            unloadLevel();
-            loadLevel();
-        }
-
         public int checkColliding(int px, int py, int ph, int pw)
         {
             // Check this for testing purposes
             if (goal != null)
             {
-                if (Logic.axisAlignedBoundingBox(px, py, ph, pw, goal.x, goal.y, goal.height, goal.width))
+                if (Logic.axisAlignedBoundingBox(px, py, ph, pw, goal.x, goal.y, Goal.HEIGHT, Goal.WIDTH) > 0)
                 {
-                    return 2;
+                    return 5;
                 }
             }
             foreach (Floor floor in floors)
@@ -85,16 +87,21 @@ namespace FinalYearProject
                 // Only want to check floors which are NEAR the player
                if (floor.x >= px - 50 && floor.x <= px + (pw + 50))
                {
-                    if (Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, Floor.HEIGHT, Floor.WIDTH))
+                    int tempResult = Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, Floor.HEIGHT, Floor.WIDTH);
+                    if (tempResult > 0)
                     {
-                        return 1;
+                        Console.WriteLine(tempResult);
+                        return tempResult;
                     }
                 }
             }
             return 0;
         }
 
-        
+        public int getWorldLength()
+        {
+            return WORLDLENGTH;
+        }
 
         public void draw(SpriteBatch spriteBatch)
         {

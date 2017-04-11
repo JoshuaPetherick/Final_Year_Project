@@ -12,18 +12,20 @@ namespace FinalYearProject
         private NetClient client;
 
         public bool local;
-        private double delay = 10; // Millisecond Delay
+        private double delay = 0; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
-        private Player localPlayer = new Player(0, 0);
+        private ServerPlayer localPlayer = new ServerPlayer(0, 0, null);
         private List<string> actions = new List<string>(); // Array of Actions
 
-        public Client (string ip, int prt, bool local)
+        public Client(string ip, int prt)
+        {
+            local = false;
+            connect(ip, prt); 
+        }
+
+        public Client (bool local)
         {
             this.local = local;
-            if (!local)
-            {
-                connect(ip, prt);
-            }
         }
 
         public void connect(string ip, int prt)
@@ -54,14 +56,20 @@ namespace FinalYearProject
                         case NetIncomingMessageType.Data:
                             // handle server messages
                             var data = message.ReadString();
-                            Console.WriteLine(data);
                             if (data.Length == 1)
                             {
                                 ID = data;
                             }
                             else
                             {
-                                pos = new Tuple<int, int>(data[0], data[1]);
+                                string[] mess = data.Split('/');
+                                string newID = mess[0];
+                                string newX = mess[1];
+                                string newY = mess[2];
+                                if (ID == newID)
+                                {
+                                    pos = new Tuple<int, int>(Int32.Parse(newX), Int32.Parse(newY));
+                                }
                             }
                             break;
 
@@ -85,7 +93,7 @@ namespace FinalYearProject
                     // Process action
                     if (actions.Count > 0)
                     {
-                        pos = Logic.actionTree(localPlayer, processAction());
+                        pos = Logic.actionTree(localPlayer, world, processAction());
                     }
                     else
                     {
@@ -128,7 +136,7 @@ namespace FinalYearProject
             return action;
         }
 
-        public Player getPlayer()
+        public ServerPlayer getPlayer()
         {
             return localPlayer;
         }

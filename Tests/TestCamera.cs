@@ -14,7 +14,9 @@ namespace FinalYearProject.Tests
         public void doesCameraMove()
         {
             Camera camera = new Camera(viewport);
-            camera.update(1, 0, 1f);
+            World world = new World();
+            world.loadLevel();
+            camera.update(1, 0, 1f, world);
             Vector2 result = camera.Position;
             Vector2 expected = new Vector2(60, 0);
 

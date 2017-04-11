@@ -12,8 +12,8 @@ namespace FinalYearProject.Tests
             Player player1 = new Player(10, 10);
             Player player2 = new Player(10, 10);
 
-            bool expected = true;
-            bool result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
+            int expected = 4;
+            int result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
                 player2.getX(), player2.getY(), player2.getHeight(), player2.getWidth());
             Assert.AreEqual(expected, result);
         }
@@ -24,8 +24,8 @@ namespace FinalYearProject.Tests
             Player player1 = new Player(100, 100);
             Player player2 = new Player(10, 10);
 
-            bool expected = false;
-            bool result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
+            int expected = 0;
+            int result = Logic.axisAlignedBoundingBox(player1.getX(), player1.getY(), player1.getHeight(), player1.getWidth(),
                 player2.getX(), player2.getY(), player2.getHeight(), player2.getWidth());
             Assert.AreEqual(expected, result);
         }
@@ -34,7 +34,8 @@ namespace FinalYearProject.Tests
         public void doesActionsWork()
         {
             Player player = new Player(10, 10);
-            Tuple<int, int> pos = Logic.actionTree(player, "1");
+            World world = new World();
+            Tuple<int, int> pos = Logic.actionTree(player, world, "1");
 
             player.setX(pos.Item1);
             player.setY(pos.Item2);
@@ -47,7 +48,7 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void canPlayerJump()
         {
-            World world = new World(1);
+            World world = new World();
             Player play = new Player(10, 500);
             play.state = Player.playerStates.JUMPING;
             for (int i = 0; i < 3; i++)
@@ -65,7 +66,7 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void doesPlayerFall()
         {
-            World world = new World(1);
+            World world = new World();
             Player play = new Player(10, 10);
             for (int i = 0; i < 3; i++)
             {

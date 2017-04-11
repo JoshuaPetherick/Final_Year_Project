@@ -13,7 +13,7 @@ namespace FinalYearProject
         //private int MAX_PLAYERS = 8;
         private World world;
         private int currID = 1;
-        private List<Player> players = new List<Player>();
+        private List<ServerPlayer> players = new List<ServerPlayer>();
         private List<Tuple<string, DateTime>> actions = new List<Tuple<string, DateTime>>();
 
         public Server (int port, World world)
@@ -50,20 +50,19 @@ namespace FinalYearProject
                         {
                             string[] mess = msg.Split('/');
                             string id = mess[0];
-                            string state = mess[1];
+                            string action = mess[1];
                             DateTime time = Convert.ToDateTime(mess[2]);
 
-                            Player p = applyLogic(id);
+                            ServerPlayer p = getPlayer(id);
                             if (p == null)
                             {
                                 Console.WriteLine("ERROR OCCURED: Unable to find player via ID (" + id + ")");
                             }
                             else
                             {
-                                // Do something with pos and state
-                                // Send updated pos to all players
-                                // string send = id + "/" + pos.item1 + "/" + pos.item2; 
-                                // sendMessages(send, null);
+                                applyLogic(p, action); // Update player accordingly
+                                string send = id + "/" + p.getX() + "/" + p.getY(); 
+                                sendMessages(send, null); // Send updated pos to all players
                             }
                         }
                         break;
@@ -72,11 +71,22 @@ namespace FinalYearProject
                         // handle connection status messages
                         if(message.SenderConnection.Status == NetConnectionStatus.Connected)
                         {
-                            Player player = new Player(0, 0);
+                            Tuple<int, int> startPos = world.getPlayerPos();
+                            ServerPlayer player = new ServerPlayer(startPos.Item1, startPos.Item2, message.SenderConnection);
                             player.setID(currID.ToString());
                             currID++;
                             players.Add(player);
                             sendMessages(player.getID(), message.SenderConnection);
+                        }
+                        else if (message.SenderConnection.Status == NetConnectionStatus.Disconnected)
+                        {
+                            for (int pos = 0; pos < players.Count; pos++)
+                            { 
+                                if (message.SenderConnection == players[pos].getRecipiant())
+                                {
+                                    players.RemoveAt(pos);
+                                }
+                            }
                         }
                         break;
 
@@ -106,9 +116,9 @@ namespace FinalYearProject
             }
         }
 
-        public Player applyLogic(string ID)
+        public ServerPlayer getPlayer(string ID)
         {
-            foreach (Player player in players)
+            foreach (ServerPlayer player in players)
             {
                 if (player.getID().Equals(ID))
                 {
@@ -116,6 +126,15 @@ namespace FinalYearProject
                 }
             }
             return null;
+        }
+
+        public void applyLogic(ServerPlayer p, string action)
+        {
+            Tuple<int, int> pos = null;
+            pos = Logic.actionTree(p, world, action);
+            pos = Logic.update(p, pos, world);
+            p.setX(pos.Item1);
+            p.setY(pos.Item2);
         }
 
         public int serverStatus()

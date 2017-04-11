@@ -14,7 +14,7 @@ namespace FinalYearProject
                 clint.sendMessages(action);
                 actions.Add(action);
             }
-            Tuple<int, int> pos = Logic.actionTree(player, action);
+            Tuple<int, int> pos = Logic.actionTree(player, world, action);
             pos = Logic.update(player, pos, world);
             player.setX(pos.Item1);
             player.setY(pos.Item2);
