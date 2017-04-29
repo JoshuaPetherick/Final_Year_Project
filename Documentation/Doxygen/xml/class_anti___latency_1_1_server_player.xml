@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_server_player" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::ServerPlayer</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98fa" prot="public" static="no">
+        <name>playerStates</name>
+        <enumvalue id="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faaa5daf7f2ebbba4975d61dab1c40188c7" prot="public">
+          <name>IDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faa6de49bfda8068b7bc3b0c0e3d2e43134" prot="public">
+          <name>JUMPING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faa4f9d4539ac1e11a251e2afe022eba4e6" prot="public">
+          <name>FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="17" column="1" bodyfile="ServerPlayer.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a2d4c263870baab92d3ee98e61df7a8f2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Anti_Latency.ServerPlayer.ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="8" column="1" bodyfile="ServerPlayer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a73128e42aaadf63a4782ef0145e37852" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="10" column="1" bodyfile="ServerPlayer.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a17803ca57081756fba2ef2c8f2414f57" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="11" column="1" bodyfile="ServerPlayer.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a0147a125c2a129848c0449b3fdd2e341" prot="private" static="no" mutable="no">
+        <type>NetConnection</type>
+        <definition>NetConnection Anti_Latency.ServerPlayer.recipient</definition>
+        <argsstring></argsstring>
+        <name>recipient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="12" column="1" bodyfile="ServerPlayer.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a45d3cedd64645921b7188f20418a840c" prot="private" static="no" mutable="no">
+        <type>SpriteEffects</type>
+        <definition>SpriteEffects Anti_Latency.ServerPlayer.effect</definition>
+        <argsstring></argsstring>
+        <name>effect</name>
+        <initializer>= SpriteEffects.None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="19" column="1" bodyfile="ServerPlayer.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a03a100b875e775acd6caa11f4bf5cb28" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.PREFWIDTH</definition>
+        <argsstring></argsstring>
+        <name>PREFWIDTH</name>
+        <initializer>= 45</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="13" column="1" bodyfile="ServerPlayer.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a924a0c45352476a1d5a2ba7b6188fc4b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.PREFHEIGHT</definition>
+        <argsstring></argsstring>
+        <name>PREFHEIGHT</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="14" column="1" bodyfile="ServerPlayer.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1abbd4e7e3928eab2cb486aa75a19c1936" prot="public" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98fa" kindref="member">playerStates</ref></type>
+        <definition>playerStates Anti_Latency.ServerPlayer.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= <ref refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faaa5daf7f2ebbba4975d61dab1c40188c7" kindref="member">playerStates.IDLE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="16" column="1" bodyfile="ServerPlayer.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a6e91348d7dfa10f005201d7c72eb045c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.jumpPoint</definition>
+        <argsstring></argsstring>
+        <name>jumpPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="18" column="1" bodyfile="ServerPlayer.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a98b674d64ece4cfc302e9150034d7aa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.ServerPlayer.ServerPlayer</definition>
+        <argsstring>(int x, int y, NetConnection recipient)</argsstring>
+        <name>ServerPlayer</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>NetConnection</type>
+          <declname>recipient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="21" column="1" bodyfile="ServerPlayer.cs" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1ad7985bdeebd2aeb2d1eb1400c3625ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.ServerPlayer.setX</definition>
+        <argsstring>(int x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="28" column="1" bodyfile="ServerPlayer.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a7faf769dd2c99f00bb7a8cad7c97c2ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.ServerPlayer.setY</definition>
+        <argsstring>(int y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="33" column="1" bodyfile="ServerPlayer.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1aa395c811dff421acf56cf2085b703c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.ServerPlayer.setID</definition>
+        <argsstring>(string ID)</argsstring>
+        <name>setID</name>
+        <param>
+          <type>string</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="38" column="1" bodyfile="ServerPlayer.cs" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a1370657824c01f0bedf6fb05c6b8f5ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="43" column="1" bodyfile="ServerPlayer.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1af976d1f49b1436a87c72ff7b5c02e9d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="48" column="1" bodyfile="ServerPlayer.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a2c146dbca57c83af92acde59f5b3541f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="53" column="1" bodyfile="ServerPlayer.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a8190f603d27c73d8ebf41a3fb17fd4c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.ServerPlayer.getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="58" column="1" bodyfile="ServerPlayer.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a26b5253370b28019ef40472401e36988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Anti_Latency.ServerPlayer.getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="63" column="1" bodyfile="ServerPlayer.cs" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a35059c781693be263a905599605af5e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SpriteEffects</type>
+        <definition>SpriteEffects Anti_Latency.ServerPlayer.getEffect</definition>
+        <argsstring>()</argsstring>
+        <name>getEffect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="68" column="1" bodyfile="ServerPlayer.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a755ae7b2dcfb98820929365dc35407ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.ServerPlayer.updateEffect</definition>
+        <argsstring>(int x)</argsstring>
+        <name>updateEffect</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="73" column="1" bodyfile="ServerPlayer.cs" bodystart="73" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a31eb360d40fcfeb6ffdcbd30546cc5f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>NetConnection</type>
+        <definition>NetConnection Anti_Latency.ServerPlayer.getRecipiant</definition>
+        <argsstring>()</argsstring>
+        <name>getRecipiant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerPlayer.cs" line="85" column="1" bodyfile="ServerPlayer.cs" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>Anti_Latency.ServerPlayer</label>
+        <link refid="class_anti___latency_1_1_server_player"/>
+      </node>
+    </collaborationgraph>
+    <location file="ServerPlayer.cs" line="7" column="1" bodyfile="ServerPlayer.cs" bodystart="6" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_server_player_1a45d3cedd64645921b7188f20418a840c" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>effect</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a35059c781693be263a905599605af5e1" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getEffect</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a2c146dbca57c83af92acde59f5b3541f" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getHeight</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a26b5253370b28019ef40472401e36988" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getID</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a31eb360d40fcfeb6ffdcbd30546cc5f9" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getRecipiant</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a8190f603d27c73d8ebf41a3fb17fd4c3" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getWidth</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a1370657824c01f0bedf6fb05c6b8f5ce" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getX</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1af976d1f49b1436a87c72ff7b5c02e9d0" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getY</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a2d4c263870baab92d3ee98e61df7a8f2" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>ID</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a6e91348d7dfa10f005201d7c72eb045c" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>jumpPoint</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98fa" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>playerStates</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a924a0c45352476a1d5a2ba7b6188fc4b" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>PREFHEIGHT</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a03a100b875e775acd6caa11f4bf5cb28" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>PREFWIDTH</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a0147a125c2a129848c0449b3fdd2e341" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>recipient</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a98b674d64ece4cfc302e9150034d7aa9" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>ServerPlayer</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1aa395c811dff421acf56cf2085b703c80" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>setID</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1ad7985bdeebd2aeb2d1eb1400c3625ce8" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>setX</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a7faf769dd2c99f00bb7a8cad7c97c2ac" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>setY</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1abbd4e7e3928eab2cb486aa75a19c1936" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>state</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a755ae7b2dcfb98820929365dc35407ee" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>updateEffect</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a73128e42aaadf63a4782ef0145e37852" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>x</name></member>
+      <member refid="class_anti___latency_1_1_server_player_1a17803ca57081756fba2ef2c8f2414f57" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

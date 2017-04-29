@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_camera" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Camera</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_camera_1a3e177aefc7a31f99707e44c661c13365" prot="private" static="no" mutable="no">
+        <type>Viewport</type>
+        <definition>Viewport Anti_Latency.Camera.viewport</definition>
+        <argsstring></argsstring>
+        <name>viewport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="10" column="1" bodyfile="Camera.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_camera_1a039dbb1bd31a5443baf8b56c881b4c21" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Camera.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="12" column="1" bodyfile="Camera.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_camera_1a5ded2396986eaf1b37be1227b123c781" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Camera.window_dist</definition>
+        <argsstring></argsstring>
+        <name>window_dist</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="13" column="1" bodyfile="Camera.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_camera_1ad2c982104545c9fbe3ef5f4de6ed9db2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Anti_Latency.Camera.Zoom</definition>
+        <argsstring></argsstring>
+        <name>Zoom</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="14" column="1" bodyfile="Camera.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_camera_1a39426b9adeecc02fb243dc04a98dd2f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Anti_Latency.Camera.Rotation</definition>
+        <argsstring></argsstring>
+        <name>Rotation</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="15" column="1" bodyfile="Camera.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_anti___latency_1_1_camera_1ac31105fafc1d894243444542bf540306" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Anti_Latency.Camera.Origin</definition>
+        <argsstring></argsstring>
+        <name>Origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="16" column="1" bodyfile="Camera.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_anti___latency_1_1_camera_1abb33758c2a26669d3d54be5ccff8b1b1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Anti_Latency.Camera.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="17" column="1" bodyfile="Camera.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_camera_1a36def68756c3f269907d15ff1b9a0080" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Camera.Camera</definition>
+        <argsstring>(Viewport viewport)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type>Viewport</type>
+          <declname>viewport</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="19" column="1" bodyfile="Camera.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_camera_1a723aa0bfa5e3149531438696b859725c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Camera.update</definition>
+        <argsstring>(int px, int py, float deltaTime, World world)</argsstring>
+        <name>update</name>
+        <param>
+          <type>int</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>deltaTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="27" column="1" bodyfile="Camera.cs" bodystart="27" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_camera_1a24b8817c8167cbbc457d1c07c0ecfd54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Camera.getX</definition>
+        <argsstring>(World world)</argsstring>
+        <name>getX</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="47" column="1" bodyfile="Camera.cs" bodystart="47" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_camera_1a5bdb28ebe9c3abc943fd5a38268845c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix</type>
+        <definition>Matrix Anti_Latency.Camera.GetViewMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>GetViewMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Camera.cs" line="60" column="1" bodyfile="Camera.cs" bodystart="60" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>Anti_Latency.Camera</label>
+        <link refid="class_anti___latency_1_1_camera"/>
+      </node>
+    </collaborationgraph>
+    <location file="Camera.cs" line="9" column="1" bodyfile="Camera.cs" bodystart="8" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_camera_1a36def68756c3f269907d15ff1b9a0080" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>Camera</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a5bdb28ebe9c3abc943fd5a38268845c8" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>GetViewMatrix</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a24b8817c8167cbbc457d1c07c0ecfd54" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>getX</name></member>
+      <member refid="class_anti___latency_1_1_camera_1ac31105fafc1d894243444542bf540306" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>Origin</name></member>
+      <member refid="class_anti___latency_1_1_camera_1abb33758c2a26669d3d54be5ccff8b1b1" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>Position</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a39426b9adeecc02fb243dc04a98dd2f4" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>Rotation</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a723aa0bfa5e3149531438696b859725c" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>update</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a3e177aefc7a31f99707e44c661c13365" prot="private" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>viewport</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a5ded2396986eaf1b37be1227b123c781" prot="private" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>window_dist</name></member>
+      <member refid="class_anti___latency_1_1_camera_1a039dbb1bd31a5443baf8b56c881b4c21" prot="private" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>x</name></member>
+      <member refid="class_anti___latency_1_1_camera_1ad2c982104545c9fbe3ef5f4de6ed9db2" prot="public" virt="non-virtual"><scope>Anti_Latency::Camera</scope><name>Zoom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

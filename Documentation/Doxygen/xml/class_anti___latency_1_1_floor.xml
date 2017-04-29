@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_floor" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Floor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_floor_1a4a64d8ca77fc2010deca4a951127ae7f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Floor.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="8" column="1" bodyfile="Floor.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_floor_1a3066f992775435f53853c5ec9b79be57" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Floor.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="9" column="1" bodyfile="Floor.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_floor_1a14e9b6f3993c1a2e6e704e0dde8d5dde" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Floor.HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>HEIGHT</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="10" column="1" bodyfile="Floor.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_floor_1ad4bbfe204922356e1ca1c23ad01a7605" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Floor.WIDTH</definition>
+        <argsstring></argsstring>
+        <name>WIDTH</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="11" column="1" bodyfile="Floor.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_floor_1a391c31352025b2c02fc64865551fa4c9" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.Floor.texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="12" column="1" bodyfile="Floor.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_floor_1a7d03b8d1c6f51976350f335140d07e93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Floor.Floor</definition>
+        <argsstring>(int x, int y, Texture2D texture)</argsstring>
+        <name>Floor</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="14" column="1" bodyfile="Floor.cs" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_floor_1a8feb1ababc93eebe059d4107589ebc4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Floor.draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Floor.cs" line="21" column="1" bodyfile="Floor.cs" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>Anti_Latency.Floor</label>
+        <link refid="class_anti___latency_1_1_floor"/>
+      </node>
+    </collaborationgraph>
+    <location file="Floor.cs" line="7" column="1" bodyfile="Floor.cs" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_floor_1a8feb1ababc93eebe059d4107589ebc4a" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>draw</name></member>
+      <member refid="class_anti___latency_1_1_floor_1a7d03b8d1c6f51976350f335140d07e93" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>Floor</name></member>
+      <member refid="class_anti___latency_1_1_floor_1a14e9b6f3993c1a2e6e704e0dde8d5dde" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>HEIGHT</name></member>
+      <member refid="class_anti___latency_1_1_floor_1a391c31352025b2c02fc64865551fa4c9" prot="private" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>texture</name></member>
+      <member refid="class_anti___latency_1_1_floor_1ad4bbfe204922356e1ca1c23ad01a7605" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>WIDTH</name></member>
+      <member refid="class_anti___latency_1_1_floor_1a4a64d8ca77fc2010deca4a951127ae7f" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>x</name></member>
+      <member refid="class_anti___latency_1_1_floor_1a3066f992775435f53853c5ec9b79be57" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

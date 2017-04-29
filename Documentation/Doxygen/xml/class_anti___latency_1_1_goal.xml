@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_goal" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Goal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1a0ace419b34b9629fb627a7169d04ae30" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Goal.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="8" column="1" bodyfile="Goal.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1aaf959e031b4e0945cc79e97c2e8f5269" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Goal.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="9" column="1" bodyfile="Goal.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1a675307c7f27e68aa02c121e9e7ca3d4f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Goal.HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>HEIGHT</name>
+        <initializer>= 400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="10" column="1" bodyfile="Goal.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1a7f8c4e48b8e9c2015807c0bf22c0bb7a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Goal.WIDTH</definition>
+        <argsstring></argsstring>
+        <name>WIDTH</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="11" column="1" bodyfile="Goal.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1a371df0e0ead02e1a14894d8f5f75682d" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.Goal.texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="12" column="1" bodyfile="Goal.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_goal_1a35321c0230200396b28e7a29763d5f01" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.Goal.flagTexture</definition>
+        <argsstring></argsstring>
+        <name>flagTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="13" column="1" bodyfile="Goal.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_goal_1a3020d89472db208479751332efd9715b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Goal.Goal</definition>
+        <argsstring>(int x, int y, Texture2D texture, Texture2D flagTexture)</argsstring>
+        <name>Goal</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>flagTexture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="15" column="1" bodyfile="Goal.cs" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_goal_1a335df36ac10cd545eb2476472bc12674" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Goal.draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Goal.cs" line="23" column="1" bodyfile="Goal.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="21">
+        <label>Anti_Latency.Goal</label>
+        <link refid="class_anti___latency_1_1_goal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Goal.cs" line="7" column="1" bodyfile="Goal.cs" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_goal_1a335df36ac10cd545eb2476472bc12674" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>draw</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a35321c0230200396b28e7a29763d5f01" prot="private" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>flagTexture</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a3020d89472db208479751332efd9715b" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>Goal</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a675307c7f27e68aa02c121e9e7ca3d4f" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>HEIGHT</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a371df0e0ead02e1a14894d8f5f75682d" prot="private" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>texture</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a7f8c4e48b8e9c2015807c0bf22c0bb7a" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>WIDTH</name></member>
+      <member refid="class_anti___latency_1_1_goal_1a0ace419b34b9629fb627a7169d04ae30" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>x</name></member>
+      <member refid="class_anti___latency_1_1_goal_1aaf959e031b4e0945cc79e97c2e8f5269" prot="public" virt="non-virtual"><scope>Anti_Latency::Goal</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

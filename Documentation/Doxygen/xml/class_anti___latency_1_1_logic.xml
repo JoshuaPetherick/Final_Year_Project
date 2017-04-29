@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_logic" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Logic</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_logic_1a455270b2a394fd2ba9248af04aa77795" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Logic.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="7" column="1" bodyfile="Logic.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_logic_1ad1508fc71ddb9a2a64ab22d4b2a6668c" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Logic.gravity</definition>
+        <argsstring></argsstring>
+        <name>gravity</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="8" column="1" bodyfile="Logic.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_logic_1aebd17b71bfe07f4b88c69a51b4d5f42e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Logic.jumpHeight</definition>
+        <argsstring></argsstring>
+        <name>jumpHeight</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="9" column="1" bodyfile="Logic.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_logic_1a3c6f60a42a85510229a34e0330ed9080" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Anti_Latency.Logic.axisAlignedBoundingBox</definition>
+        <argsstring>(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)</argsstring>
+        <name>axisAlignedBoundingBox</name>
+        <param>
+          <type>int</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oh</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="12" column="1" bodyfile="Logic.cs" bodystart="12" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_logic_1a28e1e37a8827dfc58ab31792abcc748d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>static Tuple&lt;int, int&gt; Anti_Latency.Logic.actionTree</definition>
+        <argsstring>(ServerPlayer player, World world, string action)</argsstring>
+        <name>actionTree</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_server_player" kindref="compound">ServerPlayer</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="53" column="1" bodyfile="Logic.cs" bodystart="53" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_logic_1a800ef62de1fe659469d93dc10fdc68d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>static Tuple&lt;int, int&gt; Anti_Latency.Logic.actionTree</definition>
+        <argsstring>(Player player, World world, string action)</argsstring>
+        <name>actionTree</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="97" column="1" bodyfile="Logic.cs" bodystart="97" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_logic_1ab17ccc2eefa85c997b50beebabffe3f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>static Tuple&lt;int, int&gt; Anti_Latency.Logic.update</definition>
+        <argsstring>(ServerPlayer player, Tuple&lt; int, int &gt; pos, World world)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_server_player" kindref="compound">ServerPlayer</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>Tuple&lt; int, int &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="138" column="1" bodyfile="Logic.cs" bodystart="138" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_logic_1a3907c353c79aa74e75c71de36369543e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>static Tuple&lt;int, int&gt; Anti_Latency.Logic.update</definition>
+        <argsstring>(Player player, Tuple&lt; int, int &gt; pos, World world)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>Tuple&lt; int, int &gt;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Logic.cs" line="183" column="1" bodyfile="Logic.cs" bodystart="183" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>Anti_Latency.Logic</label>
+        <link refid="class_anti___latency_1_1_logic"/>
+      </node>
+    </collaborationgraph>
+    <location file="Logic.cs" line="6" column="1" bodyfile="Logic.cs" bodystart="5" bodyend="225"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_logic_1a28e1e37a8827dfc58ab31792abcc748d" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>actionTree</name></member>
+      <member refid="class_anti___latency_1_1_logic_1a800ef62de1fe659469d93dc10fdc68d3" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>actionTree</name></member>
+      <member refid="class_anti___latency_1_1_logic_1a3c6f60a42a85510229a34e0330ed9080" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>axisAlignedBoundingBox</name></member>
+      <member refid="class_anti___latency_1_1_logic_1ad1508fc71ddb9a2a64ab22d4b2a6668c" prot="private" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>gravity</name></member>
+      <member refid="class_anti___latency_1_1_logic_1aebd17b71bfe07f4b88c69a51b4d5f42e" prot="private" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>jumpHeight</name></member>
+      <member refid="class_anti___latency_1_1_logic_1a455270b2a394fd2ba9248af04aa77795" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>speed</name></member>
+      <member refid="class_anti___latency_1_1_logic_1ab17ccc2eefa85c997b50beebabffe3f4" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>update</name></member>
+      <member refid="class_anti___latency_1_1_logic_1a3907c353c79aa74e75c71de36369543e" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

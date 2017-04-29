@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_game1" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Game1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Game</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258a" prot="private" static="no">
+        <name>gameStates</name>
+        <enumvalue id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aa3287971e79b4dca11067ed287847c1e6" prot="private">
+          <name>MAINMENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aaf8e346271e01d0bcd59a453e3096dc91" prot="private">
+          <name>HOSTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aaeedfd685b258be82ac22d2988c6a7d00" prot="private">
+          <name>JOINING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aafbea3355da659b5f50a5488e26cb9853" prot="private">
+          <name>TESTINGMENU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aa907953dcbd01ad68db1f19be286936f4" prot="private">
+          <name>TESTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="25" column="1" bodyfile="Game1.cs" bodystart="25" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a4f4b2d85df172717789b04a85746901e" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Anti_Latency.Game1.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="17" column="1" bodyfile="Game1.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a49af3872186c5e844be98bafacbd5301" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager Anti_Latency.Game1.graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="18" column="1" bodyfile="Game1.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1aef4624c46c694602dcd7449591803aa8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Anti_Latency.Game1.ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <initializer>= &quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="22" column="1" bodyfile="Game1.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1acd817f6c2fc735afba4830feb2a97a5f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Game1.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= 14242</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="23" column="1" bodyfile="Game1.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a53be5341d437d52e89968a2ee5989eb0" prot="private" static="no" mutable="no">
+        <type>gameStates</type>
+        <definition>gameStates Anti_Latency.Game1.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <initializer>= gameStates.MAINMENU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="32" column="1" bodyfile="Game1.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a415fc1f1b03066d642ba997b57a2f563" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_anti___latency_1_1_button" kindref="compound">Button</ref> &gt;</type>
+        <definition>List&lt;Button&gt; Anti_Latency.Game1.buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <initializer>= new List&lt;<ref refid="class_anti___latency_1_1_button" kindref="compound">Button</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="34" column="1" bodyfile="Game1.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a4a17ddff061e3650af160910651769ba" prot="private" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+        <definition>World Anti_Latency.Game1.world</definition>
+        <argsstring></argsstring>
+        <name>world</name>
+        <initializer>= new <ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="35" column="1" bodyfile="Game1.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a83ddd4b49f0a5cbf883000ae3c8044f7" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread Anti_Latency.Game1.serverThread</definition>
+        <argsstring></argsstring>
+        <name>serverThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="36" column="1" bodyfile="Game1.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a97cdc4f04b56d01b4a2c09c4d79de1c4" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Anti_Latency.Game1.font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="37" column="1" bodyfile="Game1.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1ab71b30ffbff12cd294069be290b81643" prot="private" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref></type>
+        <definition>Server Anti_Latency.Game1.server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="38" column="1" bodyfile="Game1.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a22a941eb0495bfd8bc7457c08aad54d1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_camera" kindref="compound">Camera</ref></type>
+        <definition>Camera Anti_Latency.Game1.camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="39" column="1" bodyfile="Game1.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a680272d0766ce6030ff3ff34a88d2665" prot="private" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+        <definition>Player Anti_Latency.Game1.player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="40" column="1" bodyfile="Game1.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a131a06dc67f2881e17fe923aedb02055" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.Game1.background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="41" column="1" bodyfile="Game1.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1ac9422f8a010953c1cba4c9465e7f3e0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Game1.tech</definition>
+        <argsstring></argsstring>
+        <name>tech</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="42" column="1" bodyfile="Game1.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a4cea6d9612f86382a4d11e5dd0b9873e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Game1.delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="43" column="1" bodyfile="Game1.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a42eb0ef988312e59c4a9e102a08c6911" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Game1.GAMEWIDTH</definition>
+        <argsstring></argsstring>
+        <name>GAMEWIDTH</name>
+        <initializer>= 800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="20" column="1" bodyfile="Game1.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a25667a4bc7f00edbfc697d945453b90a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Game1.GAMEHEIGHT</definition>
+        <argsstring></argsstring>
+        <name>GAMEHEIGHT</name>
+        <initializer>= 600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="21" column="1" bodyfile="Game1.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1aa4b402ab2402e2e5d3146375a43a0d95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Game1.Game1</definition>
+        <argsstring>()</argsstring>
+        <name>Game1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="45" column="1" bodyfile="Game1.cs" bodystart="45" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1a5b17b57f1a5abbd2ea9370015c999432" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.Game1.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Sets the graphics to the prefered window size (800x600) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="52" column="1" bodyfile="Game1.cs" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1a3570a33adc5b6c2304f3ecfcc93c652e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.Game1.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <briefdescription>
+<para>LoadContent will be called to load content based on State. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="62" column="1" bodyfile="Game1.cs" bodystart="62" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1a3db1288a4ca516ea755691e82c615047" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.Game1.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>Called last, will close server and server thread if running as Host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="128" column="1" bodyfile="Game1.cs" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1abf2370807257ea96f90985976dbcb01f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.Game1.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Allows the game to run logic such as updating the player, buttons being clicked, etc. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="138" column="1" bodyfile="Game1.cs" bodystart="138" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_game1_1a25fdb353eedc34da2287eab76fdaaf37" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.Game1.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called every frame to draw the contents of the objects (Based on state) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="237" column="1" bodyfile="Game1.cs" bodystart="237" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the main type for your game. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Game</label>
+      </node>
+      <node id="16">
+        <label>Anti_Latency.Game1</label>
+        <link refid="class_anti___latency_1_1_game1"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Game</label>
+      </node>
+      <node id="18">
+        <label>Anti_Latency.Game1</label>
+        <link refid="class_anti___latency_1_1_game1"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Game1.cs" line="16" column="1" bodyfile="Game1.cs" bodystart="15" bodyend="267"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_game1_1a131a06dc67f2881e17fe923aedb02055" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>background</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a415fc1f1b03066d642ba997b57a2f563" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>buttons</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a22a941eb0495bfd8bc7457c08aad54d1" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>camera</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a4cea6d9612f86382a4d11e5dd0b9873e" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>delay</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a25fdb353eedc34da2287eab76fdaaf37" prot="protected" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>Draw</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a97cdc4f04b56d01b4a2c09c4d79de1c4" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>font</name></member>
+      <member refid="class_anti___latency_1_1_game1_1aa4b402ab2402e2e5d3146375a43a0d95" prot="public" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>Game1</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a25667a4bc7f00edbfc697d945453b90a" prot="public" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>GAMEHEIGHT</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258a" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>gameStates</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a42eb0ef988312e59c4a9e102a08c6911" prot="public" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>GAMEWIDTH</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a49af3872186c5e844be98bafacbd5301" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>graphics</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a5b17b57f1a5abbd2ea9370015c999432" prot="protected" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>Initialize</name></member>
+      <member refid="class_anti___latency_1_1_game1_1aef4624c46c694602dcd7449591803aa8" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>ip</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a3570a33adc5b6c2304f3ecfcc93c652e" prot="protected" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>LoadContent</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a680272d0766ce6030ff3ff34a88d2665" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>player</name></member>
+      <member refid="class_anti___latency_1_1_game1_1acd817f6c2fc735afba4830feb2a97a5f" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>port</name></member>
+      <member refid="class_anti___latency_1_1_game1_1ab71b30ffbff12cd294069be290b81643" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>server</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a83ddd4b49f0a5cbf883000ae3c8044f7" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>serverThread</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a4f4b2d85df172717789b04a85746901e" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>spriteBatch</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a53be5341d437d52e89968a2ee5989eb0" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>state</name></member>
+      <member refid="class_anti___latency_1_1_game1_1ac9422f8a010953c1cba4c9465e7f3e0a" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>tech</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a3db1288a4ca516ea755691e82c615047" prot="protected" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>UnloadContent</name></member>
+      <member refid="class_anti___latency_1_1_game1_1abf2370807257ea96f90985976dbcb01f" prot="protected" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>Update</name></member>
+      <member refid="class_anti___latency_1_1_game1_1a4a17ddff061e3650af160910651769ba" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>world</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_server_reconcilliation" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::ServerReconcilliation</compoundname>
+    <basecompoundref refid="class_anti___latency_1_1_technique" prot="public" virt="non-virtual">Anti_Latency.Technique</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_reconcilliation_1ad0f66050479bb46be98c53791b9da7ed" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Anti_Latency.ServerReconcilliation.actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <initializer>= new List&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerReconcilliation.cs" line="8" column="1" bodyfile="ServerReconcilliation.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_server_reconcilliation_1abf07ad7f7e825bbfe54dee24928279de" prot="private" static="no" mutable="no">
+        <type>List&lt; Tuple&lt; int, int &gt; &gt;</type>
+        <definition>List&lt;Tuple&lt;int, int&gt; &gt; Anti_Latency.ServerReconcilliation.positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <initializer>= new List&lt;Tuple&lt;int, int&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerReconcilliation.cs" line="9" column="1" bodyfile="ServerReconcilliation.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_server_reconcilliation_1a9b8d1205e390d2b9d82b6bf6c9c39084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.ServerReconcilliation.update</definition>
+        <argsstring>(Client clint, Player player, World world, string action)</argsstring>
+        <name>update</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1ac7317e4c1631c49273d5371791cb6a3c">update</reimplements>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clint</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerReconcilliation.cs" line="10" column="1" bodyfile="ServerReconcilliation.cs" bodystart="10" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_reconcilliation_1a3d27f4c92bf2e907ab4cb77080f4f96b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override Tuple&lt; int, int &gt;</type>
+        <definition>override Tuple&lt;int, int&gt; Anti_Latency.ServerReconcilliation.process</definition>
+        <argsstring>(Client clnt, World world)</argsstring>
+        <name>process</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1afe7d616f1e5699c52863d4ceb67a2cef">process</reimplements>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clnt</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerReconcilliation.cs" line="28" column="1" bodyfile="ServerReconcilliation.cs" bodystart="28" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override string</type>
+        <definition>override string Anti_Latency.ServerReconcilliation.getLastAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLastAction</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d">getLastAction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ServerReconcilliation.cs" line="50" column="1" bodyfile="ServerReconcilliation.cs" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>Anti_Latency.ServerReconcilliation</label>
+        <link refid="class_anti___latency_1_1_server_reconcilliation"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>Anti_Latency.ServerReconcilliation</label>
+        <link refid="class_anti___latency_1_1_server_reconcilliation"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+    </collaborationgraph>
+    <location file="ServerReconcilliation.cs" line="7" column="1" bodyfile="ServerReconcilliation.cs" bodystart="6" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_server_reconcilliation_1ad0f66050479bb46be98c53791b9da7ed" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>actions</name></member>
+      <member refid="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f" prot="public" virt="virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>getLastAction</name></member>
+      <member refid="class_anti___latency_1_1_server_reconcilliation_1abf07ad7f7e825bbfe54dee24928279de" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>positions</name></member>
+      <member refid="class_anti___latency_1_1_server_reconcilliation_1a3d27f4c92bf2e907ab4cb77080f4f96b" prot="public" virt="virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>process</name></member>
+      <member refid="class_anti___latency_1_1_server_reconcilliation_1a9b8d1205e390d2b9d82b6bf6c9c39084" prot="public" virt="virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

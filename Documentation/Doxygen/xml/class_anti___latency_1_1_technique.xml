@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_technique" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Anti_Latency::Technique</compoundname>
+    <derivedcompoundref refid="class_anti___latency_1_1_blank_technique" prot="public" virt="non-virtual">Anti_Latency.BlankTechnique</derivedcompoundref>
+    <derivedcompoundref refid="class_anti___latency_1_1_client_side_prediction" prot="public" virt="non-virtual">Anti_Latency.ClientSidePrediction</derivedcompoundref>
+    <derivedcompoundref refid="class_anti___latency_1_1_server_reconcilliation" prot="public" virt="non-virtual">Anti_Latency.ServerReconcilliation</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_technique_1ac7317e4c1631c49273d5371791cb6a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Anti_Latency.Technique.update</definition>
+        <argsstring>(Client clnt, Player player, World world, string action)</argsstring>
+        <name>update</name>
+        <reimplementedby refid="class_anti___latency_1_1_client_side_prediction_1a738b5e9ee38176be3dcf509cb88ab314">update</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_blank_technique_1a30481e540bb4472c0a71595c85e371f8">update</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_server_reconcilliation_1a9b8d1205e390d2b9d82b6bf6c9c39084">update</reimplementedby>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clnt</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Technique.cs" line="7" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_technique_1afe7d616f1e5699c52863d4ceb67a2cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract Tuple&lt; int, int &gt;</type>
+        <definition>abstract Tuple&lt;int, int&gt; Anti_Latency.Technique.process</definition>
+        <argsstring>(Client clnt, World world)</argsstring>
+        <name>process</name>
+        <reimplementedby refid="class_anti___latency_1_1_blank_technique_1ae834591114ad6982632fe4562df02041">process</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_client_side_prediction_1ad7100c104d6b2a657e1cc739fd763da5">process</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_server_reconcilliation_1a3d27f4c92bf2e907ab4cb77080f4f96b">process</reimplementedby>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clnt</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Technique.cs" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract string</type>
+        <definition>abstract string Anti_Latency.Technique.getLastAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLastAction</name>
+        <reimplementedby refid="class_anti___latency_1_1_blank_technique_1ab1a194bd594bb1687aa481ec7956e03f">getLastAction</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0">getLastAction</reimplementedby>
+        <reimplementedby refid="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f">getLastAction</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Technique.cs" line="9" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="37">
+        <label>Anti_Latency.ServerReconcilliation</label>
+        <link refid="class_anti___latency_1_1_server_reconcilliation"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Anti_Latency.BlankTechnique</label>
+        <link refid="class_anti___latency_1_1_blank_technique"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Anti_Latency.Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+      <node id="36">
+        <label>Anti_Latency.ClientSidePrediction</label>
+        <link refid="class_anti___latency_1_1_client_side_prediction"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="38">
+        <label>Anti_Latency.Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+    </collaborationgraph>
+    <location file="Technique.cs" line="6" column="1" bodyfile="Technique.cs" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d" prot="public" virt="pure-virtual"><scope>Anti_Latency::Technique</scope><name>getLastAction</name></member>
+      <member refid="class_anti___latency_1_1_technique_1afe7d616f1e5699c52863d4ceb67a2cef" prot="public" virt="pure-virtual"><scope>Anti_Latency::Technique</scope><name>process</name></member>
+      <member refid="class_anti___latency_1_1_technique_1ac7317e4c1631c49273d5371791cb6a3c" prot="public" virt="pure-virtual"><scope>Anti_Latency::Technique</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

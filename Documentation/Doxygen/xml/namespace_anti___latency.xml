@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_anti___latency" kind="namespace" language="C#">
+    <compoundname>Anti_Latency</compoundname>
+    <innerclass refid="class_anti___latency_1_1_blank_technique" prot="public">Anti_Latency::BlankTechnique</innerclass>
+    <innerclass refid="class_anti___latency_1_1_button" prot="public">Anti_Latency::Button</innerclass>
+    <innerclass refid="class_anti___latency_1_1_camera" prot="public">Anti_Latency::Camera</innerclass>
+    <innerclass refid="class_anti___latency_1_1_client" prot="public">Anti_Latency::Client</innerclass>
+    <innerclass refid="class_anti___latency_1_1_client_side_prediction" prot="public">Anti_Latency::ClientSidePrediction</innerclass>
+    <innerclass refid="class_anti___latency_1_1_floor" prot="public">Anti_Latency::Floor</innerclass>
+    <innerclass refid="class_anti___latency_1_1_game1" prot="public">Anti_Latency::Game1</innerclass>
+    <innerclass refid="class_anti___latency_1_1_goal" prot="public">Anti_Latency::Goal</innerclass>
+    <innerclass refid="class_anti___latency_1_1_logic" prot="public">Anti_Latency::Logic</innerclass>
+    <innerclass refid="class_anti___latency_1_1_player" prot="public">Anti_Latency::Player</innerclass>
+    <innerclass refid="class_anti___latency_1_1_server" prot="public">Anti_Latency::Server</innerclass>
+    <innerclass refid="class_anti___latency_1_1_server_player" prot="public">Anti_Latency::ServerPlayer</innerclass>
+    <innerclass refid="class_anti___latency_1_1_server_reconcilliation" prot="public">Anti_Latency::ServerReconcilliation</innerclass>
+    <innerclass refid="class_anti___latency_1_1_technique" prot="public">Anti_Latency::Technique</innerclass>
+    <innerclass refid="class_anti___latency_1_1_world" prot="public">Anti_Latency::World</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BlankTechnique.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

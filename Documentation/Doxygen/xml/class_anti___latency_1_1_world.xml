@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_world" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::World</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1a499b7822fa635cb674a129eb3e2167b6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.World.WORLDLENGTH</definition>
+        <argsstring></argsstring>
+        <name>WORLDLENGTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="10" column="1" bodyfile="World.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1ae76b2fd0c386319ecb08293d4ad4fe8d" prot="private" static="no" mutable="no">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>Tuple&lt;int, int&gt; Anti_Latency.World.playerPos</definition>
+        <argsstring></argsstring>
+        <name>playerPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="12" column="1" bodyfile="World.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1ae8957b68be03a9789a1ed68bd2313738" prot="private" static="no" mutable="no">
+        <type><ref refid="class_anti___latency_1_1_goal" kindref="compound">Goal</ref></type>
+        <definition>Goal Anti_Latency.World.goal</definition>
+        <argsstring></argsstring>
+        <name>goal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="13" column="1" bodyfile="World.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1a8ff42307e1873708936ff410977e7c95" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_anti___latency_1_1_floor" kindref="compound">Floor</ref> &gt;</type>
+        <definition>List&lt;Floor&gt; Anti_Latency.World.floors</definition>
+        <argsstring></argsstring>
+        <name>floors</name>
+        <initializer>= new List&lt;<ref refid="class_anti___latency_1_1_floor" kindref="compound">Floor</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="14" column="1" bodyfile="World.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1a6a87bf3d631b9ddf1d8c5680459ec199" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.World.floorTexture</definition>
+        <argsstring></argsstring>
+        <name>floorTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="16" column="1" bodyfile="World.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1acfdf97ce520700b37742d925ccc94398" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.World.goalTexture</definition>
+        <argsstring></argsstring>
+        <name>goalTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="17" column="1" bodyfile="World.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_world_1a95b25dda146805e182fe410ccc0bca16" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Anti_Latency.World.flagTexture</definition>
+        <argsstring></argsstring>
+        <name>flagTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="18" column="1" bodyfile="World.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1aa5b39403e04e701a43f39bac39b97786" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.loadTextures</definition>
+        <argsstring>(Texture2D floorTexture, Texture2D goalTexture, Texture2D flagTexture)</argsstring>
+        <name>loadTextures</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>floorTexture</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>goalTexture</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>flagTexture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="21" column="1" bodyfile="World.cs" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a0232fa6733b91a03188f45c6c9994a19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.loadLevel</definition>
+        <argsstring>()</argsstring>
+        <name>loadLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="28" column="1" bodyfile="World.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a4a64bdd8d1bde66e698579377fd4aff2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.setPlayerPos</definition>
+        <argsstring>(Tuple&lt; int, int &gt;newPos)</argsstring>
+        <name>setPlayerPos</name>
+        <param>
+          <type>Tuple&lt; int, int &gt;</type>
+          <declname>newPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="65" column="1" bodyfile="World.cs" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a3bd2a16b00eda94f15d6bca28ac656c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>Tuple&lt;int, int&gt; Anti_Latency.World.getPlayerPos</definition>
+        <argsstring>()</argsstring>
+        <name>getPlayerPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="70" column="1" bodyfile="World.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a89d56029aa30b90d0585d0faf25691cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.unloadLevel</definition>
+        <argsstring>()</argsstring>
+        <name>unloadLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="75" column="1" bodyfile="World.cs" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1acb767e15ad07c882ea3a1a4f39559f9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.World.checkColliding</definition>
+        <argsstring>(int px, int py, int ph, int pw)</argsstring>
+        <name>checkColliding</name>
+        <param>
+          <type>int</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>py</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="81" column="1" bodyfile="World.cs" bodystart="81" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1af6f9369b0cd9c880d313779a54bdf61d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.World.getWorldLength</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="106" column="1" bodyfile="World.cs" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a033379e2876a32109239fc05c8095693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.draw</definition>
+        <argsstring>(SpriteBatch spriteBatch)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="111" column="1" bodyfile="World.cs" bodystart="111" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1a23d71941edbe9a8a15360881de115f09" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.buildFromFile</definition>
+        <argsstring>(string[] lines)</argsstring>
+        <name>buildFromFile</name>
+        <param>
+          <type>string []</type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="33" column="1" bodyfile="World.cs" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_world_1ad44a3ccdef39019ae04cad6ca93f1882" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.World.newObject</definition>
+        <argsstring>(char type, int x, int y)</argsstring>
+        <name>newObject</name>
+        <param>
+          <type>char</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="World.cs" line="49" column="1" bodyfile="World.cs" bodystart="49" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>Anti_Latency.World</label>
+        <link refid="class_anti___latency_1_1_world"/>
+      </node>
+    </collaborationgraph>
+    <location file="World.cs" line="9" column="1" bodyfile="World.cs" bodystart="8" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_world_1a23d71941edbe9a8a15360881de115f09" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>buildFromFile</name></member>
+      <member refid="class_anti___latency_1_1_world_1acb767e15ad07c882ea3a1a4f39559f9d" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>checkColliding</name></member>
+      <member refid="class_anti___latency_1_1_world_1a033379e2876a32109239fc05c8095693" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>draw</name></member>
+      <member refid="class_anti___latency_1_1_world_1a95b25dda146805e182fe410ccc0bca16" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>flagTexture</name></member>
+      <member refid="class_anti___latency_1_1_world_1a8ff42307e1873708936ff410977e7c95" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>floors</name></member>
+      <member refid="class_anti___latency_1_1_world_1a6a87bf3d631b9ddf1d8c5680459ec199" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>floorTexture</name></member>
+      <member refid="class_anti___latency_1_1_world_1a3bd2a16b00eda94f15d6bca28ac656c1" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>getPlayerPos</name></member>
+      <member refid="class_anti___latency_1_1_world_1af6f9369b0cd9c880d313779a54bdf61d" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>getWorldLength</name></member>
+      <member refid="class_anti___latency_1_1_world_1ae8957b68be03a9789a1ed68bd2313738" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>goal</name></member>
+      <member refid="class_anti___latency_1_1_world_1acfdf97ce520700b37742d925ccc94398" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>goalTexture</name></member>
+      <member refid="class_anti___latency_1_1_world_1a0232fa6733b91a03188f45c6c9994a19" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>loadLevel</name></member>
+      <member refid="class_anti___latency_1_1_world_1aa5b39403e04e701a43f39bac39b97786" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>loadTextures</name></member>
+      <member refid="class_anti___latency_1_1_world_1ad44a3ccdef39019ae04cad6ca93f1882" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>newObject</name></member>
+      <member refid="class_anti___latency_1_1_world_1ae76b2fd0c386319ecb08293d4ad4fe8d" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>playerPos</name></member>
+      <member refid="class_anti___latency_1_1_world_1a4a64bdd8d1bde66e698579377fd4aff2" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>setPlayerPos</name></member>
+      <member refid="class_anti___latency_1_1_world_1a89d56029aa30b90d0585d0faf25691cf" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>unloadLevel</name></member>
+      <member refid="class_anti___latency_1_1_world_1a499b7822fa635cb674a129eb3e2167b6" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>WORLDLENGTH</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

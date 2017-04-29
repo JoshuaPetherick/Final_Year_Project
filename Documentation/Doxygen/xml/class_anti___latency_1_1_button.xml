@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_button" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Button</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1a8c83ddec4957de25b07f8378b19ab297" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="8" column="1" bodyfile="Button.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1abbaac240a43e628846c4156bc25f8291" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="9" column="1" bodyfile="Button.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1ad0918023d654ad18fe3e52f25d33c358" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="10" column="1" bodyfile="Button.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1a96b2bd28e58ae212b041e3dcf1b92331" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>HEIGHT</name>
+        <initializer>= 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="11" column="1" bodyfile="Button.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1a67d6a5a1cdd760b58b274cdfa0591190" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Anti_Latency.Button.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="12" column="1" bodyfile="Button.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_button_1aa80efff62eb86ebf91df3fd22848cd87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Anti_Latency.Button.clicked</definition>
+        <argsstring></argsstring>
+        <name>clicked</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="13" column="1" bodyfile="Button.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a84d95077e8de0a0cb14af9873c28c2b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Button.Button</definition>
+        <argsstring>(int x, int y, string text)</argsstring>
+        <name>Button</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="15" column="1" bodyfile="Button.cs" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a91dffd0b7ca13acce7494499d2616445" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="22" column="1" bodyfile="Button.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1ac663727187f1684ef08f0991c52202d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="27" column="1" bodyfile="Button.cs" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a46f862368b4c098b7d23e51d1b24b086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="32" column="1" bodyfile="Button.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a026987a5171fd374b3e1a25dc2598bbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Button.getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="37" column="1" bodyfile="Button.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a96f634529256aeed2780a54e206d54d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Button.setText</definition>
+        <argsstring>(string text)</argsstring>
+        <name>setText</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="42" column="1" bodyfile="Button.cs" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1a28f39a9ed412f8c07558460d5bd720a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Button.buttonClicked</definition>
+        <argsstring>(bool result)</argsstring>
+        <name>buttonClicked</name>
+        <param>
+          <type>bool</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="48" column="1" bodyfile="Button.cs" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1ae44598b9358b0e4ddda41be637c8cc0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Anti_Latency.Button.getResult</definition>
+        <argsstring>()</argsstring>
+        <name>getResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="53" column="1" bodyfile="Button.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_button_1aa63e4c4e425dbf0b567d688c4d724851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Button.draw</definition>
+        <argsstring>(SpriteBatch spriteBatch, SpriteFont font)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>SpriteBatch</type>
+          <declname>spriteBatch</declname>
+        </param>
+        <param>
+          <type>SpriteFont</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Button.cs" line="58" column="1" bodyfile="Button.cs" bodystart="58" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>Anti_Latency.Button</label>
+        <link refid="class_anti___latency_1_1_button"/>
+      </node>
+    </collaborationgraph>
+    <location file="Button.cs" line="7" column="1" bodyfile="Button.cs" bodystart="6" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_button_1a84d95077e8de0a0cb14af9873c28c2b6" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>Button</name></member>
+      <member refid="class_anti___latency_1_1_button_1a28f39a9ed412f8c07558460d5bd720a6" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>buttonClicked</name></member>
+      <member refid="class_anti___latency_1_1_button_1aa80efff62eb86ebf91df3fd22848cd87" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>clicked</name></member>
+      <member refid="class_anti___latency_1_1_button_1aa63e4c4e425dbf0b567d688c4d724851" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>draw</name></member>
+      <member refid="class_anti___latency_1_1_button_1a026987a5171fd374b3e1a25dc2598bbf" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>getHeight</name></member>
+      <member refid="class_anti___latency_1_1_button_1ae44598b9358b0e4ddda41be637c8cc0d" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>getResult</name></member>
+      <member refid="class_anti___latency_1_1_button_1a46f862368b4c098b7d23e51d1b24b086" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>getWidth</name></member>
+      <member refid="class_anti___latency_1_1_button_1a91dffd0b7ca13acce7494499d2616445" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>getX</name></member>
+      <member refid="class_anti___latency_1_1_button_1ac663727187f1684ef08f0991c52202d9" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>getY</name></member>
+      <member refid="class_anti___latency_1_1_button_1a96b2bd28e58ae212b041e3dcf1b92331" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>HEIGHT</name></member>
+      <member refid="class_anti___latency_1_1_button_1a96f634529256aeed2780a54e206d54d8" prot="public" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>setText</name></member>
+      <member refid="class_anti___latency_1_1_button_1a67d6a5a1cdd760b58b274cdfa0591190" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>text</name></member>
+      <member refid="class_anti___latency_1_1_button_1ad0918023d654ad18fe3e52f25d33c358" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>width</name></member>
+      <member refid="class_anti___latency_1_1_button_1a8c83ddec4957de25b07f8378b19ab297" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>x</name></member>
+      <member refid="class_anti___latency_1_1_button_1abbaac240a43e628846c4156bc25f8291" prot="private" virt="non-virtual"><scope>Anti_Latency::Button</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

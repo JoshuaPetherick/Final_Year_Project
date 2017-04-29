@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_client" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::Client</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1ab89190411adeee3142472085179ed0e9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Anti_Latency.Client.ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <initializer>= &quot;0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="10" column="1" bodyfile="Client.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1abab5ccdb3424eb405b90097fcc22fc4c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Anti_Latency.Client.local</definition>
+        <argsstring></argsstring>
+        <name>local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="14" column="1" bodyfile="Client.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1ac2e08d538f0ca7faa11925076d99c3e3" prot="private" static="no" mutable="no">
+        <type>NetPeerConfiguration</type>
+        <definition>NetPeerConfiguration Anti_Latency.Client.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="11" column="1" bodyfile="Client.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1a9994f022f35f41731d63e790b0ca956b" prot="private" static="no" mutable="no">
+        <type>NetClient</type>
+        <definition>NetClient Anti_Latency.Client.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="12" column="1" bodyfile="Client.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1a5ba5bcc553008a53443bbd5aae3b4478" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Anti_Latency.Client.delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="15" column="1" bodyfile="Client.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1aa3846ef4a6e76069d2662f469e1ba59e" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Anti_Latency.Client.lastSent</definition>
+        <argsstring></argsstring>
+        <name>lastSent</name>
+        <initializer>= DateTime.Now</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="16" column="1" bodyfile="Client.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1ad050c33e5a0b00c335fc597af193217f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_anti___latency_1_1_server_player" kindref="compound">ServerPlayer</ref> &gt;</type>
+        <definition>List&lt;ServerPlayer&gt; Anti_Latency.Client.players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <initializer>= new List&lt;<ref refid="class_anti___latency_1_1_server_player" kindref="compound">ServerPlayer</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="17" column="1" bodyfile="Client.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_1af83d151b3dcf00007cd2cfc82a277cb8" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Anti_Latency.Client.actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <initializer>= new List&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="18" column="1" bodyfile="Client.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1af6fd303cd2ca8681884c8f0b45ec6e9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Client.Client</definition>
+        <argsstring>(string ip, int prt)</argsstring>
+        <name>Client</name>
+        <param>
+          <type>string</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="20" column="1" bodyfile="Client.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a2c068dc7878e8948a3e48872e03ba3dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Anti_Latency.Client.Client</definition>
+        <argsstring>(bool local, World world, int delay)</argsstring>
+        <name>Client</name>
+        <param>
+          <type>bool</type>
+          <declname>local</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="26" column="1" bodyfile="Client.cs" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1aebb73735ec2c1fb02a38bd7c747359b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Client.connect</definition>
+        <argsstring>(string ip, int prt)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>string</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="35" column="1" bodyfile="Client.cs" bodystart="35" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a2b155e7dfd4a696d7c400759c6acf56b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Tuple&lt; int, int &gt;</type>
+        <definition>Tuple&lt;int, int&gt; Anti_Latency.Client.getMessages</definition>
+        <argsstring>(World world)</argsstring>
+        <name>getMessages</name>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="50" column="1" bodyfile="Client.cs" bodystart="50" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a0d381beb9242496cc4a3fd142f88fd01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Anti_Latency.Client.sendMessages</definition>
+        <argsstring>(string action)</argsstring>
+        <name>sendMessages</name>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="147" column="1" bodyfile="Client.cs" bodystart="147" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a8d75867600f79b1a2c004a00e35406c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Anti_Latency.Client.getStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="159" column="1" bodyfile="Client.cs" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a9c022f8d73ae612d7c9feaf58fbbea84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Anti_Latency.Client.getAction</definition>
+        <argsstring>()</argsstring>
+        <name>getAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="164" column="1" bodyfile="Client.cs" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1a7302b694c4648cddcf913249111c1e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Anti_Latency.Client.processAction</definition>
+        <argsstring>()</argsstring>
+        <name>processAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="169" column="1" bodyfile="Client.cs" bodystart="169" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_1aa5cc70d5f61574d7d4c40f1178080824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_anti___latency_1_1_server_player" kindref="compound">ServerPlayer</ref> &gt;</type>
+        <definition>List&lt;ServerPlayer&gt; Anti_Latency.Client.getPlayers</definition>
+        <argsstring>()</argsstring>
+        <name>getPlayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Client.cs" line="176" column="1" bodyfile="Client.cs" bodystart="176" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>Anti_Latency.Client</label>
+        <link refid="class_anti___latency_1_1_client"/>
+      </node>
+    </collaborationgraph>
+    <location file="Client.cs" line="9" column="1" bodyfile="Client.cs" bodystart="8" bodyend="180"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_client_1af83d151b3dcf00007cd2cfc82a277cb8" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>actions</name></member>
+      <member refid="class_anti___latency_1_1_client_1a9994f022f35f41731d63e790b0ca956b" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>client</name></member>
+      <member refid="class_anti___latency_1_1_client_1af6fd303cd2ca8681884c8f0b45ec6e9e" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>Client</name></member>
+      <member refid="class_anti___latency_1_1_client_1a2c068dc7878e8948a3e48872e03ba3dc" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>Client</name></member>
+      <member refid="class_anti___latency_1_1_client_1ac2e08d538f0ca7faa11925076d99c3e3" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>config</name></member>
+      <member refid="class_anti___latency_1_1_client_1aebb73735ec2c1fb02a38bd7c747359b1" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>connect</name></member>
+      <member refid="class_anti___latency_1_1_client_1a5ba5bcc553008a53443bbd5aae3b4478" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>delay</name></member>
+      <member refid="class_anti___latency_1_1_client_1a9c022f8d73ae612d7c9feaf58fbbea84" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>getAction</name></member>
+      <member refid="class_anti___latency_1_1_client_1a2b155e7dfd4a696d7c400759c6acf56b" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>getMessages</name></member>
+      <member refid="class_anti___latency_1_1_client_1aa5cc70d5f61574d7d4c40f1178080824" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>getPlayers</name></member>
+      <member refid="class_anti___latency_1_1_client_1a8d75867600f79b1a2c004a00e35406c0" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>getStatus</name></member>
+      <member refid="class_anti___latency_1_1_client_1ab89190411adeee3142472085179ed0e9" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>ID</name></member>
+      <member refid="class_anti___latency_1_1_client_1aa3846ef4a6e76069d2662f469e1ba59e" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>lastSent</name></member>
+      <member refid="class_anti___latency_1_1_client_1abab5ccdb3424eb405b90097fcc22fc4c" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>local</name></member>
+      <member refid="class_anti___latency_1_1_client_1ad050c33e5a0b00c335fc597af193217f" prot="private" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>players</name></member>
+      <member refid="class_anti___latency_1_1_client_1a7302b694c4648cddcf913249111c1e01" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>processAction</name></member>
+      <member refid="class_anti___latency_1_1_client_1a0d381beb9242496cc4a3fd142f88fd01" prot="public" virt="non-virtual"><scope>Anti_Latency::Client</scope><name>sendMessages</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

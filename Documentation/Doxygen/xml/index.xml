@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_anti___latency_1_1_blank_technique" kind="class"><name>Anti_Latency::BlankTechnique</name>
+    <member refid="class_anti___latency_1_1_blank_technique_1ae3c666ef9a8e9fe06a233d6489e7fc78" kind="variable"><name>lastAction</name></member>
+    <member refid="class_anti___latency_1_1_blank_technique_1a30481e540bb4472c0a71595c85e371f8" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_blank_technique_1ae834591114ad6982632fe4562df02041" kind="function"><name>process</name></member>
+    <member refid="class_anti___latency_1_1_blank_technique_1ab1a194bd594bb1687aa481ec7956e03f" kind="function"><name>getLastAction</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_button" kind="class"><name>Anti_Latency::Button</name>
+    <member refid="class_anti___latency_1_1_button_1a8c83ddec4957de25b07f8378b19ab297" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_button_1abbaac240a43e628846c4156bc25f8291" kind="variable"><name>y</name></member>
+    <member refid="class_anti___latency_1_1_button_1ad0918023d654ad18fe3e52f25d33c358" kind="variable"><name>width</name></member>
+    <member refid="class_anti___latency_1_1_button_1a96b2bd28e58ae212b041e3dcf1b92331" kind="variable"><name>HEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_button_1a67d6a5a1cdd760b58b274cdfa0591190" kind="variable"><name>text</name></member>
+    <member refid="class_anti___latency_1_1_button_1aa80efff62eb86ebf91df3fd22848cd87" kind="variable"><name>clicked</name></member>
+    <member refid="class_anti___latency_1_1_button_1a84d95077e8de0a0cb14af9873c28c2b6" kind="function"><name>Button</name></member>
+    <member refid="class_anti___latency_1_1_button_1a91dffd0b7ca13acce7494499d2616445" kind="function"><name>getX</name></member>
+    <member refid="class_anti___latency_1_1_button_1ac663727187f1684ef08f0991c52202d9" kind="function"><name>getY</name></member>
+    <member refid="class_anti___latency_1_1_button_1a46f862368b4c098b7d23e51d1b24b086" kind="function"><name>getWidth</name></member>
+    <member refid="class_anti___latency_1_1_button_1a026987a5171fd374b3e1a25dc2598bbf" kind="function"><name>getHeight</name></member>
+    <member refid="class_anti___latency_1_1_button_1a96f634529256aeed2780a54e206d54d8" kind="function"><name>setText</name></member>
+    <member refid="class_anti___latency_1_1_button_1a28f39a9ed412f8c07558460d5bd720a6" kind="function"><name>buttonClicked</name></member>
+    <member refid="class_anti___latency_1_1_button_1ae44598b9358b0e4ddda41be637c8cc0d" kind="function"><name>getResult</name></member>
+    <member refid="class_anti___latency_1_1_button_1aa63e4c4e425dbf0b567d688c4d724851" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_camera" kind="class"><name>Anti_Latency::Camera</name>
+    <member refid="class_anti___latency_1_1_camera_1a3e177aefc7a31f99707e44c661c13365" kind="variable"><name>viewport</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a039dbb1bd31a5443baf8b56c881b4c21" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a5ded2396986eaf1b37be1227b123c781" kind="variable"><name>window_dist</name></member>
+    <member refid="class_anti___latency_1_1_camera_1ad2c982104545c9fbe3ef5f4de6ed9db2" kind="variable"><name>Zoom</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a39426b9adeecc02fb243dc04a98dd2f4" kind="variable"><name>Rotation</name></member>
+    <member refid="class_anti___latency_1_1_camera_1ac31105fafc1d894243444542bf540306" kind="property"><name>Origin</name></member>
+    <member refid="class_anti___latency_1_1_camera_1abb33758c2a26669d3d54be5ccff8b1b1" kind="property"><name>Position</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a36def68756c3f269907d15ff1b9a0080" kind="function"><name>Camera</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a723aa0bfa5e3149531438696b859725c" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a24b8817c8167cbbc457d1c07c0ecfd54" kind="function"><name>getX</name></member>
+    <member refid="class_anti___latency_1_1_camera_1a5bdb28ebe9c3abc943fd5a38268845c8" kind="function"><name>GetViewMatrix</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_client" kind="class"><name>Anti_Latency::Client</name>
+    <member refid="class_anti___latency_1_1_client_1ab89190411adeee3142472085179ed0e9" kind="variable"><name>ID</name></member>
+    <member refid="class_anti___latency_1_1_client_1abab5ccdb3424eb405b90097fcc22fc4c" kind="variable"><name>local</name></member>
+    <member refid="class_anti___latency_1_1_client_1ac2e08d538f0ca7faa11925076d99c3e3" kind="variable"><name>config</name></member>
+    <member refid="class_anti___latency_1_1_client_1a9994f022f35f41731d63e790b0ca956b" kind="variable"><name>client</name></member>
+    <member refid="class_anti___latency_1_1_client_1a5ba5bcc553008a53443bbd5aae3b4478" kind="variable"><name>delay</name></member>
+    <member refid="class_anti___latency_1_1_client_1aa3846ef4a6e76069d2662f469e1ba59e" kind="variable"><name>lastSent</name></member>
+    <member refid="class_anti___latency_1_1_client_1ad050c33e5a0b00c335fc597af193217f" kind="variable"><name>players</name></member>
+    <member refid="class_anti___latency_1_1_client_1af83d151b3dcf00007cd2cfc82a277cb8" kind="variable"><name>actions</name></member>
+    <member refid="class_anti___latency_1_1_client_1af6fd303cd2ca8681884c8f0b45ec6e9e" kind="function"><name>Client</name></member>
+    <member refid="class_anti___latency_1_1_client_1a2c068dc7878e8948a3e48872e03ba3dc" kind="function"><name>Client</name></member>
+    <member refid="class_anti___latency_1_1_client_1aebb73735ec2c1fb02a38bd7c747359b1" kind="function"><name>connect</name></member>
+    <member refid="class_anti___latency_1_1_client_1a2b155e7dfd4a696d7c400759c6acf56b" kind="function"><name>getMessages</name></member>
+    <member refid="class_anti___latency_1_1_client_1a0d381beb9242496cc4a3fd142f88fd01" kind="function"><name>sendMessages</name></member>
+    <member refid="class_anti___latency_1_1_client_1a8d75867600f79b1a2c004a00e35406c0" kind="function"><name>getStatus</name></member>
+    <member refid="class_anti___latency_1_1_client_1a9c022f8d73ae612d7c9feaf58fbbea84" kind="function"><name>getAction</name></member>
+    <member refid="class_anti___latency_1_1_client_1a7302b694c4648cddcf913249111c1e01" kind="function"><name>processAction</name></member>
+    <member refid="class_anti___latency_1_1_client_1aa5cc70d5f61574d7d4c40f1178080824" kind="function"><name>getPlayers</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_client_side_prediction" kind="class"><name>Anti_Latency::ClientSidePrediction</name>
+    <member refid="class_anti___latency_1_1_client_side_prediction_1a8e0a7da9c0b921064e2e6a2be7826e63" kind="variable"><name>lastAction</name></member>
+    <member refid="class_anti___latency_1_1_client_side_prediction_1a738b5e9ee38176be3dcf509cb88ab314" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_client_side_prediction_1ad7100c104d6b2a657e1cc739fd763da5" kind="function"><name>process</name></member>
+    <member refid="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0" kind="function"><name>getLastAction</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_floor" kind="class"><name>Anti_Latency::Floor</name>
+    <member refid="class_anti___latency_1_1_floor_1a4a64d8ca77fc2010deca4a951127ae7f" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_floor_1a3066f992775435f53853c5ec9b79be57" kind="variable"><name>y</name></member>
+    <member refid="class_anti___latency_1_1_floor_1a14e9b6f3993c1a2e6e704e0dde8d5dde" kind="variable"><name>HEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_floor_1ad4bbfe204922356e1ca1c23ad01a7605" kind="variable"><name>WIDTH</name></member>
+    <member refid="class_anti___latency_1_1_floor_1a391c31352025b2c02fc64865551fa4c9" kind="variable"><name>texture</name></member>
+    <member refid="class_anti___latency_1_1_floor_1a7d03b8d1c6f51976350f335140d07e93" kind="function"><name>Floor</name></member>
+    <member refid="class_anti___latency_1_1_floor_1a8feb1ababc93eebe059d4107589ebc4a" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_game1" kind="class"><name>Anti_Latency::Game1</name>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258a" kind="enum"><name>gameStates</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aa3287971e79b4dca11067ed287847c1e6" kind="enumvalue"><name>MAINMENU</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aaf8e346271e01d0bcd59a453e3096dc91" kind="enumvalue"><name>HOSTING</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aaeedfd685b258be82ac22d2988c6a7d00" kind="enumvalue"><name>JOINING</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aafbea3355da659b5f50a5488e26cb9853" kind="enumvalue"><name>TESTINGMENU</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aa907953dcbd01ad68db1f19be286936f4" kind="enumvalue"><name>TESTING</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a4f4b2d85df172717789b04a85746901e" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a49af3872186c5e844be98bafacbd5301" kind="variable"><name>graphics</name></member>
+    <member refid="class_anti___latency_1_1_game1_1aef4624c46c694602dcd7449591803aa8" kind="variable"><name>ip</name></member>
+    <member refid="class_anti___latency_1_1_game1_1acd817f6c2fc735afba4830feb2a97a5f" kind="variable"><name>port</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a53be5341d437d52e89968a2ee5989eb0" kind="variable"><name>state</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a415fc1f1b03066d642ba997b57a2f563" kind="variable"><name>buttons</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a4a17ddff061e3650af160910651769ba" kind="variable"><name>world</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a83ddd4b49f0a5cbf883000ae3c8044f7" kind="variable"><name>serverThread</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a97cdc4f04b56d01b4a2c09c4d79de1c4" kind="variable"><name>font</name></member>
+    <member refid="class_anti___latency_1_1_game1_1ab71b30ffbff12cd294069be290b81643" kind="variable"><name>server</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a22a941eb0495bfd8bc7457c08aad54d1" kind="variable"><name>camera</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a680272d0766ce6030ff3ff34a88d2665" kind="variable"><name>player</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a131a06dc67f2881e17fe923aedb02055" kind="variable"><name>background</name></member>
+    <member refid="class_anti___latency_1_1_game1_1ac9422f8a010953c1cba4c9465e7f3e0a" kind="variable"><name>tech</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a4cea6d9612f86382a4d11e5dd0b9873e" kind="variable"><name>delay</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a42eb0ef988312e59c4a9e102a08c6911" kind="variable"><name>GAMEWIDTH</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a25667a4bc7f00edbfc697d945453b90a" kind="variable"><name>GAMEHEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_game1_1aa4b402ab2402e2e5d3146375a43a0d95" kind="function"><name>Game1</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a5b17b57f1a5abbd2ea9370015c999432" kind="function"><name>Initialize</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3570a33adc5b6c2304f3ecfcc93c652e" kind="function"><name>LoadContent</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a3db1288a4ca516ea755691e82c615047" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_anti___latency_1_1_game1_1abf2370807257ea96f90985976dbcb01f" kind="function"><name>Update</name></member>
+    <member refid="class_anti___latency_1_1_game1_1a25fdb353eedc34da2287eab76fdaaf37" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_goal" kind="class"><name>Anti_Latency::Goal</name>
+    <member refid="class_anti___latency_1_1_goal_1a0ace419b34b9629fb627a7169d04ae30" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_goal_1aaf959e031b4e0945cc79e97c2e8f5269" kind="variable"><name>y</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a675307c7f27e68aa02c121e9e7ca3d4f" kind="variable"><name>HEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a7f8c4e48b8e9c2015807c0bf22c0bb7a" kind="variable"><name>WIDTH</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a371df0e0ead02e1a14894d8f5f75682d" kind="variable"><name>texture</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a35321c0230200396b28e7a29763d5f01" kind="variable"><name>flagTexture</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a3020d89472db208479751332efd9715b" kind="function"><name>Goal</name></member>
+    <member refid="class_anti___latency_1_1_goal_1a335df36ac10cd545eb2476472bc12674" kind="function"><name>draw</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_logic" kind="class"><name>Anti_Latency::Logic</name>
+    <member refid="class_anti___latency_1_1_logic_1a455270b2a394fd2ba9248af04aa77795" kind="variable"><name>speed</name></member>
+    <member refid="class_anti___latency_1_1_logic_1ad1508fc71ddb9a2a64ab22d4b2a6668c" kind="variable"><name>gravity</name></member>
+    <member refid="class_anti___latency_1_1_logic_1aebd17b71bfe07f4b88c69a51b4d5f42e" kind="variable"><name>jumpHeight</name></member>
+    <member refid="class_anti___latency_1_1_logic_1a3c6f60a42a85510229a34e0330ed9080" kind="function"><name>axisAlignedBoundingBox</name></member>
+    <member refid="class_anti___latency_1_1_logic_1a28e1e37a8827dfc58ab31792abcc748d" kind="function"><name>actionTree</name></member>
+    <member refid="class_anti___latency_1_1_logic_1a800ef62de1fe659469d93dc10fdc68d3" kind="function"><name>actionTree</name></member>
+    <member refid="class_anti___latency_1_1_logic_1ab17ccc2eefa85c997b50beebabffe3f4" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_logic_1a3907c353c79aa74e75c71de36369543e" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_player" kind="class"><name>Anti_Latency::Player</name>
+    <member refid="class_anti___latency_1_1_player_1a1ea21c266ca140932d5a8643894c353b" kind="enum"><name>playerStates</name></member>
+    <member refid="class_anti___latency_1_1_player_1a1ea21c266ca140932d5a8643894c353baa5daf7f2ebbba4975d61dab1c40188c7" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="class_anti___latency_1_1_player_1a1ea21c266ca140932d5a8643894c353ba6de49bfda8068b7bc3b0c0e3d2e43134" kind="enumvalue"><name>JUMPING</name></member>
+    <member refid="class_anti___latency_1_1_player_1a1ea21c266ca140932d5a8643894c353ba4f9d4539ac1e11a251e2afe022eba4e6" kind="enumvalue"><name>FALLING</name></member>
+    <member refid="class_anti___latency_1_1_player_1aa096088e5421897ed53c1eaa2452dd8b" kind="variable"><name>clnt</name></member>
+    <member refid="class_anti___latency_1_1_player_1ae2918c94cc7538b92b03759942131db7" kind="variable"><name>technique</name></member>
+    <member refid="class_anti___latency_1_1_player_1a5ce4cc41dbbf1078d60398086a9c6e59" kind="variable"><name>input</name></member>
+    <member refid="class_anti___latency_1_1_player_1a284bd3344fbf55329a5207133b61b0c6" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_player_1a4e0034fbd9b5c4c2701bdc55f67c25bd" kind="variable"><name>y</name></member>
+    <member refid="class_anti___latency_1_1_player_1a2494e7ddf7bb4684d31d97c226d310a6" kind="variable"><name>texture</name></member>
+    <member refid="class_anti___latency_1_1_player_1a237fa42afa37b970e7d5ca2e612b78c2" kind="variable"><name>effect</name></member>
+    <member refid="class_anti___latency_1_1_player_1af65986f880425ba4f1fcc14285b58a8a" kind="variable"><name>PREFWIDTH</name></member>
+    <member refid="class_anti___latency_1_1_player_1a2bfd242418b69179fdaf7ec82ab71bd4" kind="variable"><name>PREFHEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_player_1ab1d0f2c49b44a0823b046ca33253c924" kind="variable"><name>state</name></member>
+    <member refid="class_anti___latency_1_1_player_1ab6e64705154e7fb2a6be13d313254956" kind="variable"><name>jumpPoint</name></member>
+    <member refid="class_anti___latency_1_1_player_1a8d2598fb9824482f2e590c72c185c94c" kind="function"><name>Player</name></member>
+    <member refid="class_anti___latency_1_1_player_1a0e0db7a798670e56bc20e2bcb03c2a46" kind="function"><name>setTechnique</name></member>
+    <member refid="class_anti___latency_1_1_player_1a051db6c14a76bce84466845da3cabf18" kind="function"><name>setX</name></member>
+    <member refid="class_anti___latency_1_1_player_1a5d45db44148177245e671a38346622ef" kind="function"><name>setY</name></member>
+    <member refid="class_anti___latency_1_1_player_1aa1ac26935d34a308eb9bfc48e5e80ea0" kind="function"><name>setTexture</name></member>
+    <member refid="class_anti___latency_1_1_player_1a6bbcf7105603fa1eefca304860b40185" kind="function"><name>getX</name></member>
+    <member refid="class_anti___latency_1_1_player_1afd0be955e04ff710cd76b8d7d392153d" kind="function"><name>getY</name></member>
+    <member refid="class_anti___latency_1_1_player_1ad62724b3aeb58469f6065b7a3b65f650" kind="function"><name>getHeight</name></member>
+    <member refid="class_anti___latency_1_1_player_1a60865c4114178e23861a1df1387ecd2e" kind="function"><name>getWidth</name></member>
+    <member refid="class_anti___latency_1_1_player_1a9853ffc4799e792130fe7d30c51a82ac" kind="function"><name>handleInput</name></member>
+    <member refid="class_anti___latency_1_1_player_1a5d2d2397c4102a850a79ff6283b24bad" kind="function"><name>playerUpdate</name></member>
+    <member refid="class_anti___latency_1_1_player_1addc9d9c0829dcdf51e97c38a59b8beb1" kind="function"><name>connectClient</name></member>
+    <member refid="class_anti___latency_1_1_player_1a19a6a70b2c6916e75b41a35a25785b18" kind="function"><name>connectClient</name></member>
+    <member refid="class_anti___latency_1_1_player_1a17699a3cda43f7157ec74c1bb60c540f" kind="function"><name>drawPlayer</name></member>
+    <member refid="class_anti___latency_1_1_player_1a32ba4adaf2c3ef6d38e4c2eee4ca875f" kind="function"><name>drawClient</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_server" kind="class"><name>Anti_Latency::Server</name>
+    <member refid="class_anti___latency_1_1_server_1af203ba900f88d52605b50c2de941f687" kind="variable"><name>server</name></member>
+    <member refid="class_anti___latency_1_1_server_1ac8aa419c23550b4316a2798f6f047ca2" kind="variable"><name>config</name></member>
+    <member refid="class_anti___latency_1_1_server_1a337c3ba5b6ac597fa2d9687a5559839c" kind="variable"><name>world</name></member>
+    <member refid="class_anti___latency_1_1_server_1a53a9210ed60df1555f9744a786a68e56" kind="variable"><name>currID</name></member>
+    <member refid="class_anti___latency_1_1_server_1a8fa1eb0da6d7d4141f402a6542bdb174" kind="variable"><name>players</name></member>
+    <member refid="class_anti___latency_1_1_server_1a26ccf6a4bcf77d32fdbdc5c709c53ba6" kind="variable"><name>actions</name></member>
+    <member refid="class_anti___latency_1_1_server_1af99b6ec66679984ef3fa6a4ed85ffe75" kind="function"><name>Server</name></member>
+    <member refid="class_anti___latency_1_1_server_1a223d67cf801c9e0b55f8383586ff75c1" kind="function"><name>checkMessages</name></member>
+    <member refid="class_anti___latency_1_1_server_1aec6e96e4d13a24ce3d66ca289a4c6a4e" kind="function"><name>sendMessages</name></member>
+    <member refid="class_anti___latency_1_1_server_1af5e93f724dcabed74140b0a3abe5083c" kind="function"><name>getPlayer</name></member>
+    <member refid="class_anti___latency_1_1_server_1aa62d491d96332959f2b4b01dd2b63314" kind="function"><name>applyLogic</name></member>
+    <member refid="class_anti___latency_1_1_server_1a404a9c2634bee47397a98b71b7b520b7" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_server_1a137d1f2881e32c0a5adf27227f7b1b2b" kind="function"><name>serverStatus</name></member>
+    <member refid="class_anti___latency_1_1_server_1a3a4155767d991157dbc812524302d7ba" kind="function"><name>closeServer</name></member>
+    <member refid="class_anti___latency_1_1_server_1afaa1f1bf9b10d60f4b1a69bc491d44fa" kind="function"><name>~Server</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_server_player" kind="class"><name>Anti_Latency::ServerPlayer</name>
+    <member refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98fa" kind="enum"><name>playerStates</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faaa5daf7f2ebbba4975d61dab1c40188c7" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faa6de49bfda8068b7bc3b0c0e3d2e43134" kind="enumvalue"><name>JUMPING</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a75ba42d568d6a7444279a66e776e98faa4f9d4539ac1e11a251e2afe022eba4e6" kind="enumvalue"><name>FALLING</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a2d4c263870baab92d3ee98e61df7a8f2" kind="variable"><name>ID</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a73128e42aaadf63a4782ef0145e37852" kind="variable"><name>x</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a17803ca57081756fba2ef2c8f2414f57" kind="variable"><name>y</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a0147a125c2a129848c0449b3fdd2e341" kind="variable"><name>recipient</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a45d3cedd64645921b7188f20418a840c" kind="variable"><name>effect</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a03a100b875e775acd6caa11f4bf5cb28" kind="variable"><name>PREFWIDTH</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a924a0c45352476a1d5a2ba7b6188fc4b" kind="variable"><name>PREFHEIGHT</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1abbd4e7e3928eab2cb486aa75a19c1936" kind="variable"><name>state</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a6e91348d7dfa10f005201d7c72eb045c" kind="variable"><name>jumpPoint</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a98b674d64ece4cfc302e9150034d7aa9" kind="function"><name>ServerPlayer</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1ad7985bdeebd2aeb2d1eb1400c3625ce8" kind="function"><name>setX</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a7faf769dd2c99f00bb7a8cad7c97c2ac" kind="function"><name>setY</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1aa395c811dff421acf56cf2085b703c80" kind="function"><name>setID</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a1370657824c01f0bedf6fb05c6b8f5ce" kind="function"><name>getX</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1af976d1f49b1436a87c72ff7b5c02e9d0" kind="function"><name>getY</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a2c146dbca57c83af92acde59f5b3541f" kind="function"><name>getHeight</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a8190f603d27c73d8ebf41a3fb17fd4c3" kind="function"><name>getWidth</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a26b5253370b28019ef40472401e36988" kind="function"><name>getID</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a35059c781693be263a905599605af5e1" kind="function"><name>getEffect</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a755ae7b2dcfb98820929365dc35407ee" kind="function"><name>updateEffect</name></member>
+    <member refid="class_anti___latency_1_1_server_player_1a31eb360d40fcfeb6ffdcbd30546cc5f9" kind="function"><name>getRecipiant</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_server_reconcilliation" kind="class"><name>Anti_Latency::ServerReconcilliation</name>
+    <member refid="class_anti___latency_1_1_server_reconcilliation_1ad0f66050479bb46be98c53791b9da7ed" kind="variable"><name>actions</name></member>
+    <member refid="class_anti___latency_1_1_server_reconcilliation_1abf07ad7f7e825bbfe54dee24928279de" kind="variable"><name>positions</name></member>
+    <member refid="class_anti___latency_1_1_server_reconcilliation_1a9b8d1205e390d2b9d82b6bf6c9c39084" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_server_reconcilliation_1a3d27f4c92bf2e907ab4cb77080f4f96b" kind="function"><name>process</name></member>
+    <member refid="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f" kind="function"><name>getLastAction</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_technique" kind="class"><name>Anti_Latency::Technique</name>
+    <member refid="class_anti___latency_1_1_technique_1ac7317e4c1631c49273d5371791cb6a3c" kind="function"><name>update</name></member>
+    <member refid="class_anti___latency_1_1_technique_1afe7d616f1e5699c52863d4ceb67a2cef" kind="function"><name>process</name></member>
+    <member refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d" kind="function"><name>getLastAction</name></member>
+  </compound>
+  <compound refid="class_anti___latency_1_1_world" kind="class"><name>Anti_Latency::World</name>
+    <member refid="class_anti___latency_1_1_world_1a499b7822fa635cb674a129eb3e2167b6" kind="variable"><name>WORLDLENGTH</name></member>
+    <member refid="class_anti___latency_1_1_world_1ae76b2fd0c386319ecb08293d4ad4fe8d" kind="variable"><name>playerPos</name></member>
+    <member refid="class_anti___latency_1_1_world_1ae8957b68be03a9789a1ed68bd2313738" kind="variable"><name>goal</name></member>
+    <member refid="class_anti___latency_1_1_world_1a8ff42307e1873708936ff410977e7c95" kind="variable"><name>floors</name></member>
+    <member refid="class_anti___latency_1_1_world_1a6a87bf3d631b9ddf1d8c5680459ec199" kind="variable"><name>floorTexture</name></member>
+    <member refid="class_anti___latency_1_1_world_1acfdf97ce520700b37742d925ccc94398" kind="variable"><name>goalTexture</name></member>
+    <member refid="class_anti___latency_1_1_world_1a95b25dda146805e182fe410ccc0bca16" kind="variable"><name>flagTexture</name></member>
+    <member refid="class_anti___latency_1_1_world_1aa5b39403e04e701a43f39bac39b97786" kind="function"><name>loadTextures</name></member>
+    <member refid="class_anti___latency_1_1_world_1a0232fa6733b91a03188f45c6c9994a19" kind="function"><name>loadLevel</name></member>
+    <member refid="class_anti___latency_1_1_world_1a4a64bdd8d1bde66e698579377fd4aff2" kind="function"><name>setPlayerPos</name></member>
+    <member refid="class_anti___latency_1_1_world_1a3bd2a16b00eda94f15d6bca28ac656c1" kind="function"><name>getPlayerPos</name></member>
+    <member refid="class_anti___latency_1_1_world_1a89d56029aa30b90d0585d0faf25691cf" kind="function"><name>unloadLevel</name></member>
+    <member refid="class_anti___latency_1_1_world_1acb767e15ad07c882ea3a1a4f39559f9d" kind="function"><name>checkColliding</name></member>
+    <member refid="class_anti___latency_1_1_world_1af6f9369b0cd9c880d313779a54bdf61d" kind="function"><name>getWorldLength</name></member>
+    <member refid="class_anti___latency_1_1_world_1a033379e2876a32109239fc05c8095693" kind="function"><name>draw</name></member>
+    <member refid="class_anti___latency_1_1_world_1a23d71941edbe9a8a15360881de115f09" kind="function"><name>buildFromFile</name></member>
+    <member refid="class_anti___latency_1_1_world_1ad44a3ccdef39019ae04cad6ca93f1882" kind="function"><name>newObject</name></member>
+  </compound>
+  <compound refid="namespace_anti___latency" kind="namespace"><name>Anti_Latency</name>
+  </compound>
+  <compound refid="namespace_lidgren_1_1_network" kind="namespace"><name>Lidgren::Network</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading" kind="namespace"><name>System::Threading</name>
+  </compound>
+  <compound refid="_blank_technique_8cs" kind="file"><name>BlankTechnique.cs</name>
+  </compound>
+  <compound refid="_button_8cs" kind="file"><name>Button.cs</name>
+  </compound>
+  <compound refid="_camera_8cs" kind="file"><name>Camera.cs</name>
+  </compound>
+  <compound refid="_client_8cs" kind="file"><name>Client.cs</name>
+  </compound>
+  <compound refid="_client_side_prediction_8cs" kind="file"><name>ClientSidePrediction.cs</name>
+  </compound>
+  <compound refid="_floor_8cs" kind="file"><name>Floor.cs</name>
+  </compound>
+  <compound refid="_game1_8cs" kind="file"><name>Game1.cs</name>
+  </compound>
+  <compound refid="_goal_8cs" kind="file"><name>Goal.cs</name>
+  </compound>
+  <compound refid="_logic_8cs" kind="file"><name>Logic.cs</name>
+  </compound>
+  <compound refid="_player_8cs" kind="file"><name>Player.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_server_8cs" kind="file"><name>Server.cs</name>
+  </compound>
+  <compound refid="_server_player_8cs" kind="file"><name>ServerPlayer.cs</name>
+  </compound>
+  <compound refid="_server_reconcilliation_8cs" kind="file"><name>ServerReconcilliation.cs</name>
+  </compound>
+  <compound refid="_technique_8cs" kind="file"><name>Technique.cs</name>
+  </compound>
+  <compound refid="_world_8cs" kind="file"><name>World.cs</name>
+  </compound>
+</doxygenindex>

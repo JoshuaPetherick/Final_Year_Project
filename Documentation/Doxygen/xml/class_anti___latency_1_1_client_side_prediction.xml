@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_anti___latency_1_1_client_side_prediction" kind="class" language="C#" prot="public">
+    <compoundname>Anti_Latency::ClientSidePrediction</compoundname>
+    <basecompoundref refid="class_anti___latency_1_1_technique" prot="public" virt="non-virtual">Anti_Latency.Technique</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_anti___latency_1_1_client_side_prediction_1a8e0a7da9c0b921064e2e6a2be7826e63" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Anti_Latency.ClientSidePrediction.lastAction</definition>
+        <argsstring></argsstring>
+        <name>lastAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ClientSidePrediction.cs" line="7" column="1" bodyfile="ClientSidePrediction.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_anti___latency_1_1_client_side_prediction_1a738b5e9ee38176be3dcf509cb88ab314" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Anti_Latency.ClientSidePrediction.update</definition>
+        <argsstring>(Client clint, Player player, World world, string action)</argsstring>
+        <name>update</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1ac7317e4c1631c49273d5371791cb6a3c">update</reimplements>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clint</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ClientSidePrediction.cs" line="9" column="1" bodyfile="ClientSidePrediction.cs" bodystart="9" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_side_prediction_1ad7100c104d6b2a657e1cc739fd763da5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override Tuple&lt; int, int &gt;</type>
+        <definition>override Tuple&lt;int, int&gt; Anti_Latency.ClientSidePrediction.process</definition>
+        <argsstring>(Client clnt, World world)</argsstring>
+        <name>process</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1afe7d616f1e5699c52863d4ceb67a2cef">process</reimplements>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_client" kindref="compound">Client</ref></type>
+          <declname>clnt</declname>
+        </param>
+        <param>
+          <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ClientSidePrediction.cs" line="25" column="1" bodyfile="ClientSidePrediction.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override string</type>
+        <definition>override string Anti_Latency.ClientSidePrediction.getLastAction</definition>
+        <argsstring>()</argsstring>
+        <name>getLastAction</name>
+        <reimplements refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d">getLastAction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ClientSidePrediction.cs" line="30" column="1" bodyfile="ClientSidePrediction.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+      <node id="10">
+        <label>Anti_Latency.ClientSidePrediction</label>
+        <link refid="class_anti___latency_1_1_client_side_prediction"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+      <node id="12">
+        <label>Anti_Latency.ClientSidePrediction</label>
+        <link refid="class_anti___latency_1_1_client_side_prediction"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ClientSidePrediction.cs" line="6" column="1" bodyfile="ClientSidePrediction.cs" bodystart="5" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0" prot="public" virt="virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>getLastAction</name></member>
+      <member refid="class_anti___latency_1_1_client_side_prediction_1a8e0a7da9c0b921064e2e6a2be7826e63" prot="private" virt="non-virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>lastAction</name></member>
+      <member refid="class_anti___latency_1_1_client_side_prediction_1ad7100c104d6b2a657e1cc739fd763da5" prot="public" virt="virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>process</name></member>
+      <member refid="class_anti___latency_1_1_client_side_prediction_1a738b5e9ee38176be3dcf509cb88ab314" prot="public" virt="virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
