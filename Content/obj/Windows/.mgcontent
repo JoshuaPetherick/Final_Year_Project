@@ -4,7 +4,12 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Joshua/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/bot.png</File>
-    <File>C:/Users/Joshua/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/floor.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/bot.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/floor.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/my_font.spritefont</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/goal.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/ground.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/flag.png</File>
+    <File>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/background.png</File>
   </SourceFiles>
 </SourceFileCollection>

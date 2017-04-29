@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 //https://msdn.microsoft.com/en-us/library/ms182532.aspx
 
-namespace FinalYearProject.Tests
+namespace Anti_Latency
 {
     [TestClass]
     public class TestServer

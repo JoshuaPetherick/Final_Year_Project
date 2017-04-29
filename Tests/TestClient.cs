@@ -1,8 +1,9 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 //https://msdn.microsoft.com/en-us/library/ms182532.aspx
 
-namespace FinalYearProject.Tests
+namespace Anti_Latency
 {
     [TestClass]
     public class TestClient
@@ -27,7 +28,9 @@ namespace FinalYearProject.Tests
         [TestMethod]
         public void actionQueueTest()
         {
-            Client clint = new Client(true);
+            World world = new World();
+            world.setPlayerPos(new Tuple<int, int>(0, 0));
+            Client clint = new Client(true, world, 0);
             for (int i = 1; i < 4; i++)
             {
                 clint.sendMessages(i.ToString());

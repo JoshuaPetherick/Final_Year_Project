@@ -1,6 +1,7 @@
 ﻿using Lidgren.Network;
+using Microsoft.Xna.Framework.Graphics;
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class ServerPlayer
     {
@@ -15,6 +16,7 @@ namespace FinalYearProject
         public playerStates state = playerStates.IDLE; // Made public for Unit Test
         public enum playerStates { IDLE, JUMPING, FALLING };
         public int jumpPoint;
+        private SpriteEffects effect = SpriteEffects.None;
 
         public ServerPlayer(int x, int y, NetConnection recipient)
         {
@@ -61,6 +63,23 @@ namespace FinalYearProject
         public string getID()
         {
             return ID;
+        }
+
+        public SpriteEffects getEffect()
+        {
+            return effect;
+        }    
+
+        public void updateEffect(int x)
+        {
+            if (this.x < x && effect == SpriteEffects.FlipHorizontally)
+            {
+                effect = SpriteEffects.None;
+            }
+            else if (this.x > x && effect == SpriteEffects.None)
+            {
+                effect = SpriteEffects.FlipHorizontally;
+            }
         }
 
         public NetConnection getRecipiant()

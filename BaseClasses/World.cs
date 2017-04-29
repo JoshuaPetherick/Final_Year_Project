@@ -3,7 +3,7 @@ using System.IO;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class World
     {
@@ -15,17 +15,19 @@ namespace FinalYearProject
 
         private Texture2D floorTexture;
         private Texture2D goalTexture;
+        private Texture2D flagTexture;
 
         // Optional for testing reasons
-        public void loadTextures(Texture2D floorTexture, Texture2D goalTexture)
+        public void loadTextures(Texture2D floorTexture, Texture2D goalTexture, Texture2D flagTexture)
         {
             this.floorTexture = floorTexture;
             this.goalTexture = goalTexture;
+            this.flagTexture = flagTexture;
         }
 
         public void loadLevel()
         {
-            buildFromFile(File.ReadAllLines("Final_Year_Project/Content/level.txt"));
+            buildFromFile(File.ReadAllLines("Content/level.txt"));
         }
 
         private void buildFromFile(string[] lines)
@@ -42,7 +44,6 @@ namespace FinalYearProject
                 }
                 y += Floor.HEIGHT;
             }
-            Console.WriteLine(WORLDLENGTH);
         }
 
         private void newObject(char type, int x, int y)
@@ -53,12 +54,17 @@ namespace FinalYearProject
                     floors.Add(new Floor(x, y, floorTexture));
                     break;
                 case 'E':
-                    goal = new Goal(x, ((y+Floor.HEIGHT)-Goal.HEIGHT), goalTexture);
+                    goal = new Goal(x, ((y+Floor.HEIGHT)-Goal.HEIGHT), goalTexture, flagTexture);
                     break;
                 case 'P':
                     playerPos = new Tuple<int, int>(x, (y-Player.PREFHEIGHT));
                     break;
             }
+        }
+
+        public void setPlayerPos(Tuple<int, int>newPos)
+        {
+            playerPos = newPos;
         }
 
         public Tuple<int, int> getPlayerPos()
@@ -90,7 +96,6 @@ namespace FinalYearProject
                     int tempResult = Logic.axisAlignedBoundingBox(px, py, ph, pw, floor.x, floor.y, Floor.HEIGHT, Floor.WIDTH);
                     if (tempResult > 0)
                     {
-                        Console.WriteLine(tempResult);
                         return tempResult;
                     }
                 }

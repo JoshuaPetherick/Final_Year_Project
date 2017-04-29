@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace FinalYearProject.Tests
-{
+namespace Anti_Latency
+{ 
     [TestClass]
     public class TestLogic
     {

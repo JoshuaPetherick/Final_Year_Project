@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Joshua/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/floor.png</SourceFile>
-  <SourceTime>2017-02-13T14:23:42.8209946+00:00</SourceTime>
-  <DestFile>C:/Users/Joshua/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/bin/Windows/floor.xnb</DestFile>
-  <DestTime>2017-02-13T14:49:39.9182965+00:00</DestTime>
+  <SourceFile>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/floor.png</SourceFile>
+  <SourceTime>2017-01-04T18:09:54.6880281+00:00</SourceTime>
+  <DestFile>C:/Users/test/Documents/Work/FYP/FinalYearProject/FinalYearProject/Final_Year_Project/Content/bin/Windows/floor.xnb</DestFile>
+  <DestTime>2017-04-29T16:35:10.0443405+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2016-03-30T07:36:08+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

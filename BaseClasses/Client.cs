@@ -3,7 +3,7 @@ using Lidgren.Network;
 using System.Collections.Generic;
 //https://github.com/lidgren/lidgren-network-gen3
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class Client
     {
@@ -14,7 +14,7 @@ namespace FinalYearProject
         public bool local;
         private double delay = 0; // Millisecond Delay
         private DateTime lastSent = DateTime.Now;
-        private ServerPlayer localPlayer = new ServerPlayer(0, 0, null);
+        private List<ServerPlayer> players = new List<ServerPlayer>();
         private List<string> actions = new List<string>(); // Array of Actions
 
         public Client(string ip, int prt)
@@ -23,9 +23,13 @@ namespace FinalYearProject
             connect(ip, prt); 
         }
 
-        public Client (bool local)
+        public Client (bool local, World world, int delay)
         {
             this.local = local;
+            this.delay = delay;
+            players.Add(new ServerPlayer(0, 0, null));
+            players[0].setX(world.getPlayerPos().Item1);
+            players[0].setY(world.getPlayerPos().Item2);
         }
 
         public void connect(string ip, int prt)
@@ -54,7 +58,7 @@ namespace FinalYearProject
                     switch (message.MessageType)
                     {
                         case NetIncomingMessageType.Data:
-                            // handle server messages
+                            // Handle server messages
                             var data = message.ReadString();
                             if (data.Length == 1)
                             {
@@ -64,11 +68,30 @@ namespace FinalYearProject
                             {
                                 string[] mess = data.Split('/');
                                 string newID = mess[0];
-                                string newX = mess[1];
-                                string newY = mess[2];
+                                int newX = Int32.Parse(mess[1]);
+                                int newY = Int32.Parse(mess[2]);
                                 if (ID == newID)
                                 {
-                                    pos = new Tuple<int, int>(Int32.Parse(newX), Int32.Parse(newY));
+                                    pos = new Tuple<int, int>(newX, newY);
+                                }
+                                else
+                                {
+                                    bool newP = true;
+                                    for(int i = 0; i < players.Count; i++)
+                                    {
+                                        if(newID == players[i].getID())
+                                        {
+                                            newP = false;
+                                            players[i].setX(newX);
+                                            players[i].setY(newY);
+                                            players[i].updateEffect(newX);
+                                        }
+                                    }
+                                    if (newP)
+                                    {
+                                        players.Add(new ServerPlayer(newX, newY, null));
+                                        players[(players.Count - 1)].setID(newID);
+                                    }
                                 }
                             }
                             break;
@@ -79,6 +102,7 @@ namespace FinalYearProject
 
                         default:
                             Console.WriteLine("Unhandled message with type: " + message.MessageType);
+                            Console.WriteLine(message.ReadString());
                             break;
                     }
                 }
@@ -93,15 +117,28 @@ namespace FinalYearProject
                     // Process action
                     if (actions.Count > 0)
                     {
-                        pos = Logic.actionTree(localPlayer, world, processAction());
+                        pos = Logic.actionTree(players[0], world, processAction());
                     }
                     else
                     {
-                        pos = new Tuple<int, int>(localPlayer.getX(), localPlayer.getY());
+                        pos = new Tuple<int, int>(players[0].getX(), players[0].getY());
                     }
-                    pos = Logic.update(localPlayer, pos, world);
-                    localPlayer.setX(pos.Item1);
-                    localPlayer.setY(pos.Item2);
+                    if (world.checkColliding(pos.Item1, pos.Item2, players[0].getHeight(), players[0].getWidth()) == 5)
+                    {
+                        Tuple<int, int> originalPos = world.getPlayerPos();
+                        for (int i = 0; i < players.Count; i++)
+                        {
+                            players[0].setX(originalPos.Item1);
+                            players[0].setY(originalPos.Item2);
+                        }
+                    }
+                    else
+                    {
+                        pos = Logic.update(players[0], pos, world);
+                        players[0].setX(pos.Item1);
+                        players[0].setY(pos.Item2);
+                        players[0].updateEffect(pos.Item1);
+                    }
                 }
             }
             return pos;
@@ -136,9 +173,9 @@ namespace FinalYearProject
             return action;
         }
 
-        public ServerPlayer getPlayer()
+        public List<ServerPlayer> getPlayers()
         {
-            return localPlayer;
+            return players;
         }
     }
 }

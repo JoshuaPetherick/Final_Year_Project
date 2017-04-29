@@ -2,7 +2,7 @@
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FinalYearProject.Tests
+namespace Anti_Latency
 {
     [TestClass]
     public class TestTechnique
@@ -11,9 +11,10 @@ namespace FinalYearProject.Tests
         public void doesClientSidePredictionUpdate()
         {
             World world = new World();
+            world.setPlayerPos(new Tuple<int, int>(0, 0));
             Player player = new Player(10, 10);
             Technique technique = new ClientSidePrediction();
-            technique.update(new Client(true), player, world, "7");
+            technique.update(new Client(true, world, 0), player, world, "7");
 
             string expected = "7";
             string result = technique.getLastAction();
@@ -24,9 +25,10 @@ namespace FinalYearProject.Tests
         public void doesClientSidePredictionProcess()
         {
             World world = new World();
+            world.setPlayerPos(new Tuple<int, int>(0, 0));
             Player player = new Player(0, 0);
             Technique technique = new ClientSidePrediction();
-            Client clnt = new Client(true);
+            Client clnt = new Client(true, world, 0);
 
             technique.update(clnt, player, world, "1");
             Thread.Sleep(1000); // Wait for packet to be recieved
@@ -40,9 +42,10 @@ namespace FinalYearProject.Tests
         public void doesServerReconcilliationUpdate()
         {
             World world = new World();
+            world.setPlayerPos(new Tuple<int, int>(0, 0));
             Player player = new Player(10, 10);
             Technique technique = new ServerReconcilliation();
-            technique.update(new Client(true), player, world, "7");
+            technique.update(new Client(true, world, 0), player, world, "7");
 
             string expected = "7";
             string result = technique.getLastAction();
@@ -53,9 +56,10 @@ namespace FinalYearProject.Tests
         public void doesServerReconcilliationProcess()
         {
             World world = new World();
+            world.setPlayerPos(new Tuple<int, int>(0, 0));
             Player player = new Player(0, 0);
             Technique technique = new ServerReconcilliation();
-            Client clnt = new Client(true);
+            Client clnt = new Client(true, world, 0);
 
             technique.update(clnt, player, world, "1");
             Thread.Sleep(1000); // Wait for packet to be recieved

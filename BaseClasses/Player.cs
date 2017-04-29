@@ -2,14 +2,15 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class Player
     {
         Client clnt;
+        Technique technique;
         private bool input = true;
-        Technique technique = new ServerReconcilliation();
 
         private int x;
         private int y;
@@ -26,6 +27,24 @@ namespace FinalYearProject
         {
             setX(x);
             setY(y);
+        }
+
+        public void setTechnique(int type)
+        {
+            switch(type)
+            {
+                case 1:
+                    technique = new ClientSidePrediction();
+                    break;
+
+                case 2:
+                    technique = new ServerReconcilliation();
+                    break;
+
+                default:
+                    technique = new BlankTechnique();
+                    break;
+            }
         }
 
         public void setX(int x)
@@ -118,9 +137,9 @@ namespace FinalYearProject
         /*
             Connect to a server
         */
-        public void connectClient(bool local)
+        public void connectClient(bool local, World world, int delay)
         {
-            clnt = new Client(local);
+            clnt = new Client(local, world, delay);
         }
 
         public void drawPlayer(SpriteBatch spriteBatch)
@@ -132,9 +151,13 @@ namespace FinalYearProject
 
         public void drawClient(SpriteBatch spriteBatch)
         {
-            ServerPlayer cPlayer = clnt.getPlayer();
-            spriteBatch.Draw(texture, new Rectangle(cPlayer.getX(), cPlayer.getY(), PREFWIDTH, PREFHEIGHT), null,
-                new Color(255, 255, 255, 0.5f), 0.0f, new Vector2(0, 0), effect, 0.0f);
+            List<ServerPlayer> temp = clnt.getPlayers();
+            for (int i = 0; i < temp.Count; i++)
+            {
+                ServerPlayer cPlayer = temp[i];
+                spriteBatch.Draw(texture, new Rectangle(cPlayer.getX(), cPlayer.getY(), PREFWIDTH, PREFHEIGHT), null,
+                    new Color(255, 255, 255, 0.5f), 0.0f, new Vector2(0, 0), cPlayer.getEffect(), 0.0f);
+            }
         }
     }
 }

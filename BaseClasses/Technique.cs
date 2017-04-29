@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     abstract class Technique
     {

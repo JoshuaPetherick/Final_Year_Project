@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Lidgren.Network;
 //https://github.com/lidgren/lidgren-network-gen3
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class Server
     {
@@ -33,8 +33,8 @@ namespace FinalYearProject
         }
 
         // Messages from clients will be structure as 2 bytes (e.g. 11, 12, 21, etc)
-        // First bit = players ID (Each player will be assigned an ID by the server)
-        // Second bit = player action/state
+        // First = players ID (Each player will be assigned an ID by the server)
+        // Second = player action/state
 
         public void checkMessages()
         {
@@ -132,9 +132,53 @@ namespace FinalYearProject
         {
             Tuple<int, int> pos = null;
             pos = Logic.actionTree(p, world, action);
-            pos = Logic.update(p, pos, world);
             p.setX(pos.Item1);
             p.setY(pos.Item2);
+        }
+
+        public void update()
+        {
+            DateTime fpsDelay = DateTime.Now;
+            bool goalHit = false;
+            while (server.Status == NetPeerStatus.Running)
+            {
+                checkMessages();
+                if (DateTime.Now > fpsDelay)
+                {
+                    // Applies update logic to players (Such as gravity)
+                    for (int i = 0; i < players.Count; i++)
+                    {
+                        Tuple<int, int> currPos = new Tuple<int, int>(players[i].getX(), players[i].getY());
+                        Tuple<int, int> pos = Logic.update(players[i], currPos, world);
+                        players[i].setX(pos.Item1);
+                        players[i].setY(pos.Item2);
+                        // Check if has touched goal
+                        if (world.checkColliding(players[i].getX(), players[i].getY(), players[i].getHeight(), players[i].getWidth()) == 5)
+                        {
+                            goalHit = true;
+                        }
+                        else if (currPos.Item1 != pos.Item1 || currPos.Item2 != pos.Item2)
+                        {
+                            string send = players[i].getID() + "/" + players[i].getX() + "/" + players[i].getY();
+                            sendMessages(send, null); // Send updated pos to all players
+                        }
+                    }
+                    // Goal touched! Reset positions for next round!
+                    if (goalHit)
+                    {
+                        Tuple<int, int> originalPos = world.getPlayerPos();
+                        for (int i = 0; i < players.Count; i++)
+                        {
+                            players[i].setX(originalPos.Item1);
+                            players[i].setY(originalPos.Item2);
+                            string send = players[i].getID() + "/" + players[i].getX() + "/" + players[i].getY();
+                            sendMessages(send, null); // Send updated pos to all players
+                        }
+                        goalHit = false;
+                    }
+                    fpsDelay = DateTime.Now.AddMilliseconds(20);
+                }
+            }
         }
 
         public int serverStatus()

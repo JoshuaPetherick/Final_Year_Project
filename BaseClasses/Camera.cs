@@ -1,14 +1,16 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 // http://www.dylanwilson.net/implementing-a-2d-camera-in-monogame 
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class Camera
     {
         private Viewport viewport;
 
         private int x = 0;
+        private int window_dist = 200;
         public float Zoom = 1.0f;
         public float Rotation = 0;
         public Vector2 Origin { get; set; }
@@ -26,15 +28,33 @@ namespace FinalYearProject
         {
             if (x != px)
             {
-                int diffX = x - px;
-                Position -= new Vector2((60 * diffX), 0) * deltaTime;
-                // Don't move camera off world setting
-                if (Position.X < 0 || Position.X >= (world.getWorldLength() - viewport.Width))
-                { 
-                    Position += new Vector2((60 * diffX), 0) * deltaTime;
+                if (x - window_dist < 0)
+                {
+                    Position = new Vector2(0, 0);
+                }
+                else if (x - window_dist > (world.getWorldLength() - viewport.Width))
+                {
+                    Position = new Vector2((world.getWorldLength() - viewport.Width), 0);
+                }
+                else
+                {
+                    Position = new Vector2((x - window_dist), 0);
                 }
                 x = px;
             }
+        }
+
+        public int getX(World world)
+        {
+            if (x - window_dist < 0)
+            {
+                return 0;
+            }
+            else if (x - window_dist > (world.getWorldLength() - viewport.Width))
+            {
+                return (world.getWorldLength() - viewport.Width);
+            }
+            return (x - window_dist);
         }
 
         public Matrix GetViewMatrix()

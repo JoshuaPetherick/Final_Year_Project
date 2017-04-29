@@ -1,11 +1,12 @@
 ﻿using System;
 
-namespace FinalYearProject
+namespace Anti_Latency
 {
     class Logic
     {
-        private static int speed = 2;
+        public static int speed = 2;
         private static int gravity = 1;
+        private static int jumpHeight = 60;
 
         // Checks collsion, return what side it's colliding with (If it's colliding)
         public static int axisAlignedBoundingBox(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)
@@ -80,9 +81,11 @@ namespace FinalYearProject
                     break;
 
                 case "3":
-                    // Jump - Needs player to be passed
-                    player.jumpPoint = y - 50;
-                    player.state = ServerPlayer.playerStates.JUMPING;
+                    if (player.state == ServerPlayer.playerStates.IDLE)
+                    {
+                        player.jumpPoint = y - jumpHeight;
+                        player.state = ServerPlayer.playerStates.JUMPING;
+                    }
                     break;
             }
             return new Tuple<int, int>(x, y);
@@ -122,9 +125,11 @@ namespace FinalYearProject
                     break;
 
                 case "3":
-                    // Jump - Needs player to be passed
-                    player.jumpPoint = y - 50;
-                    player.state = Player.playerStates.JUMPING;
+                    if (player.state == Player.playerStates.IDLE)
+                    {
+                        player.jumpPoint = y - jumpHeight;
+                        player.state = Player.playerStates.JUMPING;
+                    }
                     break;
             }
             return new Tuple<int, int>(x, y);
@@ -162,6 +167,12 @@ namespace FinalYearProject
                         player.state = ServerPlayer.playerStates.IDLE;
                     }
                     break;
+            }
+            // If fallen off screen
+            if (y > Game1.GAMEHEIGHT)
+            {
+                x = world.getPlayerPos().Item1;
+                y = world.getPlayerPos().Item2;
             }
             return new Tuple<int, int>(x, y);
         }
@@ -202,6 +213,12 @@ namespace FinalYearProject
                         player.state = Player.playerStates.IDLE;
                     }
                     break;
+            }
+            // If fallen off screen
+            if (y > Game1.GAMEHEIGHT)
+            {
+                x = world.getPlayerPos().Item1;
+                y = world.getPlayerPos().Item2;
             }
             return new Tuple<int, int>(x, y);
         }
