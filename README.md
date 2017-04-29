@@ -1,5 +1,4 @@
 # Anti-Latency
-Created by Joshua Petherick
 ## What is Anti-Latency?
 Anti-Latency is a multiplayer game, made using the Monogame framework, which allows users to simulate and compare the latency techniques Client-side predicition and Server Reconcilliation.
 
@@ -14,3 +13,9 @@ This was created using Visual Studio 2015 (Community edition) and Monogame frame
 
 - Visual Studio 2015 (Community)  https://www.visualstudio.com/downloads/		
 - Monogame v3.4 or higher	  http://www.monogame.net/downloads/
+
+## Documentation
+The documentation for this project can be found at: https://joshuapetherick.github.io/Final_Year_Project/Documentation/Doxygen/html/index.html
+
+
+Created by Joshua Petherick
