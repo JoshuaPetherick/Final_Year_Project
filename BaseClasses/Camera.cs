@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Anti_Latency
 {
+    /// Handles on-screen positioning based on Player position
     class Camera
     {
         private Viewport viewport;
@@ -24,6 +25,7 @@ namespace Anti_Latency
             Position = Vector2.Zero;
         }
 
+        /// Moves camera based off player position
         public void update(int px, int py, float deltaTime, World world)
         {
             if (x != px)
@@ -44,6 +46,7 @@ namespace Anti_Latency
             }
         }
 
+        /// Returns cameras X position
         public int getX(World world)
         {
             if (x - window_dist < 0)
@@ -57,6 +60,7 @@ namespace Anti_Latency
             return (x - window_dist);
         }
 
+        /// Pass across camera matrix, based off camera position and origin point
         public Matrix GetViewMatrix()
         {
             return Matrix.CreateTranslation(new Vector3(-Position, 0.0f)) *

@@ -83,17 +83,21 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_client_side_p
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_client_side_prediction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.ClientSidePrediction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Client-side Prediction technique.  
+ <a href="class_anti___latency_1_1_client_side_prediction.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Anti_Latency.ClientSidePrediction:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_anti___latency_1_1_client_side_prediction__inherit__graph.png" border="0" usemap="#_anti___latency_8_client_side_prediction_inherit__map" alt="Inheritance graph"/></div>
 <map name="_anti___latency_8_client_side_prediction_inherit__map" id="_anti___latency_8_client_side_prediction_inherit__map">
-<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="{Technique\n||+ update()\l+ process()\l+ getLastAction()\l}" alt="" coords="53,5,176,112"/>
+<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="53,5,176,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -101,22 +105,31 @@ Collaboration diagram for Anti_Latency.ClientSidePrediction:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_anti___latency_1_1_client_side_prediction__coll__graph.png" border="0" usemap="#_anti___latency_8_client_side_prediction_coll__map" alt="Collaboration graph"/></div>
 <map name="_anti___latency_8_client_side_prediction_coll__map" id="_anti___latency_8_client_side_prediction_coll__map">
-<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="{Technique\n||+ update()\l+ process()\l+ getLastAction()\l}" alt="" coords="53,5,176,112"/>
+<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="53,5,176,112"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a738b5e9ee38176be3dcf509cb88ab314"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client_side_prediction.html#a738b5e9ee38176be3dcf509cb88ab314">update</a> (<a class="el" href="class_anti___latency_1_1_client.html">Client</a> clint, <a class="el" href="class_anti___latency_1_1_player.html">Player</a> player, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, string action)</td></tr>
+<tr class="memdesc:a738b5e9ee38176be3dcf509cb88ab314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieve input from player. Process and return expected position.  <a href="#a738b5e9ee38176be3dcf509cb88ab314">More...</a><br /></td></tr>
 <tr class="separator:a738b5e9ee38176be3dcf509cb88ab314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7100c104d6b2a657e1cc739fd763da5"><td class="memItemLeft" align="right" valign="top">override Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client_side_prediction.html#ad7100c104d6b2a657e1cc739fd763da5">process</a> (<a class="el" href="class_anti___latency_1_1_client.html">Client</a> clnt, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:ad7100c104d6b2a657e1cc739fd763da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieve input from server. Return result.  <a href="#ad7100c104d6b2a657e1cc739fd763da5">More...</a><br /></td></tr>
 <tr class="separator:ad7100c104d6b2a657e1cc739fd763da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa492278e4cfbec32ba8fe9b10546f9d0"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client_side_prediction.html#aa492278e4cfbec32ba8fe9b10546f9d0">getLastAction</a> ()</td></tr>
+<tr class="memdesc:aa492278e4cfbec32ba8fe9b10546f9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created for testing purposes.  <a href="#aa492278e4cfbec32ba8fe9b10546f9d0">More...</a><br /></td></tr>
 <tr class="separator:aa492278e4cfbec32ba8fe9b10546f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8e0a7da9c0b921064e2e6a2be7826e63"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client_side_prediction.html#a8e0a7da9c0b921064e2e6a2be7826e63">lastAction</a></td></tr>
+<tr class="separator:a8e0a7da9c0b921064e2e6a2be7826e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00005">5</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
+<div class="textblock"><p>Client-side Prediction technique. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00006">6</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa492278e4cfbec32ba8fe9b10546f9d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa492278e4cfbec32ba8fe9b10546f9d0">&#9670;&nbsp;</a></span>getLastAction()</h2>
@@ -141,9 +154,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Created for testing purposes. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#a9d319653fbe1db556f7e74c05c3ad37d">Anti_Latency.Technique</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00030">30</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00034">34</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
 
 </div>
 </div>
@@ -181,9 +196,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Recieve input from server. Return result. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#afe7d616f1e5699c52863d4ceb67a2cef">Anti_Latency.Technique</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00025">25</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00028">28</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
 
 </div>
 </div>
@@ -233,14 +250,41 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Recieve input from player. Process and return expected position. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#ac7317e4c1631c49273d5371791cb6a3c">Anti_Latency.Technique</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00009">9</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00011">11</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8e0a7da9c0b921064e2e6a2be7826e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0a7da9c0b921064e2e6a2be7826e63">&#9670;&nbsp;</a></span>lastAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Anti_Latency.ClientSidePrediction.lastAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_side_prediction_8cs_source.html#l00008">8</a> of file <a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a></li>
+<li>BaseClasses/<a class="el" href="_client_side_prediction_8cs_source.html">ClientSidePrediction.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

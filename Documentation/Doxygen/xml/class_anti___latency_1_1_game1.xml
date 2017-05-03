@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="25" column="1" bodyfile="Game1.cs" bodystart="25" bodyend="31"/>
+        <location file="BaseClasses/Game1.cs" line="23" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="23" bodyend="29"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="17" column="1" bodyfile="Game1.cs" bodystart="17" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="15" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a49af3872186c5e844be98bafacbd5301" prot="private" static="no" mutable="no">
         <type>GraphicsDeviceManager</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="18" column="1" bodyfile="Game1.cs" bodystart="18" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="16" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1aef4624c46c694602dcd7449591803aa8" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="22" column="1" bodyfile="Game1.cs" bodystart="22" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="20" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1acd817f6c2fc735afba4830feb2a97a5f" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -103,21 +103,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="23" column="1" bodyfile="Game1.cs" bodystart="23" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="21" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a53be5341d437d52e89968a2ee5989eb0" prot="private" static="no" mutable="no">
-        <type>gameStates</type>
+        <type><ref refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258a" kindref="member">gameStates</ref></type>
         <definition>gameStates Anti_Latency.Game1.state</definition>
         <argsstring></argsstring>
         <name>state</name>
-        <initializer>= gameStates.MAINMENU</initializer>
+        <initializer>= <ref refid="class_anti___latency_1_1_game1_1a3e91b15094da4cb2e8bd57a5ec9e258aa3287971e79b4dca11067ed287847c1e6" kindref="member">gameStates.MAINMENU</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="32" column="1" bodyfile="Game1.cs" bodystart="32" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="30" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a415fc1f1b03066d642ba997b57a2f563" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_anti___latency_1_1_button" kindref="compound">Button</ref> &gt;</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="34" column="1" bodyfile="Game1.cs" bodystart="34" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="32" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a4a17ddff061e3650af160910651769ba" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref></type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="35" column="1" bodyfile="Game1.cs" bodystart="35" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="33" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a83ddd4b49f0a5cbf883000ae3c8044f7" prot="private" static="no" mutable="no">
         <type>Thread</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="36" column="1" bodyfile="Game1.cs" bodystart="36" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="34" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a97cdc4f04b56d01b4a2c09c4d79de1c4" prot="private" static="no" mutable="no">
         <type>SpriteFont</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="37" column="1" bodyfile="Game1.cs" bodystart="37" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="35" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1ab71b30ffbff12cd294069be290b81643" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref></type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="38" column="1" bodyfile="Game1.cs" bodystart="38" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="36" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a22a941eb0495bfd8bc7457c08aad54d1" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_camera" kindref="compound">Camera</ref></type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="39" column="1" bodyfile="Game1.cs" bodystart="39" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="37" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a680272d0766ce6030ff3ff34a88d2665" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref></type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="40" column="1" bodyfile="Game1.cs" bodystart="40" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="38" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a131a06dc67f2881e17fe923aedb02055" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="41" column="1" bodyfile="Game1.cs" bodystart="41" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="39" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1ac9422f8a010953c1cba4c9465e7f3e0a" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="42" column="1" bodyfile="Game1.cs" bodystart="42" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="40" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a4cea6d9612f86382a4d11e5dd0b9873e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="43" column="1" bodyfile="Game1.cs" bodystart="43" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="41" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="20" column="1" bodyfile="Game1.cs" bodystart="20" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="18" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_game1_1a25667a4bc7f00edbfc697d945453b90a" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="21" column="1" bodyfile="Game1.cs" bodystart="21" bodyend="-1"/>
+        <location file="BaseClasses/Game1.cs" line="19" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="45" column="1" bodyfile="Game1.cs" bodystart="45" bodyend="49"/>
+        <location file="BaseClasses/Game1.cs" line="43" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="43" bodyend="47"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="52" column="1" bodyfile="Game1.cs" bodystart="52" bodyend="59"/>
+        <location file="BaseClasses/Game1.cs" line="50" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="50" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_game1_1a3570a33adc5b6c2304f3ecfcc93c652e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="62" column="1" bodyfile="Game1.cs" bodystart="62" bodyend="125"/>
+        <location file="BaseClasses/Game1.cs" line="60" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="60" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_game1_1a3db1288a4ca516ea755691e82c615047" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="128" column="1" bodyfile="Game1.cs" bodystart="128" bodyend="135"/>
+        <location file="BaseClasses/Game1.cs" line="126" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="126" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_game1_1abf2370807257ea96f90985976dbcb01f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="138" column="1" bodyfile="Game1.cs" bodystart="138" bodyend="233"/>
+        <location file="BaseClasses/Game1.cs" line="136" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="136" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_game1_1a25fdb353eedc34da2287eab76fdaaf37" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -366,24 +366,16 @@
           <declname>gameTime</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Called every frame to draw the contents of the objects (Based on state) </para>        </briefdescription>
         <detaileddescription>
-<para>Called every frame to draw the contents of the objects (Based on state) <parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>gameTime</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Provides a snapshot of timing values.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Game1.cs" line="237" column="1" bodyfile="Game1.cs" bodystart="237" bodyend="266"/>
+        <location file="BaseClasses/Game1.cs" line="234" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="234" bodyend="263"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>This is the main type for your game. </para>    </briefdescription>
+<para>The primary class for game. Holds and manages all the crucial elements of the game. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -398,6 +390,39 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="26">
+        <label>Anti_Latency.Server</label>
+        <link refid="class_anti___latency_1_1_server"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-world</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Anti_Latency.Goal</label>
+        <link refid="class_anti___latency_1_1_goal"/>
+      </node>
+      <node id="25">
+        <label>Anti_Latency.Camera</label>
+        <link refid="class_anti___latency_1_1_camera"/>
+      </node>
+      <node id="23">
+        <label>Anti_Latency.Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+      <node id="22">
+        <label>Anti_Latency.Player</label>
+        <link refid="class_anti___latency_1_1_player"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>-technique</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>-clnt</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Anti_Latency.Client</label>
+        <link refid="class_anti___latency_1_1_client"/>
+      </node>
       <node id="19">
         <label>Game</label>
       </node>
@@ -406,9 +431,28 @@
         <link refid="class_anti___latency_1_1_game1"/>
         <childnode refid="19" relation="public-inheritance">
         </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-world</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>-player</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>-camera</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-server</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Anti_Latency.World</label>
+        <link refid="class_anti___latency_1_1_world"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>-goal</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="Game1.cs" line="16" column="1" bodyfile="Game1.cs" bodystart="15" bodyend="267"/>
+    <location file="BaseClasses/Game1.cs" line="14" column="1" bodyfile="BaseClasses/Game1.cs" bodystart="13" bodyend="264"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_game1_1a131a06dc67f2881e17fe923aedb02055" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>background</name></member>
       <member refid="class_anti___latency_1_1_game1_1a415fc1f1b03066d642ba997b57a2f563" prot="private" virt="non-virtual"><scope>Anti_Latency::Game1</scope><name>buttons</name></member>

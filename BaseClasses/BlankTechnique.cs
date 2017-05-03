@@ -2,6 +2,7 @@
 
 namespace Anti_Latency
 {
+    /// Empty technique used when no other technique selected
     class BlankTechnique : Technique
     {
         private string lastAction;

@@ -1,12 +1,12 @@
 # Anti-Latency
 ## What is Anti-Latency?
-Anti-Latency is a multiplayer game, made using the Monogame framework, which allows users to simulate and compare the latency techniques Client-side predicition and Server Reconcilliation.
+Anti-Latency is a multiplayer game, created using the Monogame framework, which allows users to simulate and compare the latency techniques Client-side predicition and Server Reconcilliation.
 
 ## What is a Latency Technique?
-A latency technique is an algorithm designed to handle or mask the delay caused by packet latency between the server and the client. Without these techniques users would experience the serious issues that latency causes.
+A latency technique is an algorithm designed to handle or mask the delay caused by packet latency between the server and the client (Or client to client if using a Peer-to-Peer network). Without these techniques users would experience the serious issues that latency causes.
 
 ## How does it simulate them?
-A set-able (Millisecond) timer has been created to allow users to measure the severance that a certain delay causes. It also allows users to create a local server, that other users can connect to, and see if they can feel the effects that latency has on their actual multiplayer experience (If they feel any at all).
+A set-able (Millisecond) timer has been created to allow users to measure the severance that a certain delay causes. The game also allows users to create a local server which other users can connect to and see if they can feel the effect that latency has on an actual multiplayer session.
 
 ## Requirements
 This was created using Visual Studio 2015 (Community edition) and Monogame framework (v3.4). These can be downloaded from:

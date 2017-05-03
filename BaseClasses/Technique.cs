@@ -2,6 +2,7 @@
 
 namespace Anti_Latency
 {
+    /// Abstract class designed to be inhertied by actual techniques
     abstract class Technique
     {
         abstract public void update(Client clnt, Player player, World world, string action);

@@ -17,6 +17,11 @@ var class_anti___latency_1_1_server_player =
     [ "setX", "class_anti___latency_1_1_server_player.html#ad7985bdeebd2aeb2d1eb1400c3625ce8", null ],
     [ "setY", "class_anti___latency_1_1_server_player.html#a7faf769dd2c99f00bb7a8cad7c97c2ac", null ],
     [ "updateEffect", "class_anti___latency_1_1_server_player.html#a755ae7b2dcfb98820929365dc35407ee", null ],
+    [ "effect", "class_anti___latency_1_1_server_player.html#a45d3cedd64645921b7188f20418a840c", null ],
+    [ "ID", "class_anti___latency_1_1_server_player.html#a2d4c263870baab92d3ee98e61df7a8f2", null ],
     [ "jumpPoint", "class_anti___latency_1_1_server_player.html#a6e91348d7dfa10f005201d7c72eb045c", null ],
-    [ "state", "class_anti___latency_1_1_server_player.html#abbd4e7e3928eab2cb486aa75a19c1936", null ]
+    [ "recipient", "class_anti___latency_1_1_server_player.html#a0147a125c2a129848c0449b3fdd2e341", null ],
+    [ "state", "class_anti___latency_1_1_server_player.html#abbd4e7e3928eab2cb486aa75a19c1936", null ],
+    [ "x", "class_anti___latency_1_1_server_player.html#a73128e42aaadf63a4782ef0145e37852", null ],
+    [ "y", "class_anti___latency_1_1_server_player.html#a17803ca57081756fba2ef2c8f2414f57", null ]
 ];

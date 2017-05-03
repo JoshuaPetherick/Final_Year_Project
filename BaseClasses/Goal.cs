@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Anti_Latency
 {
+    /// Basic goal object 
     class Goal
     {
         public int x;

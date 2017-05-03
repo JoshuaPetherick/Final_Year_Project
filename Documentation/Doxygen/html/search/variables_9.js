@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x',['x',['../class_anti___latency_1_1_floor.html#a4a64d8ca77fc2010deca4a951127ae7f',1,'Anti_Latency.Floor.x()'],['../class_anti___latency_1_1_goal.html#a0ace419b34b9629fb627a7169d04ae30',1,'Anti_Latency.Goal.x()']]]
+  ['jumpheight',['jumpHeight',['../class_anti___latency_1_1_logic.html#aebd17b71bfe07f4b88c69a51b4d5f42e',1,'Anti_Latency::Logic']]],
+  ['jumppoint',['jumpPoint',['../class_anti___latency_1_1_player.html#ab6e64705154e7fb2a6be13d313254956',1,'Anti_Latency.Player.jumpPoint()'],['../class_anti___latency_1_1_server_player.html#a6e91348d7dfa10f005201d7c72eb045c',1,'Anti_Latency.ServerPlayer.jumpPoint()']]]
 ];

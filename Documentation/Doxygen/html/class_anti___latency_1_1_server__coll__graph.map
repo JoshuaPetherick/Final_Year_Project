@@ -1,2 +1,4 @@
 <map id="Anti_Latency.Server" name="Anti_Latency.Server">
+<area shape="rect" id="node2" href="$class_anti___latency_1_1_world.html" title="World object designed to manage game world (Floor &amp; Goal) " alt="" coords="7,233,143,516"/>
+<area shape="rect" id="node3" href="$class_anti___latency_1_1_goal.html" title="Basic goal object. " alt="" coords="10,5,139,171"/>
 </map>

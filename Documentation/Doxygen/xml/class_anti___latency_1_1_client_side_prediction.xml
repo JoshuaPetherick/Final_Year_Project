@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ClientSidePrediction.cs" line="7" column="1" bodyfile="ClientSidePrediction.cs" bodystart="7" bodyend="-1"/>
+        <location file="BaseClasses/ClientSidePrediction.cs" line="8" column="1" bodyfile="BaseClasses/ClientSidePrediction.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,12 +42,12 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Recieve input from player. Process and return expected position. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ClientSidePrediction.cs" line="9" column="1" bodyfile="ClientSidePrediction.cs" bodystart="9" bodyend="23"/>
+        <location file="BaseClasses/ClientSidePrediction.cs" line="11" column="1" bodyfile="BaseClasses/ClientSidePrediction.cs" bodystart="11" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_client_side_prediction_1ad7100c104d6b2a657e1cc739fd763da5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override Tuple&lt; int, int &gt;</type>
@@ -64,12 +64,12 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Recieve input from server. Return result. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ClientSidePrediction.cs" line="25" column="1" bodyfile="ClientSidePrediction.cs" bodystart="25" bodyend="28"/>
+        <location file="BaseClasses/ClientSidePrediction.cs" line="28" column="1" bodyfile="BaseClasses/ClientSidePrediction.cs" bodystart="28" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override string</type>
@@ -78,16 +78,16 @@
         <name>getLastAction</name>
         <reimplements refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d">getLastAction</reimplements>
         <briefdescription>
-        </briefdescription>
+<para>Created for testing purposes. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ClientSidePrediction.cs" line="30" column="1" bodyfile="ClientSidePrediction.cs" bodystart="30" bodyend="33"/>
+        <location file="BaseClasses/ClientSidePrediction.cs" line="34" column="1" bodyfile="BaseClasses/ClientSidePrediction.cs" bodystart="34" bodyend="37"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Client-side Prediction technique. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -114,7 +114,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="ClientSidePrediction.cs" line="6" column="1" bodyfile="ClientSidePrediction.cs" bodystart="5" bodyend="34"/>
+    <location file="BaseClasses/ClientSidePrediction.cs" line="7" column="1" bodyfile="BaseClasses/ClientSidePrediction.cs" bodystart="6" bodyend="38"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_client_side_prediction_1aa492278e4cfbec32ba8fe9b10546f9d0" prot="public" virt="virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>getLastAction</name></member>
       <member refid="class_anti___latency_1_1_client_side_prediction_1a8e0a7da9c0b921064e2e6a2be7826e63" prot="private" virt="non-virtual"><scope>Anti_Latency::ClientSidePrediction</scope><name>lastAction</name></member>

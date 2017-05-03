@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['height',['HEIGHT',['../class_anti___latency_1_1_floor.html#a14e9b6f3993c1a2e6e704e0dde8d5dde',1,'Anti_Latency.Floor.HEIGHT()'],['../class_anti___latency_1_1_goal.html#a675307c7f27e68aa02c121e9e7ca3d4f',1,'Anti_Latency.Goal.HEIGHT()']]]
+  ['background',['background',['../class_anti___latency_1_1_game1.html#a131a06dc67f2881e17fe923aedb02055',1,'Anti_Latency::Game1']]],
+  ['buttons',['buttons',['../class_anti___latency_1_1_game1.html#a415fc1f1b03066d642ba997b57a2f563',1,'Anti_Latency::Game1']]]
 ];

@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Button.cs" line="1" column="1"/>
+    <location file="BaseClasses/Button.cs" line="1" column="1"/>
   </compounddef>
 </doxygen>

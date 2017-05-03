@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace Anti_Latency
 {
+    /// Lidgren client class designed to communicate with Server 
     class Client
     {
         public string ID = "0"; // ID assigned by Server
@@ -17,12 +18,14 @@ namespace Anti_Latency
         private List<ServerPlayer> players = new List<ServerPlayer>();
         private List<string> actions = new List<string>(); // Array of Actions
 
+        /// (Server) Pass across ip address and port 
         public Client(string ip, int prt)
         {
             local = false;
             connect(ip, prt); 
         }
 
+        /// (Local) Pass world object and create test player
         public Client (bool local, World world, int delay)
         {
             this.local = local;
@@ -32,6 +35,7 @@ namespace Anti_Latency
             players[0].setY(world.getPlayerPos().Item2);
         }
 
+        /// Connect to server
         public void connect(string ip, int prt)
         {
             config = new NetPeerConfiguration("FYP");
@@ -47,6 +51,7 @@ namespace Anti_Latency
             }
         }
 
+        /// (Server) Check if recieved messages from server. (Local) If past delay time then run game logic and return updated logic
         public Tuple<int, int> getMessages(World world)
         {
             Tuple<int, int> pos = null;
@@ -82,9 +87,9 @@ namespace Anti_Latency
                                         if(newID == players[i].getID())
                                         {
                                             newP = false;
-                                            players[i].setX(newX);
-                                            players[i].setY(newY);
                                             players[i].updateEffect(newX);
+                                            players[i].setX(newX);
+                                            players[i].setY(newY); 
                                         }
                                     }
                                     if (newP)
@@ -135,15 +140,16 @@ namespace Anti_Latency
                     else
                     {
                         pos = Logic.update(players[0], pos, world);
+                        players[0].updateEffect(pos.Item1);
                         players[0].setX(pos.Item1);
                         players[0].setY(pos.Item2);
-                        players[0].updateEffect(pos.Item1);
                     }
                 }
             }
             return pos;
         }
 
+        /// (Server) Send message to server. (Local) Only store action in actions array
         public void sendMessages(string action)
         {
             if (!local)
@@ -156,16 +162,19 @@ namespace Anti_Latency
             actions.Add(action);
         }
 
+        /// Return connection status
         public int getStatus()
         {
             return (int)client.ConnectionStatus;
         }
 
+        /// Return latest action
         public string getAction()
         {
             return actions[0];
         }
 
+        /// Created for testing purposes
         public string processAction()
         {
             string action = actions[0];
@@ -173,6 +182,7 @@ namespace Anti_Latency
             return action;
         }
 
+        /// (Server) Return array of connected players. (Local) Return test player
         public List<ServerPlayer> getPlayers()
         {
             return players;

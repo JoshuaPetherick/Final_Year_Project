@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Anti_Latency
 {
+    /// Player object used to represent connected server users
     class ServerPlayer
     {
         private string ID;
@@ -68,20 +69,22 @@ namespace Anti_Latency
         public SpriteEffects getEffect()
         {
             return effect;
-        }    
+        }
 
+        /// Flip player based on direction walking
         public void updateEffect(int x)
         {
-            if (this.x < x && effect == SpriteEffects.FlipHorizontally)
+            if (this.x < x)
             {
                 effect = SpriteEffects.None;
             }
-            else if (this.x > x && effect == SpriteEffects.None)
+            else if (this.x > x)
             {
                 effect = SpriteEffects.FlipHorizontally;
             }
         }
 
+        /// Pass across servers net client for packet messaging
         public NetConnection getRecipiant()
         {
             return recipient;

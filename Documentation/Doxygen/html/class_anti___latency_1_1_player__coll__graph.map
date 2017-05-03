@@ -1,2 +1,4 @@
 <map id="Anti_Latency.Player" name="Anti_Latency.Player">
+<area shape="rect" id="node2" href="$class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="5,101,167,207"/>
+<area shape="rect" id="node3" href="$class_anti___latency_1_1_client.html" title="Lidgren client class designed to communicate with Server. " alt="" coords="191,5,325,303"/>
 </map>

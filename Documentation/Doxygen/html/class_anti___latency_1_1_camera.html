@@ -85,11 +85,15 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_camera.html',
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.Camera Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles on-screen positioning based on <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a> position.  
+ <a href="class_anti___latency_1_1_camera.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Anti_Latency.Camera:</div>
 <div class="dyncontent">
@@ -100,13 +104,16 @@ Collaboration diagram for Anti_Latency.Camera:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a36def68756c3f269907d15ff1b9a0080"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a36def68756c3f269907d15ff1b9a0080">Camera</a> (Viewport viewport)</td></tr>
+<tr class="memitem:a36def68756c3f269907d15ff1b9a0080"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a36def68756c3f269907d15ff1b9a0080">Camera</a> (Viewport <a class="el" href="class_anti___latency_1_1_camera.html#a3e177aefc7a31f99707e44c661c13365">viewport</a>)</td></tr>
 <tr class="separator:a36def68756c3f269907d15ff1b9a0080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a723aa0bfa5e3149531438696b859725c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a723aa0bfa5e3149531438696b859725c">update</a> (int px, int py, float deltaTime, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:a723aa0bfa5e3149531438696b859725c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves camera based off player position.  <a href="#a723aa0bfa5e3149531438696b859725c">More...</a><br /></td></tr>
 <tr class="separator:a723aa0bfa5e3149531438696b859725c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b8817c8167cbbc457d1c07c0ecfd54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a24b8817c8167cbbc457d1c07c0ecfd54">getX</a> (<a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:a24b8817c8167cbbc457d1c07c0ecfd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns cameras X position.  <a href="#a24b8817c8167cbbc457d1c07c0ecfd54">More...</a><br /></td></tr>
 <tr class="separator:a24b8817c8167cbbc457d1c07c0ecfd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bdb28ebe9c3abc943fd5a38268845c8"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a5bdb28ebe9c3abc943fd5a38268845c8">GetViewMatrix</a> ()</td></tr>
+<tr class="memdesc:a5bdb28ebe9c3abc943fd5a38268845c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass across camera matrix, based off camera position and origin point.  <a href="#a5bdb28ebe9c3abc943fd5a38268845c8">More...</a><br /></td></tr>
 <tr class="separator:a5bdb28ebe9c3abc943fd5a38268845c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -122,10 +129,20 @@ Properties</h2></td></tr>
 <tr class="separator:ac31105fafc1d894243444542bf540306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb33758c2a26669d3d54be5ccff8b1b1"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#abb33758c2a26669d3d54be5ccff8b1b1">Position</a><code> [get, set]</code></td></tr>
 <tr class="separator:abb33758c2a26669d3d54be5ccff8b1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e177aefc7a31f99707e44c661c13365"><td class="memItemLeft" align="right" valign="top">Viewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a3e177aefc7a31f99707e44c661c13365">viewport</a></td></tr>
+<tr class="separator:a3e177aefc7a31f99707e44c661c13365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039dbb1bd31a5443baf8b56c881b4c21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a039dbb1bd31a5443baf8b56c881b4c21">x</a> = 0</td></tr>
+<tr class="separator:a039dbb1bd31a5443baf8b56c881b4c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ded2396986eaf1b37be1227b123c781"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_camera.html#a5ded2396986eaf1b37be1227b123c781">window_dist</a> = 200</td></tr>
+<tr class="separator:a5ded2396986eaf1b37be1227b123c781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00008">8</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<div class="textblock"><p>Handles on-screen positioning based on <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a> position. </p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00009">9</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a36def68756c3f269907d15ff1b9a0080"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36def68756c3f269907d15ff1b9a0080">&#9670;&nbsp;</a></span>Camera()</h2>
@@ -143,7 +160,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00019">19</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00020">20</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -163,7 +180,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00060">60</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p>Pass across camera matrix, based off camera position and origin point. </p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00064">64</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -183,7 +202,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00047">47</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p>Returns cameras X position. </p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00050">50</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -225,7 +246,9 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00027">27</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p>Moves camera based off player position. </p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00029">29</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -242,7 +265,79 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00015">15</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00016">16</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+
+</div>
+</div>
+<a id="a3e177aefc7a31f99707e44c661c13365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e177aefc7a31f99707e44c661c13365">&#9670;&nbsp;</a></span>viewport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Viewport Anti_Latency.Camera.viewport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00011">11</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5ded2396986eaf1b37be1227b123c781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ded2396986eaf1b37be1227b123c781">&#9670;&nbsp;</a></span>window_dist</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Anti_Latency.Camera.window_dist = 200</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00014">14</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+
+</div>
+</div>
+<a id="a039dbb1bd31a5443baf8b56c881b4c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039dbb1bd31a5443baf8b56c881b4c21">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Anti_Latency.Camera.x = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00013">13</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -258,7 +353,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00014">14</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00015">15</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -283,7 +378,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00016">16</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00017">17</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
@@ -307,12 +402,12 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00017">17</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8cs_source.html#l00018">18</a> of file <a class="el" href="_camera_8cs_source.html">Camera.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_camera_8cs_source.html">Camera.cs</a></li>
+<li>BaseClasses/<a class="el" href="_camera_8cs_source.html">Camera.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

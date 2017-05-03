@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="10" column="1" bodyfile="World.cs" bodystart="10" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="11" column="1" bodyfile="BaseClasses/World.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1ae76b2fd0c386319ecb08293d4ad4fe8d" prot="private" static="no" mutable="no">
         <type>Tuple&lt; int, int &gt;</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="12" column="1" bodyfile="World.cs" bodystart="12" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="13" column="1" bodyfile="BaseClasses/World.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1ae8957b68be03a9789a1ed68bd2313738" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_goal" kindref="compound">Goal</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="13" column="1" bodyfile="World.cs" bodystart="13" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="14" column="1" bodyfile="BaseClasses/World.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1a8ff42307e1873708936ff410977e7c95" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_anti___latency_1_1_floor" kindref="compound">Floor</ref> &gt;</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="14" column="1" bodyfile="World.cs" bodystart="14" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="15" column="1" bodyfile="BaseClasses/World.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1a6a87bf3d631b9ddf1d8c5680459ec199" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="16" column="1" bodyfile="World.cs" bodystart="16" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="17" column="1" bodyfile="BaseClasses/World.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1acfdf97ce520700b37742d925ccc94398" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="17" column="1" bodyfile="World.cs" bodystart="17" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="18" column="1" bodyfile="BaseClasses/World.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_world_1a95b25dda146805e182fe410ccc0bca16" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="18" column="1" bodyfile="World.cs" bodystart="18" bodyend="-1"/>
+        <location file="BaseClasses/World.cs" line="19" column="1" bodyfile="BaseClasses/World.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -115,12 +115,12 @@
           <declname>flagTexture</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Pass across images for objects - Optional for testing reasons. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="21" column="1" bodyfile="World.cs" bodystart="21" bodyend="26"/>
+        <location file="BaseClasses/World.cs" line="22" column="1" bodyfile="BaseClasses/World.cs" bodystart="22" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1a0232fa6733b91a03188f45c6c9994a19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -128,12 +128,12 @@
         <argsstring>()</argsstring>
         <name>loadLevel</name>
         <briefdescription>
-        </briefdescription>
+<para>Load in level from text file. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="28" column="1" bodyfile="World.cs" bodystart="28" bodyend="31"/>
+        <location file="BaseClasses/World.cs" line="30" column="1" bodyfile="BaseClasses/World.cs" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1a4a64bdd8d1bde66e698579377fd4aff2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -145,12 +145,12 @@
           <declname>newPos</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Set player start point - created for test purposes. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="65" column="1" bodyfile="World.cs" bodystart="65" bodyend="68"/>
+        <location file="BaseClasses/World.cs" line="70" column="1" bodyfile="BaseClasses/World.cs" bodystart="70" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1a3bd2a16b00eda94f15d6bca28ac656c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Tuple&lt; int, int &gt;</type>
@@ -158,12 +158,12 @@
         <argsstring>()</argsstring>
         <name>getPlayerPos</name>
         <briefdescription>
-        </briefdescription>
+<para>Return player start position. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="70" column="1" bodyfile="World.cs" bodystart="70" bodyend="73"/>
+        <location file="BaseClasses/World.cs" line="76" column="1" bodyfile="BaseClasses/World.cs" bodystart="76" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1a89d56029aa30b90d0585d0faf25691cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -171,12 +171,12 @@
         <argsstring>()</argsstring>
         <name>unloadLevel</name>
         <briefdescription>
-        </briefdescription>
+<para>Empty world arrays. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="75" column="1" bodyfile="World.cs" bodystart="75" bodyend="79"/>
+        <location file="BaseClasses/World.cs" line="82" column="1" bodyfile="BaseClasses/World.cs" bodystart="82" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1acb767e15ad07c882ea3a1a4f39559f9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -200,12 +200,12 @@
           <declname>pw</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Check if player colliding with floor objects or goal. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="81" column="1" bodyfile="World.cs" bodystart="81" bodyend="104"/>
+        <location file="BaseClasses/World.cs" line="89" column="1" bodyfile="BaseClasses/World.cs" bodystart="89" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1af6f9369b0cd9c880d313779a54bdf61d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="106" column="1" bodyfile="World.cs" bodystart="106" bodyend="109"/>
+        <location file="BaseClasses/World.cs" line="114" column="1" bodyfile="BaseClasses/World.cs" bodystart="114" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1a033379e2876a32109239fc05c8095693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -230,12 +230,12 @@
           <declname>spriteBatch</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Draw all floor and goal object. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="111" column="1" bodyfile="World.cs" bodystart="111" bodyend="118"/>
+        <location file="BaseClasses/World.cs" line="120" column="1" bodyfile="BaseClasses/World.cs" bodystart="120" bodyend="127"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -249,12 +249,12 @@
           <declname>lines</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Create objects based off position in text file. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="33" column="1" bodyfile="World.cs" bodystart="33" bodyend="47"/>
+        <location file="BaseClasses/World.cs" line="36" column="1" bodyfile="BaseClasses/World.cs" bodystart="36" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_world_1ad44a3ccdef39019ae04cad6ca93f1882" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -274,25 +274,32 @@
           <declname>y</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>New object found, create based on character type (e.g. P = <ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref> Start Position) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="World.cs" line="49" column="1" bodyfile="World.cs" bodystart="49" bodyend="63"/>
+        <location file="BaseClasses/World.cs" line="53" column="1" bodyfile="BaseClasses/World.cs" bodystart="53" bodyend="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="class_anti___latency_1_1_world" kindref="compound">World</ref> object designed to manage game world (<ref refid="class_anti___latency_1_1_floor" kindref="compound">Floor</ref> &amp; <ref refid="class_anti___latency_1_1_goal" kindref="compound">Goal</ref>) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="40">
+      <node id="52">
+        <label>Anti_Latency.Goal</label>
+        <link refid="class_anti___latency_1_1_goal"/>
+      </node>
+      <node id="51">
         <label>Anti_Latency.World</label>
         <link refid="class_anti___latency_1_1_world"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>-goal</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="World.cs" line="9" column="1" bodyfile="World.cs" bodystart="8" bodyend="119"/>
+    <location file="BaseClasses/World.cs" line="10" column="1" bodyfile="BaseClasses/World.cs" bodystart="9" bodyend="128"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_world_1a23d71941edbe9a8a15360881de115f09" prot="private" virt="non-virtual"><scope>Anti_Latency::World</scope><name>buildFromFile</name></member>
       <member refid="class_anti___latency_1_1_world_1acb767e15ad07c882ea3a1a4f39559f9d" prot="public" virt="non-virtual"><scope>Anti_Latency::World</scope><name>checkColliding</name></member>

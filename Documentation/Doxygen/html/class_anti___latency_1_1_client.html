@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_client.html',
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_client-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.Client Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Lidgren client class designed to communicate with <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>.  
+ <a href="class_anti___latency_1_1_client.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Anti_Latency.Client:</div>
 <div class="dyncontent">
@@ -100,22 +104,31 @@ Collaboration diagram for Anti_Latency.Client:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af6fd303cd2ca8681884c8f0b45ec6e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#af6fd303cd2ca8681884c8f0b45ec6e9e">Client</a> (string ip, int prt)</td></tr>
+<tr class="memdesc:af6fd303cd2ca8681884c8f0b45ec6e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Pass across ip address and port  <a href="#af6fd303cd2ca8681884c8f0b45ec6e9e">More...</a><br /></td></tr>
 <tr class="separator:af6fd303cd2ca8681884c8f0b45ec6e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c068dc7878e8948a3e48872e03ba3dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a2c068dc7878e8948a3e48872e03ba3dc">Client</a> (bool <a class="el" href="class_anti___latency_1_1_client.html#abab5ccdb3424eb405b90097fcc22fc4c">local</a>, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, int delay)</td></tr>
+<tr class="memitem:a2c068dc7878e8948a3e48872e03ba3dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a2c068dc7878e8948a3e48872e03ba3dc">Client</a> (bool <a class="el" href="class_anti___latency_1_1_client.html#abab5ccdb3424eb405b90097fcc22fc4c">local</a>, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, int <a class="el" href="class_anti___latency_1_1_client.html#a5ba5bcc553008a53443bbd5aae3b4478">delay</a>)</td></tr>
+<tr class="memdesc:a2c068dc7878e8948a3e48872e03ba3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Local) Pass world object and create test player  <a href="#a2c068dc7878e8948a3e48872e03ba3dc">More...</a><br /></td></tr>
 <tr class="separator:a2c068dc7878e8948a3e48872e03ba3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb73735ec2c1fb02a38bd7c747359b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#aebb73735ec2c1fb02a38bd7c747359b1">connect</a> (string ip, int prt)</td></tr>
+<tr class="memdesc:aebb73735ec2c1fb02a38bd7c747359b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to server.  <a href="#aebb73735ec2c1fb02a38bd7c747359b1">More...</a><br /></td></tr>
 <tr class="separator:aebb73735ec2c1fb02a38bd7c747359b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b155e7dfd4a696d7c400759c6acf56b"><td class="memItemLeft" align="right" valign="top">Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a2b155e7dfd4a696d7c400759c6acf56b">getMessages</a> (<a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:a2b155e7dfd4a696d7c400759c6acf56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Check if recieved messages from server. (Local) If past delay time then run game logic and return updated logic  <a href="#a2b155e7dfd4a696d7c400759c6acf56b">More...</a><br /></td></tr>
 <tr class="separator:a2b155e7dfd4a696d7c400759c6acf56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d381beb9242496cc4a3fd142f88fd01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a0d381beb9242496cc4a3fd142f88fd01">sendMessages</a> (string action)</td></tr>
+<tr class="memdesc:a0d381beb9242496cc4a3fd142f88fd01"><td class="mdescLeft">&#160;</td><td class="mdescRight">(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Send message to server. (Local) Only store action in actions array  <a href="#a0d381beb9242496cc4a3fd142f88fd01">More...</a><br /></td></tr>
 <tr class="separator:a0d381beb9242496cc4a3fd142f88fd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d75867600f79b1a2c004a00e35406c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a8d75867600f79b1a2c004a00e35406c0">getStatus</a> ()</td></tr>
+<tr class="memdesc:a8d75867600f79b1a2c004a00e35406c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return connection status.  <a href="#a8d75867600f79b1a2c004a00e35406c0">More...</a><br /></td></tr>
 <tr class="separator:a8d75867600f79b1a2c004a00e35406c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c022f8d73ae612d7c9feaf58fbbea84"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a9c022f8d73ae612d7c9feaf58fbbea84">getAction</a> ()</td></tr>
+<tr class="memdesc:a9c022f8d73ae612d7c9feaf58fbbea84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return latest action.  <a href="#a9c022f8d73ae612d7c9feaf58fbbea84">More...</a><br /></td></tr>
 <tr class="separator:a9c022f8d73ae612d7c9feaf58fbbea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7302b694c4648cddcf913249111c1e01"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a7302b694c4648cddcf913249111c1e01">processAction</a> ()</td></tr>
+<tr class="memdesc:a7302b694c4648cddcf913249111c1e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created for testing purposes.  <a href="#a7302b694c4648cddcf913249111c1e01">More...</a><br /></td></tr>
 <tr class="separator:a7302b694c4648cddcf913249111c1e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5cc70d5f61574d7d4c40f1178080824"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#aa5cc70d5f61574d7d4c40f1178080824">getPlayers</a> ()</td></tr>
+<tr class="memdesc:aa5cc70d5f61574d7d4c40f1178080824"><td class="mdescLeft">&#160;</td><td class="mdescRight">(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Return array of connected players. (Local) Return test player  <a href="#aa5cc70d5f61574d7d4c40f1178080824">More...</a><br /></td></tr>
 <tr class="separator:aa5cc70d5f61574d7d4c40f1178080824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -124,10 +137,26 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab89190411adeee3142472085179ed0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abab5ccdb3424eb405b90097fcc22fc4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#abab5ccdb3424eb405b90097fcc22fc4c">local</a></td></tr>
 <tr class="separator:abab5ccdb3424eb405b90097fcc22fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac2e08d538f0ca7faa11925076d99c3e3"><td class="memItemLeft" align="right" valign="top">NetPeerConfiguration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#ac2e08d538f0ca7faa11925076d99c3e3">config</a></td></tr>
+<tr class="separator:ac2e08d538f0ca7faa11925076d99c3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9994f022f35f41731d63e790b0ca956b"><td class="memItemLeft" align="right" valign="top">NetClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a9994f022f35f41731d63e790b0ca956b">client</a></td></tr>
+<tr class="separator:a9994f022f35f41731d63e790b0ca956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba5bcc553008a53443bbd5aae3b4478"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#a5ba5bcc553008a53443bbd5aae3b4478">delay</a> = 0</td></tr>
+<tr class="separator:a5ba5bcc553008a53443bbd5aae3b4478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3846ef4a6e76069d2662f469e1ba59e"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#aa3846ef4a6e76069d2662f469e1ba59e">lastSent</a> = DateTime.Now</td></tr>
+<tr class="separator:aa3846ef4a6e76069d2662f469e1ba59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad050c33e5a0b00c335fc597af193217f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#ad050c33e5a0b00c335fc597af193217f">players</a> = new List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt;()</td></tr>
+<tr class="separator:ad050c33e5a0b00c335fc597af193217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83d151b3dcf00007cd2cfc82a277cb8"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_client.html#af83d151b3dcf00007cd2cfc82a277cb8">actions</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:af83d151b3dcf00007cd2cfc82a277cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00008">8</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<div class="textblock"><p>Lidgren client class designed to communicate with <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00009">9</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af6fd303cd2ca8681884c8f0b45ec6e9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6fd303cd2ca8681884c8f0b45ec6e9e">&#9670;&nbsp;</a></span>Client() <span class="overload">[1/2]</span></h2>
@@ -155,7 +184,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00020">20</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Pass across ip address and port </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00022">22</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -191,7 +222,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00026">26</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>(Local) Pass world object and create test player </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00029">29</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -222,7 +255,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00035">35</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>Connect to server. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00039">39</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -241,7 +276,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00164">164</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>Return latest action. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00172">172</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -261,7 +298,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00050">50</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Check if recieved messages from server. (Local) If past delay time then run game logic and return updated logic </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00055">55</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -280,7 +319,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00176">176</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Return array of connected players. (Local) Return test player </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00186">186</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -299,7 +340,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00159">159</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>Return connection status. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00166">166</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -318,7 +361,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00169">169</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>Created for testing purposes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00178">178</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -338,11 +383,109 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00147">147</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p>(<a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a>) Send message to server. (Local) Only store action in actions array </p>
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00153">153</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="af83d151b3dcf00007cd2cfc82a277cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83d151b3dcf00007cd2cfc82a277cb8">&#9670;&nbsp;</a></span>actions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; Anti_Latency.Client.actions = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00019">19</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9994f022f35f41731d63e790b0ca956b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9994f022f35f41731d63e790b0ca956b">&#9670;&nbsp;</a></span>client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetClient Anti_Latency.Client.client</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00013">13</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac2e08d538f0ca7faa11925076d99c3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e08d538f0ca7faa11925076d99c3e3">&#9670;&nbsp;</a></span>config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetPeerConfiguration Anti_Latency.Client.config</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00012">12</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5ba5bcc553008a53443bbd5aae3b4478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba5bcc553008a53443bbd5aae3b4478">&#9670;&nbsp;</a></span>delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Anti_Latency.Client.delay = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00016">16</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
 <a id="ab89190411adeee3142472085179ed0e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab89190411adeee3142472085179ed0e9">&#9670;&nbsp;</a></span>ID</h2>
 
@@ -355,7 +498,31 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00010">10</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00011">11</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa3846ef4a6e76069d2662f469e1ba59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3846ef4a6e76069d2662f469e1ba59e">&#9670;&nbsp;</a></span>lastSent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DateTime Anti_Latency.Client.lastSent = DateTime.Now</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00017">17</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
@@ -371,12 +538,36 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00014">14</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00015">15</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad050c33e5a0b00c335fc597af193217f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad050c33e5a0b00c335fc597af193217f">&#9670;&nbsp;</a></span>players</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt; Anti_Latency.Client.players = new List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_client_8cs_source.html#l00018">18</a> of file <a class="el" href="_client_8cs_source.html">Client.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_client_8cs_source.html">Client.cs</a></li>
+<li>BaseClasses/<a class="el" href="_client_8cs_source.html">Client.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

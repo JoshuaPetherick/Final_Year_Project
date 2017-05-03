@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Game1.cs" line="5" column="1"/>
+    <location file="BaseClasses/Game1.cs" line="5" column="1"/>
   </compounddef>
 </doxygen>

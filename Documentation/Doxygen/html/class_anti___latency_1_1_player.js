@@ -20,6 +20,13 @@ var class_anti___latency_1_1_player =
     [ "setTexture", "class_anti___latency_1_1_player.html#aa1ac26935d34a308eb9bfc48e5e80ea0", null ],
     [ "setX", "class_anti___latency_1_1_player.html#a051db6c14a76bce84466845da3cabf18", null ],
     [ "setY", "class_anti___latency_1_1_player.html#a5d45db44148177245e671a38346622ef", null ],
+    [ "clnt", "class_anti___latency_1_1_player.html#aa096088e5421897ed53c1eaa2452dd8b", null ],
+    [ "effect", "class_anti___latency_1_1_player.html#a237fa42afa37b970e7d5ca2e612b78c2", null ],
+    [ "input", "class_anti___latency_1_1_player.html#a5ce4cc41dbbf1078d60398086a9c6e59", null ],
     [ "jumpPoint", "class_anti___latency_1_1_player.html#ab6e64705154e7fb2a6be13d313254956", null ],
-    [ "state", "class_anti___latency_1_1_player.html#ab1d0f2c49b44a0823b046ca33253c924", null ]
+    [ "state", "class_anti___latency_1_1_player.html#ab1d0f2c49b44a0823b046ca33253c924", null ],
+    [ "technique", "class_anti___latency_1_1_player.html#ae2918c94cc7538b92b03759942131db7", null ],
+    [ "texture", "class_anti___latency_1_1_player.html#a2494e7ddf7bb4684d31d97c226d310a6", null ],
+    [ "x", "class_anti___latency_1_1_player.html#a284bd3344fbf55329a5207133b61b0c6", null ],
+    [ "y", "class_anti___latency_1_1_player.html#a4e0034fbd9b5c4c2701bdc55f67c25bd", null ]
 ];

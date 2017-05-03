@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="23" column="1" bodyfile="Player.cs" bodystart="23" bodyend="23"/>
+        <location file="BaseClasses/Player.cs" line="24" column="1" bodyfile="BaseClasses/Player.cs" bodystart="24" bodyend="24"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="11" column="1" bodyfile="Player.cs" bodystart="11" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="12" column="1" bodyfile="BaseClasses/Player.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1ae2918c94cc7538b92b03759942131db7" prot="private" static="no" mutable="no">
         <type><ref refid="class_anti___latency_1_1_technique" kindref="compound">Technique</ref></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="12" column="1" bodyfile="Player.cs" bodystart="12" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="13" column="1" bodyfile="BaseClasses/Player.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a5ce4cc41dbbf1078d60398086a9c6e59" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="13" column="1" bodyfile="Player.cs" bodystart="13" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="14" column="1" bodyfile="BaseClasses/Player.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a284bd3344fbf55329a5207133b61b0c6" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="15" column="1" bodyfile="Player.cs" bodystart="15" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="16" column="1" bodyfile="BaseClasses/Player.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a4e0034fbd9b5c4c2701bdc55f67c25bd" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="16" column="1" bodyfile="Player.cs" bodystart="16" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="17" column="1" bodyfile="BaseClasses/Player.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a2494e7ddf7bb4684d31d97c226d310a6" prot="private" static="no" mutable="no">
         <type>Texture2D</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="17" column="1" bodyfile="Player.cs" bodystart="17" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="18" column="1" bodyfile="BaseClasses/Player.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a237fa42afa37b970e7d5ca2e612b78c2" prot="private" static="no" mutable="no">
         <type>SpriteEffects</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="20" column="1" bodyfile="Player.cs" bodystart="20" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="21" column="1" bodyfile="BaseClasses/Player.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="18" column="1" bodyfile="Player.cs" bodystart="18" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="19" column="1" bodyfile="BaseClasses/Player.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1a2bfd242418b69179fdaf7ec82ab71bd4" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="19" column="1" bodyfile="Player.cs" bodystart="19" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="20" column="1" bodyfile="BaseClasses/Player.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="22" column="1" bodyfile="Player.cs" bodystart="22" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="23" column="1" bodyfile="BaseClasses/Player.cs" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_player_1ab6e64705154e7fb2a6be13d313254956" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="24" column="1" bodyfile="Player.cs" bodystart="23" bodyend="-1"/>
+        <location file="BaseClasses/Player.cs" line="25" column="1" bodyfile="BaseClasses/Player.cs" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="26" column="1" bodyfile="Player.cs" bodystart="26" bodyend="30"/>
+        <location file="BaseClasses/Player.cs" line="27" column="1" bodyfile="BaseClasses/Player.cs" bodystart="27" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a0e0db7a798670e56bc20e2bcb03c2a46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -221,12 +221,12 @@
           <declname>type</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Set technique to be used (based on type passed from <ref refid="class_anti___latency_1_1_game1" kindref="compound">Game1</ref>) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="32" column="1" bodyfile="Player.cs" bodystart="32" bodyend="48"/>
+        <location file="BaseClasses/Player.cs" line="34" column="1" bodyfile="BaseClasses/Player.cs" bodystart="34" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a051db6c14a76bce84466845da3cabf18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="50" column="1" bodyfile="Player.cs" bodystart="50" bodyend="53"/>
+        <location file="BaseClasses/Player.cs" line="52" column="1" bodyfile="BaseClasses/Player.cs" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a5d45db44148177245e671a38346622ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="55" column="1" bodyfile="Player.cs" bodystart="55" bodyend="58"/>
+        <location file="BaseClasses/Player.cs" line="57" column="1" bodyfile="BaseClasses/Player.cs" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1aa1ac26935d34a308eb9bfc48e5e80ea0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="60" column="1" bodyfile="Player.cs" bodystart="60" bodyend="63"/>
+        <location file="BaseClasses/Player.cs" line="62" column="1" bodyfile="BaseClasses/Player.cs" bodystart="62" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a6bbcf7105603fa1eefca304860b40185" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="65" column="1" bodyfile="Player.cs" bodystart="65" bodyend="68"/>
+        <location file="BaseClasses/Player.cs" line="67" column="1" bodyfile="BaseClasses/Player.cs" bodystart="67" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1afd0be955e04ff710cd76b8d7d392153d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="70" column="1" bodyfile="Player.cs" bodystart="70" bodyend="73"/>
+        <location file="BaseClasses/Player.cs" line="72" column="1" bodyfile="BaseClasses/Player.cs" bodystart="72" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1ad62724b3aeb58469f6065b7a3b65f650" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -316,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="75" column="1" bodyfile="Player.cs" bodystart="75" bodyend="78"/>
+        <location file="BaseClasses/Player.cs" line="77" column="1" bodyfile="BaseClasses/Player.cs" bodystart="77" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a60865c4114178e23861a1df1387ecd2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -329,7 +329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="80" column="1" bodyfile="Player.cs" bodystart="80" bodyend="83"/>
+        <location file="BaseClasses/Player.cs" line="82" column="1" bodyfile="BaseClasses/Player.cs" bodystart="82" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a9853ffc4799e792130fe7d30c51a82ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -341,12 +341,12 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Checks WASD+SPACEBAR keys, then passes across value to technique if pressed. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="85" column="1" bodyfile="Player.cs" bodystart="85" bodyend="106"/>
+        <location file="BaseClasses/Player.cs" line="88" column="1" bodyfile="BaseClasses/Player.cs" bodystart="88" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a5d2d2397c4102a850a79ff6283b24bad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -358,12 +358,12 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Check input, then check if servers returned position. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="108" column="1" bodyfile="Player.cs" bodystart="108" bodyend="127"/>
+        <location file="BaseClasses/Player.cs" line="112" column="1" bodyfile="BaseClasses/Player.cs" bodystart="112" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1addc9d9c0829dcdf51e97c38a59b8beb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -379,12 +379,12 @@
           <declname>port</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Connect to a server. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="132" column="1" bodyfile="Player.cs" bodystart="132" bodyend="135"/>
+        <location file="BaseClasses/Player.cs" line="135" column="1" bodyfile="BaseClasses/Player.cs" bodystart="135" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a19a6a70b2c6916e75b41a35a25785b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -404,12 +404,12 @@
           <declname>delay</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Connect to a server. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="140" column="1" bodyfile="Player.cs" bodystart="140" bodyend="143"/>
+        <location file="BaseClasses/Player.cs" line="141" column="1" bodyfile="BaseClasses/Player.cs" bodystart="141" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a17699a3cda43f7157ec74c1bb60c540f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -421,12 +421,12 @@
           <declname>spriteBatch</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Draw player object. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="145" column="1" bodyfile="Player.cs" bodystart="145" bodyend="150"/>
+        <location file="BaseClasses/Player.cs" line="147" column="1" bodyfile="BaseClasses/Player.cs" bodystart="147" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_player_1a32ba4adaf2c3ef6d38e4c2eee4ca875f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -438,25 +438,39 @@
           <declname>spriteBatch</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>(<ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref>) Draw other players. (Local) Draw servers player position </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Player.cs" line="152" column="1" bodyfile="Player.cs" bodystart="152" bodyend="161"/>
+        <location file="BaseClasses/Player.cs" line="155" column="1" bodyfile="BaseClasses/Player.cs" bodystart="155" bodyend="164"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref> object used to represent user (Handles input and drawing) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="25">
+      <node id="33">
+        <label>Anti_Latency.Technique</label>
+        <link refid="class_anti___latency_1_1_technique"/>
+      </node>
+      <node id="32">
         <label>Anti_Latency.Player</label>
         <link refid="class_anti___latency_1_1_player"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>-technique</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>-clnt</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Anti_Latency.Client</label>
+        <link refid="class_anti___latency_1_1_client"/>
       </node>
     </collaborationgraph>
-    <location file="Player.cs" line="10" column="1" bodyfile="Player.cs" bodystart="9" bodyend="162"/>
+    <location file="BaseClasses/Player.cs" line="11" column="1" bodyfile="BaseClasses/Player.cs" bodystart="10" bodyend="165"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_player_1aa096088e5421897ed53c1eaa2452dd8b" prot="private" virt="non-virtual"><scope>Anti_Latency::Player</scope><name>clnt</name></member>
       <member refid="class_anti___latency_1_1_player_1addc9d9c0829dcdf51e97c38a59b8beb1" prot="public" virt="non-virtual"><scope>Anti_Latency::Player</scope><name>connectClient</name></member>

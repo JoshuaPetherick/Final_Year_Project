@@ -2,13 +2,14 @@
 
 namespace Anti_Latency
 {
+    /// Static class designed to be provide logic throughout entire program
     class Logic
     {
         public static int speed = 2;
         private static int gravity = 1;
         private static int jumpHeight = 60;
 
-        // Checks collsion, return what side it's colliding with (If it's colliding)
+        /// Checks collsion and returns which side it's colliding with (If colliding)
         public static int axisAlignedBoundingBox(int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)
         {
             // http://gamedev.stackexchange.com/questions/29786/a-simple-2d-rectangle-collision-algorithm-that-also-determines-which-sides-that
@@ -50,6 +51,7 @@ namespace Anti_Latency
             return 0;
         }
 
+        /// Processes users actions (e.g. moving left will increase X value, etc). Designed for Server Players
         public static Tuple<int, int> actionTree(ServerPlayer player, World world, string action)
         {
             int x = player.getX();
@@ -91,9 +93,7 @@ namespace Anti_Latency
             return new Tuple<int, int>(x, y);
         }
 
-        /*
-        *   Additional method required for Client Side Prediction technique (Different player type)
-        */
+        /// Processes users actions (e.g. moving left will increase X value, etc). Designed for local Player
         public static Tuple<int, int> actionTree(Player player, World world, string action)
         {
             int x = player.getX();
@@ -135,6 +135,7 @@ namespace Anti_Latency
             return new Tuple<int, int>(x, y);
         }
 
+        /// Processes users state (e.g. Gravity). Designed for Server Players
         public static Tuple<int, int> update(ServerPlayer player, Tuple<int, int> pos, World world)
         {
             int x = pos.Item1;
@@ -177,9 +178,7 @@ namespace Anti_Latency
             return new Tuple<int, int>(x, y);
         }
 
-        /*
-        *   Additional method required for Client Side Prediction technique (Different player type)
-        */
+        /// Processes users state (e.g. Gravity). Designed for local Player
         public static Tuple<int, int> update(Player player, Tuple<int, int> pos, World world)
         {
             int x = pos.Item1;

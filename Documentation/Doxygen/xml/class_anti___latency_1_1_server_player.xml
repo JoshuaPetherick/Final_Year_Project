@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="17" column="1" bodyfile="ServerPlayer.cs" bodystart="17" bodyend="17"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="18" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="18" bodyend="18"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="8" column="1" bodyfile="ServerPlayer.cs" bodystart="8" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="9" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a73128e42aaadf63a4782ef0145e37852" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="10" column="1" bodyfile="ServerPlayer.cs" bodystart="10" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="11" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a17803ca57081756fba2ef2c8f2414f57" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="11" column="1" bodyfile="ServerPlayer.cs" bodystart="11" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="12" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a0147a125c2a129848c0449b3fdd2e341" prot="private" static="no" mutable="no">
         <type>NetConnection</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="12" column="1" bodyfile="ServerPlayer.cs" bodystart="12" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="13" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a45d3cedd64645921b7188f20418a840c" prot="private" static="no" mutable="no">
         <type>SpriteEffects</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="19" column="1" bodyfile="ServerPlayer.cs" bodystart="19" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="20" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="13" column="1" bodyfile="ServerPlayer.cs" bodystart="13" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="14" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a924a0c45352476a1d5a2ba7b6188fc4b" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="14" column="1" bodyfile="ServerPlayer.cs" bodystart="14" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="15" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="16" column="1" bodyfile="ServerPlayer.cs" bodystart="16" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="17" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_player_1a6e91348d7dfa10f005201d7c72eb045c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="18" column="1" bodyfile="ServerPlayer.cs" bodystart="17" bodyend="-1"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="19" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="21" column="1" bodyfile="ServerPlayer.cs" bodystart="21" bodyend="26"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="22" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="22" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1ad7985bdeebd2aeb2d1eb1400c3625ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -203,7 +203,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="28" column="1" bodyfile="ServerPlayer.cs" bodystart="28" bodyend="31"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="29" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="29" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a7faf769dd2c99f00bb7a8cad7c97c2ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -220,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="33" column="1" bodyfile="ServerPlayer.cs" bodystart="33" bodyend="36"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="34" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1aa395c811dff421acf56cf2085b703c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="38" column="1" bodyfile="ServerPlayer.cs" bodystart="38" bodyend="41"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="39" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="39" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a1370657824c01f0bedf6fb05c6b8f5ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -250,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="43" column="1" bodyfile="ServerPlayer.cs" bodystart="43" bodyend="46"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="44" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="44" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1af976d1f49b1436a87c72ff7b5c02e9d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="48" column="1" bodyfile="ServerPlayer.cs" bodystart="48" bodyend="51"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="49" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="49" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a2c146dbca57c83af92acde59f5b3541f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="53" column="1" bodyfile="ServerPlayer.cs" bodystart="53" bodyend="56"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="54" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="54" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a8190f603d27c73d8ebf41a3fb17fd4c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="58" column="1" bodyfile="ServerPlayer.cs" bodystart="58" bodyend="61"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="59" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a26b5253370b28019ef40472401e36988" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>string</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="63" column="1" bodyfile="ServerPlayer.cs" bodystart="63" bodyend="66"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="64" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="64" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a35059c781693be263a905599605af5e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>SpriteEffects</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="68" column="1" bodyfile="ServerPlayer.cs" bodystart="68" bodyend="71"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="69" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a755ae7b2dcfb98820929365dc35407ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -327,12 +327,12 @@
           <declname>x</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Flip player based on direction walking. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="73" column="1" bodyfile="ServerPlayer.cs" bodystart="73" bodyend="83"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="75" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="75" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_player_1a31eb360d40fcfeb6ffdcbd30546cc5f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>NetConnection</type>
@@ -340,25 +340,25 @@
         <argsstring>()</argsstring>
         <name>getRecipiant</name>
         <briefdescription>
-        </briefdescription>
+<para>Pass across servers net client for packet messaging. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerPlayer.cs" line="85" column="1" bodyfile="ServerPlayer.cs" bodystart="85" bodyend="88"/>
+        <location file="BaseClasses/ServerPlayer.cs" line="88" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="88" bodyend="91"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref> object used to represent connected server users. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="29">
+      <node id="40">
         <label>Anti_Latency.ServerPlayer</label>
         <link refid="class_anti___latency_1_1_server_player"/>
       </node>
     </collaborationgraph>
-    <location file="ServerPlayer.cs" line="7" column="1" bodyfile="ServerPlayer.cs" bodystart="6" bodyend="89"/>
+    <location file="BaseClasses/ServerPlayer.cs" line="8" column="1" bodyfile="BaseClasses/ServerPlayer.cs" bodystart="7" bodyend="92"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_server_player_1a45d3cedd64645921b7188f20418a840c" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>effect</name></member>
       <member refid="class_anti___latency_1_1_server_player_1a35059c781693be263a905599605af5e1" prot="public" virt="non-virtual"><scope>Anti_Latency::ServerPlayer</scope><name>getEffect</name></member>

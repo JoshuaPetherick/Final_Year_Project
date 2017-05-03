@@ -9,9 +9,7 @@ using System.Threading;
 
 namespace Anti_Latency
 {
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
+    /// The primary class for game. Holds and manages all the crucial elements of the game.
     public class Game1 : Game
     {
         SpriteBatch spriteBatch;
@@ -233,7 +231,6 @@ namespace Anti_Latency
         }
 
         /// Called every frame to draw the contents of the objects (Based on state)
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);

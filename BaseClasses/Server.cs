@@ -5,12 +5,12 @@ using Lidgren.Network;
 
 namespace Anti_Latency
 {
+    /// The server class which handles connected users and game logic
     class Server
     {
         private NetServer server;
         private NetPeerConfiguration config;
 
-        //private int MAX_PLAYERS = 8;
         private World world;
         private int currID = 1;
         private List<ServerPlayer> players = new List<ServerPlayer>();
@@ -32,10 +32,9 @@ namespace Anti_Latency
             closeServer();
         }
 
-        // Messages from clients will be structure as 2 bytes (e.g. 11, 12, 21, etc)
-        // First = players ID (Each player will be assigned an ID by the server)
-        // Second = player action/state
-
+        /// Messages from clients will be structure as 2 bytes (e.g. 11, 12, 21, etc)
+        /// First = players ID (Each player will be assigned an ID by the server)
+        /// Second = player action/state
         public void checkMessages()
         {
             NetIncomingMessage message;
@@ -102,6 +101,7 @@ namespace Anti_Latency
             }
         }
 
+        /// Send messages to a particuarly client or all clients
         public void sendMessages(string msg, NetConnection recipient)
         {
             NetOutgoingMessage message = server.CreateMessage();
@@ -116,6 +116,7 @@ namespace Anti_Latency
             }
         }
 
+        /// Return player based on their ID
         public ServerPlayer getPlayer(string ID)
         {
             foreach (ServerPlayer player in players)
@@ -128,6 +129,7 @@ namespace Anti_Latency
             return null;
         }
 
+        /// Handles logic after recieving a users action
         public void applyLogic(ServerPlayer p, string action)
         {
             Tuple<int, int> pos = null;
@@ -136,6 +138,7 @@ namespace Anti_Latency
             p.setY(pos.Item2);
         }
 
+        /// Primary method for server, checks for messages every 20 milliseconds
         public void update()
         {
             DateTime fpsDelay = DateTime.Now;
@@ -181,11 +184,13 @@ namespace Anti_Latency
             }
         }
 
+        /// Returns servers status in Integer form
         public int serverStatus()
         {
             return (int)server.Status;
         }
 
+        /// Closes the server
         public void closeServer()
         {
             if (server.Status == NetPeerStatus.Running)

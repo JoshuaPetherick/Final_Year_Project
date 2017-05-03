@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Anti_Latency
 {
+    /// Simple class to handle buttons
     class Button
     {
         private int x;
@@ -39,22 +40,26 @@ namespace Anti_Latency
             return HEIGHT;
         }
 
+        /// Set text for the button (Also determines width)
         public void setText(string text)
         {
             this.text = text;
             width = (text.Length * 24); // Multiply by size of Font
         }
 
+        /// Set result of button click
         public void buttonClicked(bool result)
         {
             clicked = result;
         }
 
+        /// Return clicked result
         public bool getResult()
         {
             return clicked;
         }
 
+        /// Draw white if not clicked, black if clicked
         public void draw(SpriteBatch spriteBatch, SpriteFont font)
         {
             if (clicked)

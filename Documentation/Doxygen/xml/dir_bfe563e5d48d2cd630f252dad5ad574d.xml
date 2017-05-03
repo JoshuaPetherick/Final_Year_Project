@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_bfe563e5d48d2cd630f252dad5ad574d" kind="dir">
+    <compoundname>BaseClasses</compoundname>
+    <innerfile refid="_blank_technique_8cs">BlankTechnique.cs</innerfile>
+    <innerfile refid="_button_8cs">Button.cs</innerfile>
+    <innerfile refid="_camera_8cs">Camera.cs</innerfile>
+    <innerfile refid="_client_8cs">Client.cs</innerfile>
+    <innerfile refid="_client_side_prediction_8cs">ClientSidePrediction.cs</innerfile>
+    <innerfile refid="_floor_8cs">Floor.cs</innerfile>
+    <innerfile refid="_game1_8cs">Game1.cs</innerfile>
+    <innerfile refid="_goal_8cs">Goal.cs</innerfile>
+    <innerfile refid="_logic_8cs">Logic.cs</innerfile>
+    <innerfile refid="_player_8cs">Player.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_server_8cs">Server.cs</innerfile>
+    <innerfile refid="_server_player_8cs">ServerPlayer.cs</innerfile>
+    <innerfile refid="_server_reconcilliation_8cs">ServerReconcilliation.cs</innerfile>
+    <innerfile refid="_technique_8cs">Technique.cs</innerfile>
+    <innerfile refid="_world_8cs">World.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BaseClasses/"/>
+  </compounddef>
+</doxygen>

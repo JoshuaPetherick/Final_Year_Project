@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlankTechnique.cs" line="7" column="1" bodyfile="BlankTechnique.cs" bodystart="7" bodyend="-1"/>
+        <location file="BaseClasses/BlankTechnique.cs" line="8" column="1" bodyfile="BaseClasses/BlankTechnique.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlankTechnique.cs" line="9" column="1" bodyfile="BlankTechnique.cs" bodystart="9" bodyend="16"/>
+        <location file="BaseClasses/BlankTechnique.cs" line="10" column="1" bodyfile="BaseClasses/BlankTechnique.cs" bodystart="10" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_blank_technique_1ae834591114ad6982632fe4562df02041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override Tuple&lt; int, int &gt;</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlankTechnique.cs" line="18" column="1" bodyfile="BlankTechnique.cs" bodystart="18" bodyend="21"/>
+        <location file="BaseClasses/BlankTechnique.cs" line="19" column="1" bodyfile="BaseClasses/BlankTechnique.cs" bodystart="19" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_blank_technique_1ab1a194bd594bb1687aa481ec7956e03f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override string</type>
@@ -83,11 +83,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="BlankTechnique.cs" line="23" column="1" bodyfile="BlankTechnique.cs" bodystart="23" bodyend="26"/>
+        <location file="BaseClasses/BlankTechnique.cs" line="24" column="1" bodyfile="BaseClasses/BlankTechnique.cs" bodystart="24" bodyend="27"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Empty technique used when no other technique selected. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
@@ -114,7 +114,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="BlankTechnique.cs" line="6" column="1" bodyfile="BlankTechnique.cs" bodystart="5" bodyend="27"/>
+    <location file="BaseClasses/BlankTechnique.cs" line="7" column="1" bodyfile="BaseClasses/BlankTechnique.cs" bodystart="6" bodyend="28"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_blank_technique_1ab1a194bd594bb1687aa481ec7956e03f" prot="public" virt="virtual"><scope>Anti_Latency::BlankTechnique</scope><name>getLastAction</name></member>
       <member refid="class_anti___latency_1_1_blank_technique_1ae3c666ef9a8e9fe06a233d6489e7fc78" prot="private" virt="non-virtual"><scope>Anti_Latency::BlankTechnique</scope><name>lastAction</name></member>

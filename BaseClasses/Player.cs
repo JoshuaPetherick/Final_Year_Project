@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace Anti_Latency
 {
+    /// Player object used to represent user (Handles input and drawing)
     class Player
     {
         Client clnt;
@@ -29,6 +30,7 @@ namespace Anti_Latency
             setY(y);
         }
 
+        /// Set technique to be used (based on type passed from Game1)
         public void setTechnique(int type)
         {
             switch(type)
@@ -82,6 +84,7 @@ namespace Anti_Latency
             return PREFWIDTH;
         }
 
+        /// Checks WASD+SPACEBAR keys, then passes across value to technique if pressed
         public void handleInput(World world)
         {
             if (Keyboard.GetState().IsKeyDown(Keys.A))
@@ -105,6 +108,7 @@ namespace Anti_Latency
             }
         }
 
+        /// Check input, then check if servers returned position
         public void playerUpdate(World world)
         {
              // Handle player input
@@ -126,22 +130,20 @@ namespace Anti_Latency
             }
         }
 
-        /*
-            Connect to a server
-        */
+
+        /// Connect to a server
         public void connectClient(string ip, int port)
         {
             clnt = new Client(ip, port);
         }
 
-        /*
-            Connect to a server
-        */
+        /// Connect to a server
         public void connectClient(bool local, World world, int delay)
         {
             clnt = new Client(local, world, delay);
         }
 
+        /// Draw player object
         public void drawPlayer(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, new Rectangle(x, y, PREFWIDTH, PREFHEIGHT), null,
@@ -149,6 +151,7 @@ namespace Anti_Latency
             input = false; // Reset input
         }
 
+        /// (Server) Draw other players. (Local) Draw servers player position 
         public void drawClient(SpriteBatch spriteBatch)
         {
             List<ServerPlayer> temp = clnt.getPlayers();

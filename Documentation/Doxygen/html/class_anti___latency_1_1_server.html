@@ -83,41 +83,75 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_server.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_server-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.Server Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The server class which handles connected users and game logic.  
+ <a href="class_anti___latency_1_1_server.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Anti_Latency.Server:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_anti___latency_1_1_server__coll__graph.png" border="0" usemap="#_anti___latency_8_server_coll__map" alt="Collaboration graph"/></div>
 <map name="_anti___latency_8_server_coll__map" id="_anti___latency_8_server_coll__map">
+<area shape="rect" id="node2" href="class_anti___latency_1_1_world.html" title="World object designed to manage game world (Floor &amp; Goal) " alt="" coords="7,233,143,516"/>
+<area shape="rect" id="node3" href="class_anti___latency_1_1_goal.html" title="Basic goal object. " alt="" coords="10,5,139,171"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af99b6ec66679984ef3fa6a4ed85ffe75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#af99b6ec66679984ef3fa6a4ed85ffe75">Server</a> (int port, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memitem:af99b6ec66679984ef3fa6a4ed85ffe75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#af99b6ec66679984ef3fa6a4ed85ffe75">Server</a> (int port, <a class="el" href="class_anti___latency_1_1_world.html">World</a> <a class="el" href="class_anti___latency_1_1_server.html#a337c3ba5b6ac597fa2d9687a5559839c">world</a>)</td></tr>
 <tr class="separator:af99b6ec66679984ef3fa6a4ed85ffe75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223d67cf801c9e0b55f8383586ff75c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a223d67cf801c9e0b55f8383586ff75c1">checkMessages</a> ()</td></tr>
 <tr class="separator:a223d67cf801c9e0b55f8383586ff75c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6e96e4d13a24ce3d66ca289a4c6a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#aec6e96e4d13a24ce3d66ca289a4c6a4e">sendMessages</a> (string msg, NetConnection recipient)</td></tr>
+<tr class="memdesc:aec6e96e4d13a24ce3d66ca289a4c6a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send messages to a particuarly client or all clients.  <a href="#aec6e96e4d13a24ce3d66ca289a4c6a4e">More...</a><br /></td></tr>
 <tr class="separator:aec6e96e4d13a24ce3d66ca289a4c6a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e93f724dcabed74140b0a3abe5083c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#af5e93f724dcabed74140b0a3abe5083c">getPlayer</a> (string ID)</td></tr>
+<tr class="memdesc:af5e93f724dcabed74140b0a3abe5083c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return player based on their ID.  <a href="#af5e93f724dcabed74140b0a3abe5083c">More...</a><br /></td></tr>
 <tr class="separator:af5e93f724dcabed74140b0a3abe5083c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa62d491d96332959f2b4b01dd2b63314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#aa62d491d96332959f2b4b01dd2b63314">applyLogic</a> (<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> p, string action)</td></tr>
+<tr class="memdesc:aa62d491d96332959f2b4b01dd2b63314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles logic after recieving a users action.  <a href="#aa62d491d96332959f2b4b01dd2b63314">More...</a><br /></td></tr>
 <tr class="separator:aa62d491d96332959f2b4b01dd2b63314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a404a9c2634bee47397a98b71b7b520b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a404a9c2634bee47397a98b71b7b520b7">update</a> ()</td></tr>
+<tr class="memdesc:a404a9c2634bee47397a98b71b7b520b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primary method for server, checks for messages every 20 milliseconds.  <a href="#a404a9c2634bee47397a98b71b7b520b7">More...</a><br /></td></tr>
 <tr class="separator:a404a9c2634bee47397a98b71b7b520b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137d1f2881e32c0a5adf27227f7b1b2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a137d1f2881e32c0a5adf27227f7b1b2b">serverStatus</a> ()</td></tr>
+<tr class="memdesc:a137d1f2881e32c0a5adf27227f7b1b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns servers status in Integer form.  <a href="#a137d1f2881e32c0a5adf27227f7b1b2b">More...</a><br /></td></tr>
 <tr class="separator:a137d1f2881e32c0a5adf27227f7b1b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a4155767d991157dbc812524302d7ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a3a4155767d991157dbc812524302d7ba">closeServer</a> ()</td></tr>
+<tr class="memdesc:a3a4155767d991157dbc812524302d7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the server.  <a href="#a3a4155767d991157dbc812524302d7ba">More...</a><br /></td></tr>
 <tr class="separator:a3a4155767d991157dbc812524302d7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afaa1f1bf9b10d60f4b1a69bc491d44fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#afaa1f1bf9b10d60f4b1a69bc491d44fa">~Server</a> ()</td></tr>
+<tr class="separator:afaa1f1bf9b10d60f4b1a69bc491d44fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af203ba900f88d52605b50c2de941f687"><td class="memItemLeft" align="right" valign="top">NetServer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#af203ba900f88d52605b50c2de941f687">server</a></td></tr>
+<tr class="separator:af203ba900f88d52605b50c2de941f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8aa419c23550b4316a2798f6f047ca2"><td class="memItemLeft" align="right" valign="top">NetPeerConfiguration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#ac8aa419c23550b4316a2798f6f047ca2">config</a></td></tr>
+<tr class="separator:ac8aa419c23550b4316a2798f6f047ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337c3ba5b6ac597fa2d9687a5559839c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anti___latency_1_1_world.html">World</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a337c3ba5b6ac597fa2d9687a5559839c">world</a></td></tr>
+<tr class="separator:a337c3ba5b6ac597fa2d9687a5559839c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a9210ed60df1555f9744a786a68e56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a53a9210ed60df1555f9744a786a68e56">currID</a> = 1</td></tr>
+<tr class="separator:a53a9210ed60df1555f9744a786a68e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa1eb0da6d7d4141f402a6542bdb174"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a8fa1eb0da6d7d4141f402a6542bdb174">players</a> = new List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt;()</td></tr>
+<tr class="separator:a8fa1eb0da6d7d4141f402a6542bdb174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ccf6a4bcf77d32fdbdc5c709c53ba6"><td class="memItemLeft" align="right" valign="top">List&lt; Tuple&lt; string, DateTime &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server.html#a26ccf6a4bcf77d32fdbdc5c709c53ba6">actions</a> = new List&lt;Tuple&lt;string, DateTime&gt;&gt;()</td></tr>
+<tr class="separator:a26ccf6a4bcf77d32fdbdc5c709c53ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00008">8</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<div class="textblock"><p>The server class which handles connected users and game logic. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00009">9</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af99b6ec66679984ef3fa6a4ed85ffe75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af99b6ec66679984ef3fa6a4ed85ffe75">&#9670;&nbsp;</a></span>Server()</h2>
@@ -149,6 +183,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="afaa1f1bf9b10d60f4b1a69bc491d44fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa1f1bf9b10d60f4b1a69bc491d44fa">&#9670;&nbsp;</a></span>~Server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Anti_Latency.Server.~Server </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00030">30</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa62d491d96332959f2b4b01dd2b63314"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa62d491d96332959f2b4b01dd2b63314">&#9670;&nbsp;</a></span>applyLogic()</h2>
@@ -176,7 +237,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00131">131</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p>Handles logic after recieving a users action. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00133">133</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
@@ -194,8 +257,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Messages from clients will be structure as 2 bytes (e.g. 11, 12, 21, etc) First = players ID (Each player will be assigned an ID by the server) Second = player action/state </p>
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00039">39</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00038">38</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
@@ -214,7 +278,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00189">189</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p>Closes the server. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00194">194</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
@@ -234,7 +300,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00119">119</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p>Return player based on their ID. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00120">120</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
@@ -264,6 +332,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Send messages to a particuarly client or all clients. </p>
+
 <p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00105">105</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
@@ -283,7 +353,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00184">184</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p>Returns servers status in Integer form. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00188">188</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
@@ -302,12 +374,159 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00139">139</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+<p>Primary method for server, checks for messages every 20 milliseconds. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00142">142</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a26ccf6a4bcf77d32fdbdc5c709c53ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ccf6a4bcf77d32fdbdc5c709c53ba6">&#9670;&nbsp;</a></span>actions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Tuple&lt;string, DateTime&gt; &gt; Anti_Latency.Server.actions = new List&lt;Tuple&lt;string, DateTime&gt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00017">17</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac8aa419c23550b4316a2798f6f047ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8aa419c23550b4316a2798f6f047ca2">&#9670;&nbsp;</a></span>config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetPeerConfiguration Anti_Latency.Server.config</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00012">12</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<a id="a53a9210ed60df1555f9744a786a68e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a9210ed60df1555f9744a786a68e56">&#9670;&nbsp;</a></span>currID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Anti_Latency.Server.currID = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00015">15</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<a id="a8fa1eb0da6d7d4141f402a6542bdb174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa1eb0da6d7d4141f402a6542bdb174">&#9670;&nbsp;</a></span>players</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt; Anti_Latency.Server.players = new List&lt;<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00016">16</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<a id="af203ba900f88d52605b50c2de941f687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af203ba900f88d52605b50c2de941f687">&#9670;&nbsp;</a></span>server</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetServer Anti_Latency.Server.server</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00011">11</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
+
+</div>
+</div>
+<a id="a337c3ba5b6ac597fa2d9687a5559839c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337c3ba5b6ac597fa2d9687a5559839c">&#9670;&nbsp;</a></span>world</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_anti___latency_1_1_world.html">World</a> Anti_Latency.Server.world</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_8cs_source.html#l00014">14</a> of file <a class="el" href="_server_8cs_source.html">Server.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_server_8cs_source.html">Server.cs</a></li>
+<li>BaseClasses/<a class="el" href="_server_8cs_source.html">Server.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="7" column="1" bodyfile="Logic.cs" bodystart="7" bodyend="-1"/>
+        <location file="BaseClasses/Logic.cs" line="8" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="8" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="8" column="1" bodyfile="Logic.cs" bodystart="8" bodyend="-1"/>
+        <location file="BaseClasses/Logic.cs" line="9" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_logic_1aebd17b71bfe07f4b88c69a51b4d5f42e" prot="private" static="yes" mutable="no">
         <type>int</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="9" column="1" bodyfile="Logic.cs" bodystart="9" bodyend="-1"/>
+        <location file="BaseClasses/Logic.cs" line="10" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -87,12 +87,12 @@
           <declname>ow</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Checks collsion and returns which side it&apos;s colliding with (If colliding) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="12" column="1" bodyfile="Logic.cs" bodystart="12" bodyend="51"/>
+        <location file="BaseClasses/Logic.cs" line="13" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="13" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_logic_1a28e1e37a8827dfc58ab31792abcc748d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Tuple&lt; int, int &gt;</type>
@@ -112,12 +112,12 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Processes users actions (e.g. moving left will increase X value, etc). Designed for <ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref> Players. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="53" column="1" bodyfile="Logic.cs" bodystart="53" bodyend="92"/>
+        <location file="BaseClasses/Logic.cs" line="55" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="55" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_logic_1a800ef62de1fe659469d93dc10fdc68d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Tuple&lt; int, int &gt;</type>
@@ -137,12 +137,12 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Processes users actions (e.g. moving left will increase X value, etc). Designed for local <ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="97" column="1" bodyfile="Logic.cs" bodystart="97" bodyend="136"/>
+        <location file="BaseClasses/Logic.cs" line="97" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="97" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_logic_1ab17ccc2eefa85c997b50beebabffe3f4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Tuple&lt; int, int &gt;</type>
@@ -162,12 +162,12 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Processes users state (e.g. Gravity). Designed for <ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref> Players. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="138" column="1" bodyfile="Logic.cs" bodystart="138" bodyend="178"/>
+        <location file="BaseClasses/Logic.cs" line="139" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="139" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_logic_1a3907c353c79aa74e75c71de36369543e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Tuple&lt; int, int &gt;</type>
@@ -187,25 +187,25 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Processes users state (e.g. Gravity). Designed for local <ref refid="class_anti___latency_1_1_player" kindref="compound">Player</ref>. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Logic.cs" line="183" column="1" bodyfile="Logic.cs" bodystart="183" bodyend="224"/>
+        <location file="BaseClasses/Logic.cs" line="182" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="182" bodyend="223"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Static class designed to be provide logic throughout entire program. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="23">
+      <node id="30">
         <label>Anti_Latency.Logic</label>
         <link refid="class_anti___latency_1_1_logic"/>
       </node>
     </collaborationgraph>
-    <location file="Logic.cs" line="6" column="1" bodyfile="Logic.cs" bodystart="5" bodyend="225"/>
+    <location file="BaseClasses/Logic.cs" line="7" column="1" bodyfile="BaseClasses/Logic.cs" bodystart="6" bodyend="224"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_logic_1a28e1e37a8827dfc58ab31792abcc748d" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>actionTree</name></member>
       <member refid="class_anti___latency_1_1_logic_1a800ef62de1fe659469d93dc10fdc68d3" prot="public" virt="non-virtual"><scope>Anti_Latency::Logic</scope><name>actionTree</name></member>

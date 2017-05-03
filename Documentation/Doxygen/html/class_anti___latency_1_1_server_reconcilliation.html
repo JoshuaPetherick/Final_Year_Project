@@ -83,17 +83,21 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_server_reconc
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_server_reconcilliation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.ServerReconcilliation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Reconciliation <a class="el" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. ">Technique</a>.  
+ <a href="class_anti___latency_1_1_server_reconcilliation.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Anti_Latency.ServerReconcilliation:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_anti___latency_1_1_server_reconcilliation__inherit__graph.png" border="0" usemap="#_anti___latency_8_server_reconcilliation_inherit__map" alt="Inheritance graph"/></div>
 <map name="_anti___latency_8_server_reconcilliation_inherit__map" id="_anti___latency_8_server_reconcilliation_inherit__map">
-<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="{Technique\n||+ update()\l+ process()\l+ getLastAction()\l}" alt="" coords="55,5,178,112"/>
+<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="55,5,178,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -101,22 +105,33 @@ Collaboration diagram for Anti_Latency.ServerReconcilliation:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_anti___latency_1_1_server_reconcilliation__coll__graph.png" border="0" usemap="#_anti___latency_8_server_reconcilliation_coll__map" alt="Collaboration graph"/></div>
 <map name="_anti___latency_8_server_reconcilliation_coll__map" id="_anti___latency_8_server_reconcilliation_coll__map">
-<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="{Technique\n||+ update()\l+ process()\l+ getLastAction()\l}" alt="" coords="55,5,178,112"/>
+<area shape="rect" id="node2" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="55,5,178,112"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b8d1205e390d2b9d82b6bf6c9c39084"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server_reconcilliation.html#a9b8d1205e390d2b9d82b6bf6c9c39084">update</a> (<a class="el" href="class_anti___latency_1_1_client.html">Client</a> clint, <a class="el" href="class_anti___latency_1_1_player.html">Player</a> player, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, string action)</td></tr>
+<tr class="memdesc:a9b8d1205e390d2b9d82b6bf6c9c39084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieve input from player. Process and return expected position.  <a href="#a9b8d1205e390d2b9d82b6bf6c9c39084">More...</a><br /></td></tr>
 <tr class="separator:a9b8d1205e390d2b9d82b6bf6c9c39084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d27f4c92bf2e907ab4cb77080f4f96b"><td class="memItemLeft" align="right" valign="top">override Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server_reconcilliation.html#a3d27f4c92bf2e907ab4cb77080f4f96b">process</a> (<a class="el" href="class_anti___latency_1_1_client.html">Client</a> clnt, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:a3d27f4c92bf2e907ab4cb77080f4f96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recieve input from server. Check if matches positions array, return nothing if matches, else return server position.  <a href="#a3d27f4c92bf2e907ab4cb77080f4f96b">More...</a><br /></td></tr>
 <tr class="separator:a3d27f4c92bf2e907ab4cb77080f4f96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7333d9fae892cd52ded80a2898556f"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server_reconcilliation.html#a8c7333d9fae892cd52ded80a2898556f">getLastAction</a> ()</td></tr>
+<tr class="memdesc:a8c7333d9fae892cd52ded80a2898556f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created for testing purposes.  <a href="#a8c7333d9fae892cd52ded80a2898556f">More...</a><br /></td></tr>
 <tr class="separator:a8c7333d9fae892cd52ded80a2898556f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad0f66050479bb46be98c53791b9da7ed"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server_reconcilliation.html#ad0f66050479bb46be98c53791b9da7ed">actions</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:ad0f66050479bb46be98c53791b9da7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf07ad7f7e825bbfe54dee24928279de"><td class="memItemLeft" align="right" valign="top">List&lt; Tuple&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_server_reconcilliation.html#abf07ad7f7e825bbfe54dee24928279de">positions</a> = new List&lt;Tuple&lt;int, int&gt;&gt;()</td></tr>
+<tr class="separator:abf07ad7f7e825bbfe54dee24928279de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00006">6</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
+<div class="textblock"><p><a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Reconciliation <a class="el" href="class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. ">Technique</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00007">7</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8c7333d9fae892cd52ded80a2898556f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c7333d9fae892cd52ded80a2898556f">&#9670;&nbsp;</a></span>getLastAction()</h2>
@@ -141,9 +156,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Created for testing purposes. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#a9d319653fbe1db556f7e74c05c3ad37d">Anti_Latency.Technique</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00050">50</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00055">55</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
 
 </div>
 </div>
@@ -181,9 +198,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Recieve input from server. Check if matches positions array, return nothing if matches, else return server position. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#afe7d616f1e5699c52863d4ceb67a2cef">Anti_Latency.Technique</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00028">28</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00032">32</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
 
 </div>
 </div>
@@ -233,14 +252,65 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Recieve input from player. Process and return expected position. </p>
+
 <p>Implements <a class="el" href="class_anti___latency_1_1_technique.html#ac7317e4c1631c49273d5371791cb6a3c">Anti_Latency.Technique</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00013">13</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad0f66050479bb46be98c53791b9da7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f66050479bb46be98c53791b9da7ed">&#9670;&nbsp;</a></span>actions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; Anti_Latency.ServerReconcilliation.actions = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00009">9</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
+
+</div>
+</div>
+<a id="abf07ad7f7e825bbfe54dee24928279de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf07ad7f7e825bbfe54dee24928279de">&#9670;&nbsp;</a></span>positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Tuple&lt;int, int&gt; &gt; Anti_Latency.ServerReconcilliation.positions = new List&lt;Tuple&lt;int, int&gt;&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_server_reconcilliation_8cs_source.html#l00010">10</a> of file <a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a></li>
+<li>BaseClasses/<a class="el" href="_server_reconcilliation_8cs_source.html">ServerReconcilliation.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -84,11 +84,15 @@ $(document).ready(function(){initNavTree('class_anti___latency_1_1_logic.html','
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_anti___latency_1_1_logic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Anti_Latency.Logic Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Static class designed to be provide logic throughout entire program.  
+ <a href="class_anti___latency_1_1_logic.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Anti_Latency.Logic:</div>
 <div class="dyncontent">
@@ -100,24 +104,37 @@ Collaboration diagram for Anti_Latency.Logic:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c6f60a42a85510229a34e0330ed9080"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#a3c6f60a42a85510229a34e0330ed9080">axisAlignedBoundingBox</a> (int px, int py, int ph, int pw, int ox, int oy, int oh, int ow)</td></tr>
+<tr class="memdesc:a3c6f60a42a85510229a34e0330ed9080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks collsion and returns which side it's colliding with (If colliding)  <a href="#a3c6f60a42a85510229a34e0330ed9080">More...</a><br /></td></tr>
 <tr class="separator:a3c6f60a42a85510229a34e0330ed9080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e1e37a8827dfc58ab31792abcc748d"><td class="memItemLeft" align="right" valign="top">static Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#a28e1e37a8827dfc58ab31792abcc748d">actionTree</a> (<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> player, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, string action)</td></tr>
+<tr class="memdesc:a28e1e37a8827dfc58ab31792abcc748d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes users actions (e.g. moving left will increase X value, etc). Designed for <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Players.  <a href="#a28e1e37a8827dfc58ab31792abcc748d">More...</a><br /></td></tr>
 <tr class="separator:a28e1e37a8827dfc58ab31792abcc748d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800ef62de1fe659469d93dc10fdc68d3"><td class="memItemLeft" align="right" valign="top">static Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#a800ef62de1fe659469d93dc10fdc68d3">actionTree</a> (<a class="el" href="class_anti___latency_1_1_player.html">Player</a> player, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world, string action)</td></tr>
+<tr class="memdesc:a800ef62de1fe659469d93dc10fdc68d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes users actions (e.g. moving left will increase X value, etc). Designed for local <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a>.  <a href="#a800ef62de1fe659469d93dc10fdc68d3">More...</a><br /></td></tr>
 <tr class="separator:a800ef62de1fe659469d93dc10fdc68d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab17ccc2eefa85c997b50beebabffe3f4"><td class="memItemLeft" align="right" valign="top">static Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#ab17ccc2eefa85c997b50beebabffe3f4">update</a> (<a class="el" href="class_anti___latency_1_1_server_player.html">ServerPlayer</a> player, Tuple&lt; int, int &gt; pos, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:ab17ccc2eefa85c997b50beebabffe3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes users state (e.g. Gravity). Designed for <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Players.  <a href="#ab17ccc2eefa85c997b50beebabffe3f4">More...</a><br /></td></tr>
 <tr class="separator:ab17ccc2eefa85c997b50beebabffe3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3907c353c79aa74e75c71de36369543e"><td class="memItemLeft" align="right" valign="top">static Tuple&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#a3907c353c79aa74e75c71de36369543e">update</a> (<a class="el" href="class_anti___latency_1_1_player.html">Player</a> player, Tuple&lt; int, int &gt; pos, <a class="el" href="class_anti___latency_1_1_world.html">World</a> world)</td></tr>
+<tr class="memdesc:a3907c353c79aa74e75c71de36369543e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes users state (e.g. Gravity). Designed for local <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a>.  <a href="#a3907c353c79aa74e75c71de36369543e">More...</a><br /></td></tr>
 <tr class="separator:a3907c353c79aa74e75c71de36369543e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a455270b2a394fd2ba9248af04aa77795"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#a455270b2a394fd2ba9248af04aa77795">speed</a> = 2</td></tr>
 <tr class="separator:a455270b2a394fd2ba9248af04aa77795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad1508fc71ddb9a2a64ab22d4b2a6668c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#ad1508fc71ddb9a2a64ab22d4b2a6668c">gravity</a> = 1</td></tr>
+<tr class="separator:ad1508fc71ddb9a2a64ab22d4b2a6668c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd17b71bfe07f4b88c69a51b4d5f42e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anti___latency_1_1_logic.html#aebd17b71bfe07f4b88c69a51b4d5f42e">jumpHeight</a> = 60</td></tr>
+<tr class="separator:aebd17b71bfe07f4b88c69a51b4d5f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00005">5</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<div class="textblock"><p>Static class designed to be provide logic throughout entire program. </p>
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00006">6</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a28e1e37a8827dfc58ab31792abcc748d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28e1e37a8827dfc58ab31792abcc748d">&#9670;&nbsp;</a></span>actionTree() <span class="overload">[1/2]</span></h2>
@@ -159,7 +176,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00053">53</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<p>Processes users actions (e.g. moving left will increase X value, etc). Designed for <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Players. </p>
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00055">55</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
 </div>
 </div>
@@ -202,6 +221,8 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Processes users actions (e.g. moving left will increase X value, etc). Designed for local <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00097">97</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
@@ -277,7 +298,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00012">12</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<p>Checks collsion and returns which side it's colliding with (If colliding) </p>
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00013">13</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
 </div>
 </div>
@@ -321,7 +344,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00138">138</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<p>Processes users state (e.g. Gravity). Designed for <a class="el" href="class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. ">Server</a> Players. </p>
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00139">139</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
 </div>
 </div>
@@ -365,11 +390,61 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00183">183</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<p>Processes users state (e.g. Gravity). Designed for local <a class="el" href="class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) ">Player</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00182">182</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad1508fc71ddb9a2a64ab22d4b2a6668c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1508fc71ddb9a2a64ab22d4b2a6668c">&#9670;&nbsp;</a></span>gravity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Anti_Latency.Logic.gravity = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00009">9</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+
+</div>
+</div>
+<a id="aebd17b71bfe07f4b88c69a51b4d5f42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd17b71bfe07f4b88c69a51b4d5f42e">&#9670;&nbsp;</a></span>jumpHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Anti_Latency.Logic.jumpHeight = 60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00010">10</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+
+</div>
+</div>
 <a id="a455270b2a394fd2ba9248af04aa77795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a455270b2a394fd2ba9248af04aa77795">&#9670;&nbsp;</a></span>speed</h2>
 
@@ -390,12 +465,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00007">7</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_logic_8cs_source.html#l00008">8</a> of file <a class="el" href="_logic_8cs_source.html">Logic.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_logic_8cs_source.html">Logic.cs</a></li>
+<li>BaseClasses/<a class="el" href="_logic_8cs_source.html">Logic.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

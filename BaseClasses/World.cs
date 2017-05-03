@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace Anti_Latency
 {
+    /// World object designed to manage game world (Floor & Goal)
     class World
     {
         private int WORLDLENGTH;
@@ -17,7 +18,7 @@ namespace Anti_Latency
         private Texture2D goalTexture;
         private Texture2D flagTexture;
 
-        // Optional for testing reasons
+        /// Pass across images for objects - Optional for testing reasons
         public void loadTextures(Texture2D floorTexture, Texture2D goalTexture, Texture2D flagTexture)
         {
             this.floorTexture = floorTexture;
@@ -25,11 +26,13 @@ namespace Anti_Latency
             this.flagTexture = flagTexture;
         }
 
+        /// Load in level from text file
         public void loadLevel()
         {
             buildFromFile(File.ReadAllLines("Content/level.txt"));
         }
 
+        /// Create objects based off position in text file
         private void buildFromFile(string[] lines)
         {
             int x, y = 0;
@@ -46,6 +49,7 @@ namespace Anti_Latency
             }
         }
 
+        /// New object found, create based on character type (e.g. P = Player Start Position)
         private void newObject(char type, int x, int y)
         {
             switch (type)
@@ -62,22 +66,26 @@ namespace Anti_Latency
             }
         }
 
+        /// Set player start point - created for test purposes
         public void setPlayerPos(Tuple<int, int>newPos)
         {
             playerPos = newPos;
         }
 
+        /// Return player start position 
         public Tuple<int, int> getPlayerPos()
         {
             return playerPos;
         }
 
+        /// Empty world arrays
         public void unloadLevel()
         {
             floors.Clear();
             goal = null;
         }
 
+        /// Check if player colliding with floor objects or goal
         public int checkColliding(int px, int py, int ph, int pw)
         {
             // Check this for testing purposes
@@ -108,6 +116,7 @@ namespace Anti_Latency
             return WORLDLENGTH;
         }
 
+        /// Draw all floor and goal object
         public void draw(SpriteBatch spriteBatch)
         {
             foreach (Floor floor in floors)

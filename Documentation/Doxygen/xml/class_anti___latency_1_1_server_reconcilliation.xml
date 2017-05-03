@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerReconcilliation.cs" line="8" column="1" bodyfile="ServerReconcilliation.cs" bodystart="8" bodyend="-1"/>
+        <location file="BaseClasses/ServerReconcilliation.cs" line="9" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_server_reconcilliation_1abf07ad7f7e825bbfe54dee24928279de" prot="private" static="no" mutable="no">
         <type>List&lt; Tuple&lt; int, int &gt; &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerReconcilliation.cs" line="9" column="1" bodyfile="ServerReconcilliation.cs" bodystart="9" bodyend="-1"/>
+        <location file="BaseClasses/ServerReconcilliation.cs" line="10" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,12 +57,12 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Recieve input from player. Process and return expected position. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerReconcilliation.cs" line="10" column="1" bodyfile="ServerReconcilliation.cs" bodystart="10" bodyend="26"/>
+        <location file="BaseClasses/ServerReconcilliation.cs" line="13" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="13" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_reconcilliation_1a3d27f4c92bf2e907ab4cb77080f4f96b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override Tuple&lt; int, int &gt;</type>
@@ -79,12 +79,12 @@
           <declname>world</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Recieve input from server. Check if matches positions array, return nothing if matches, else return server position. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerReconcilliation.cs" line="28" column="1" bodyfile="ServerReconcilliation.cs" bodystart="28" bodyend="48"/>
+        <location file="BaseClasses/ServerReconcilliation.cs" line="32" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="32" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override string</type>
@@ -93,43 +93,43 @@
         <name>getLastAction</name>
         <reimplements refid="class_anti___latency_1_1_technique_1a9d319653fbe1db556f7e74c05c3ad37d">getLastAction</reimplements>
         <briefdescription>
-        </briefdescription>
+<para>Created for testing purposes. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ServerReconcilliation.cs" line="50" column="1" bodyfile="ServerReconcilliation.cs" bodystart="50" bodyend="53"/>
+        <location file="BaseClasses/ServerReconcilliation.cs" line="55" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="55" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="class_anti___latency_1_1_server" kindref="compound">Server</ref> Reconciliation <ref refid="class_anti___latency_1_1_technique" kindref="compound">Technique</ref>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="30">
+      <node id="41">
         <label>Anti_Latency.ServerReconcilliation</label>
         <link refid="class_anti___latency_1_1_server_reconcilliation"/>
-        <childnode refid="31" relation="public-inheritance">
+        <childnode refid="42" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="42">
         <label>Technique</label>
         <link refid="class_anti___latency_1_1_technique"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="32">
+      <node id="43">
         <label>Anti_Latency.ServerReconcilliation</label>
         <link refid="class_anti___latency_1_1_server_reconcilliation"/>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="44" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="44">
         <label>Technique</label>
         <link refid="class_anti___latency_1_1_technique"/>
       </node>
     </collaborationgraph>
-    <location file="ServerReconcilliation.cs" line="7" column="1" bodyfile="ServerReconcilliation.cs" bodystart="6" bodyend="54"/>
+    <location file="BaseClasses/ServerReconcilliation.cs" line="8" column="1" bodyfile="BaseClasses/ServerReconcilliation.cs" bodystart="7" bodyend="59"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_server_reconcilliation_1ad0f66050479bb46be98c53791b9da7ed" prot="private" virt="non-virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>actions</name></member>
       <member refid="class_anti___latency_1_1_server_reconcilliation_1a8c7333d9fae892cd52ded80a2898556f" prot="public" virt="virtual"><scope>Anti_Latency::ServerReconcilliation</scope><name>getLastAction</name></member>

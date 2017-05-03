@@ -3,10 +3,13 @@ using System.Collections.Generic;
 
 namespace Anti_Latency
 {
+    /// Server Reconciliation  Technique
     class ServerReconcilliation : Technique
     {
         private List<string> actions = new List<string>(); // Array of Actions
         private List<Tuple<int, int>> positions = new List<Tuple<int, int>>();
+
+        /// Recieve input from player. Process and return expected position
         public override void update(Client clint, Player player, World world, string action)
         {
             if (!action.Equals("0"))
@@ -25,6 +28,7 @@ namespace Anti_Latency
             
         }
 
+        /// Recieve input from server. Check if matches positions array, return nothing if matches, else return server position
         public override Tuple<int, int> process(Client clnt, World world)
         {
             Tuple<int, int> pos = clnt.getMessages(world);
@@ -47,6 +51,7 @@ namespace Anti_Latency
             // <--------------------------------------------------------------------------------->
         }
 
+        /// Created for testing purposes
         public override string getLastAction()
         {
             return actions[(actions.Count-1)];

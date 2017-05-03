@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="8" column="1" bodyfile="Floor.cs" bodystart="8" bodyend="-1"/>
+        <location file="BaseClasses/Floor.cs" line="9" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_floor_1a3066f992775435f53853c5ec9b79be57" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="9" column="1" bodyfile="Floor.cs" bodystart="9" bodyend="-1"/>
+        <location file="BaseClasses/Floor.cs" line="10" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="10" column="1" bodyfile="Floor.cs" bodystart="10" bodyend="-1"/>
+        <location file="BaseClasses/Floor.cs" line="11" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_anti___latency_1_1_floor_1ad4bbfe204922356e1ca1c23ad01a7605" prot="public" static="yes" mutable="no">
         <type>int</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="11" column="1" bodyfile="Floor.cs" bodystart="11" bodyend="-1"/>
+        <location file="BaseClasses/Floor.cs" line="12" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="12" column="1" bodyfile="Floor.cs" bodystart="12" bodyend="-1"/>
+        <location file="BaseClasses/Floor.cs" line="13" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="13" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="14" column="1" bodyfile="Floor.cs" bodystart="14" bodyend="19"/>
+        <location file="BaseClasses/Floor.cs" line="15" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="15" bodyend="20"/>
       </memberdef>
       <memberdef kind="function" id="class_anti___latency_1_1_floor_1a8feb1ababc93eebe059d4107589ebc4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -116,11 +116,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Floor.cs" line="21" column="1" bodyfile="Floor.cs" bodystart="21" bodyend="24"/>
+        <location file="BaseClasses/Floor.cs" line="22" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="22" bodyend="25"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Basic ground object. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
@@ -129,7 +129,7 @@
         <link refid="class_anti___latency_1_1_floor"/>
       </node>
     </collaborationgraph>
-    <location file="Floor.cs" line="7" column="1" bodyfile="Floor.cs" bodystart="6" bodyend="25"/>
+    <location file="BaseClasses/Floor.cs" line="8" column="1" bodyfile="BaseClasses/Floor.cs" bodystart="7" bodyend="26"/>
     <listofallmembers>
       <member refid="class_anti___latency_1_1_floor_1a8feb1ababc93eebe059d4107589ebc4a" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>draw</name></member>
       <member refid="class_anti___latency_1_1_floor_1a7d03b8d1c6f51976350f335140d07e93" prot="public" virt="non-virtual"><scope>Anti_Latency::Floor</scope><name>Floor</name></member>

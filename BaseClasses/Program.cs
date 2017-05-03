@@ -4,15 +4,12 @@
 namespace Anti_Latency
 {
 #if WINDOWS || LINUX
-    /// <summary>
-    /// The main class.
-    /// </summary>
+
+    /// The main class
     public static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
+        /// The main entry point for the application
         static void Main()
         {
             using (var game = new Game1())

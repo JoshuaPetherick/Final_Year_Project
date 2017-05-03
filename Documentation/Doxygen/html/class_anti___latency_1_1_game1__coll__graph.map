@@ -1,2 +1,9 @@
 <map id="Anti_Latency.Game1" name="Anti_Latency.Game1">
+<area shape="rect" id="node3" href="$class_anti___latency_1_1_world.html" title="World object designed to manage game world (Floor &amp; Goal) " alt="" coords="71,241,207,523"/>
+<area shape="rect" id="node9" href="$class_anti___latency_1_1_server.html" title="The server class which handles connected users and game logic. " alt="" coords="174,667,313,920"/>
+<area shape="rect" id="node4" href="$class_anti___latency_1_1_goal.html" title="Basic goal object. " alt="" coords="75,5,204,171"/>
+<area shape="rect" id="node5" href="$class_anti___latency_1_1_player.html" title="Player object used to represent user (Handles input and drawing) " alt="" coords="337,593,475,993"/>
+<area shape="rect" id="node6" href="$class_anti___latency_1_1_technique.html" title="Abstract class designed to be inhertied by actual techniques. " alt="" coords="247,329,408,435"/>
+<area shape="rect" id="node7" href="$class_anti___latency_1_1_client.html" title="Lidgren client class designed to communicate with Server. " alt="" coords="432,233,567,531"/>
+<area shape="rect" id="node8" href="$class_anti___latency_1_1_camera.html" title="Handles on&#45;screen positioning based on Player position. " alt="" coords="499,689,646,898"/>
 </map>

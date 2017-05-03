@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Anti_Latency
 {
+    /// Basic ground object
     class Floor
     {
         public int x;
